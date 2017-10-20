@@ -1,18 +1,22 @@
-// $forms-font-family:;
-// $forms-font-weigth:;
-// $forms-border-radius:;
-// $forms-border-color:;
-// $forms-border-size:;
-// $forms-box-shadow:;
-// $forms-disabled-bg:;
-// $forms-textarea-max-height: 600px;
-// $forms-textarea-min-height: 120px;
+$forms-font-family:         $base-font-family;
+$forms-font-weigth:         600;
+$forms-font-size:           $base-font-size;
+$forms-border-radius:       $base-border-radius;
+$forms-border-color:        $base-border-color;
+$forms-border-size:         1px;
+$forms-border-style:        solid;
+$forms-box-shadow:          inset 0 0 1px $light-grey, 0 2px 4px darken($white, 10%);
+$forms-disabled-bg:         shade($base-background-color, 5%);
+
+$forms-inputs-bg:           $forms-border-color;
+$forms-textarea-min-height: 120px;
+$forms-textarea-max-height: 600px;
 
 fieldset {
   background-color: transparent;
-  border: 1px solid $base-border-color;
-  border-radius: $base-border-radius;
-  box-shadow: inset 0 0 1px $light-grey, 0 2px 4px darken($white, 10%);
+  border: $forms-border-size $forms-border-style $forms-border-color;
+  border-radius: $forms-border-radius;
+  box-shadow: $forms-box-shadow;
   margin: 0;
   @include from($desktop) {
     padding: 0 2em 1em;
@@ -27,7 +31,7 @@ legend {
 
 label {
   display: block;
-  font-weight: 600;
+  font-weight:  $forms-font-weigth;
   margin-bottom: $small-spacing / 2;
 }
 
@@ -35,13 +39,13 @@ input,
 select,
 textarea {
   display: block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $forms-font-family;
+  font-size: $forms-font-size;
 }
 
 #{$all-text-inputs} {
   appearance: none;
-  background-color: $base-background-color;
+  background-color: $forms-inputs-bg;
   border: $base-border;
   border-radius: $base-border-radius;
   box-sizing: border-box;
@@ -60,7 +64,7 @@ textarea {
   }
 
   &:disabled {
-    background-color: shade($base-background-color, 5%);
+    background-color: $forms-disabled-bg;
     cursor: not-allowed;
 
     &:hover {
@@ -77,8 +81,8 @@ textarea {
   resize: vertical;
 
   &:not([rows]) {
-    max-height: 600px;
-    min-height: 120px;
+    max-height: $forms-textarea-max-height;
+    min-height: $forms-textarea-min-height;
   }
 }
 
