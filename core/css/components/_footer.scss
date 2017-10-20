@@ -1,18 +1,18 @@
-// $footer-font-family:;
-// $footer-font-size:;
-// $footer-font-weigth:;
-// $footer-text-transform:;
-// $footer-padding:;
-// $footer-bg:;
-// $footer-color:;
-// $footer-border:;
+$footer-font-family:  $base-font-family !default;
+$footer-font-size:    $base-font-size !default;
+$footer-text-align:   center !default;
+$footer-padding:      10px 0 5px !default;
+$footer-bg:           $white !default;
+$footer-color:        $black !default;
+$footer-border-top:   1px solid #ddd !default;
 
 
 
 .footer {
-  padding: 10px 0 5px;
-  font-size: 8pt;
-  text-align: center;
-  border-top: 1px solid #ddd;
-  color: black;
+  background-color: $footer-bg;
+  padding: $footer-padding;
+  font-size: $footer-font-size;
+  text-align: $footer-text-align;
+  border-top: $footer-border-top;
+  color: $footer-color;
 }

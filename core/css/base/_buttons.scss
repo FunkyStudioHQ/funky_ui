@@ -1,19 +1,17 @@
-$buttons-font-family:     $base-font-family;
-$buttons-font-size:       $base-font-size;
-$buttons-font-weight:     600;
-$buttons-line-heigth:     1;
-$buttons-cursor:          pointer;
-$buttons-border:          0;
-$buttons-border-radius:   $base-border-radius;
-$buttons-text-transform:  none;
-$buttons-text-align:      center;
-$buttons-padding:         $small-spacing $base-spacing;
-$buttons-bg:              $action-color;
-$buttons-hover-bg:        shade($buttons-bg, 20%);
-$buttons-color:           contrast-switch($buttons-bg);
-$buttons-hover-color:     $buttons-color;
-// $buttons-disabled-bg:;
-// $buttons-disabled-color:;
+$buttons-font-family:     $base-font-family !default;
+$buttons-font-size:       $base-font-size !default;
+$buttons-font-weight:     600 !default;
+$buttons-line-heigth:     1 !default;
+$buttons-cursor:          pointer !default;
+$buttons-border:          0 !default;
+$buttons-border-radius:   $base-border-radius !default;
+$buttons-text-transform:  none !default;
+$buttons-text-align:      center !default;
+$buttons-padding:         $small-spacing $base-spacing !default;
+$buttons-bg:              $action-color !default;
+$buttons-hover-bg:        shade($buttons-bg, 20%) !default;
+$buttons-color:           contrast-switch($buttons-bg) !default;
+$buttons-hover-color:     $buttons-color !default;
 
 
 // Block

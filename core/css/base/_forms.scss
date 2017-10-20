@@ -1,16 +1,16 @@
-$forms-font-family:         $base-font-family;
-$forms-font-weigth:         600;
-$forms-font-size:           $base-font-size;
-$forms-border-radius:       $base-border-radius;
-$forms-border-color:        $base-border-color;
-$forms-border-size:         1px;
-$forms-border-style:        solid;
-$forms-box-shadow:          inset 0 0 1px $light-grey, 0 2px 4px darken($white, 10%);
-$forms-disabled-bg:         shade($base-background-color, 5%);
+$forms-font-family:         $base-font-family !default;
+$forms-font-weigth:         600 !default;
+$forms-font-size:           $base-font-size !default;
+$forms-border-radius:       $base-border-radius !default;
+$forms-border-color:        $base-border-color !default;
+$forms-border-size:         1px !default;
+$forms-border-style:        solid !default;
+$forms-box-shadow:          inset 0 0 1px $light-grey, 0 2px 4px darken($white, 10%) !default;
+$forms-disabled-bg:         shade($base-background-color, 5%) !default;
 
-$forms-inputs-bg:           $forms-border-color;
-$forms-textarea-min-height: 120px;
-$forms-textarea-max-height: 600px;
+$forms-inputs-bg:           $forms-border-color !default;
+$forms-textarea-min-height: 120px !default;
+$forms-textarea-max-height: 600px !default;
 
 fieldset {
   background-color: transparent;

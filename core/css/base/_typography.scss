@@ -1,33 +1,30 @@
-// $typography-font-family:;
-// $typography-font-weight:;
-// $typography-line-height:;
-// $typography-color:;
-//
-// $typography-headings-font-family:;
-// $typography-heading-font-weight:;
-// $typography-heading-line-height:;
-// $typography-headings-transform:;
-//
-// $typography-link-font-family:;
-// $typography-link-color:;
-// $typography-link-hover-color:;
-// $typography-link-visited-color:;
+$typography-font-family:            $base-font-family !default;
+$typography-line-height:            $base-line-height !default;
+$typography-color:                  $base-font-color !default;
+$typography-headings-font-family:   $base-font-family !default;
+$typography-headings-font-weight:   600 !default;
+$typography-headings-line-height:   1.2 !default;
+$typography-headings-transform:     capitalize !default;
+$typography-link-color:             $base-links-color !default;
+$typography-link-hover-color:       shade($action-color, 25%) !default;
+$typography-link-font-weight:       bolder !default;
+$typography-link-decoration:        none !default;
 
 html {
-  color: $base-font-color;
-  font-family: $base-font-family;
+  color: $typography-color;
+  font-family: $typography-font-family;
   font-size: 100%;
-  line-height: $base-line-height;
+  line-height: $typography-line-height;
 }
 // Headings
 @for $i from 1 through 6 {
   .h--#{$i},
   h#{$i} {
     $index: $i;
-    font-family: $heading-font-family;
-    font-weight: $heading-font-weight;
-    line-height: $heading-line-height;
-    text-transform: $headings-transform;
+    font-family: $typography-headings-font-family;
+    font-weight: $typography-headings-font-weight;
+    line-height: $typography-headings-line-height;
+    text-transform: $typography-headings-transform;
     margin: 0 0 $small-spacing;
     font-size: modular-scale(6 - $index);
   }
@@ -38,13 +35,13 @@ p {
 }
 
 a {
-  color: inherit;
-  font-weight: bolder;
-  text-decoration: none;
+  color: $typography-link-color;
+  font-weight: $typography-link-font-weight;
+  text-decoration: $typography-link-decoration;
   transition: color $base-duration $base-timing;
 
   &:hover {
-    color: shade($action-color, 25%);
+    color: $typography-link-hover-color;
     cursor: pointer;
   }
 

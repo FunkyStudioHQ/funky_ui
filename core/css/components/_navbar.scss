@@ -1,35 +1,9 @@
-// $navbar-font-family:;
-// $navbar-font-size:;
-// $navbar-font-weigth:;
-// $navbar-bg:;
-// $navbar-height:;
-// $navbar-margin-bottom:;
-// $navbar-border-color:;
-// $navbar-border-size:;
-// $navbar-border-bottom:;
-
-// $navbar-items-font-family:;
-// $navbar-items-font-size:;
-// $navbar-items-font-weigth:;
-// $navbar-items-padding:;
-// $navbar-items-color:;
-// $navbar-items-cursor:;
-
-// $navbar-burger-cursor:;
-// $navbar-burger-height;
-// $navbar-burger-width:;
-// $navbar-burger-bg:;
-// $navbar-burger-hover-bg:;
-
-
-
-//////////
-$navbar-bg: white;
-$navbar-height: 52px;
-$navbar-margin-bottom: 0;
-$navbar-border-bottom: 1px solid #ddd;
-
-
+$navbar-bg:             white !default;
+$navbar-height:         52px !default;
+$navbar-margin-bottom:  0 !default;
+$navbar-border-bottom:  1px solid #ddd !default;
+$navbar-items-color:    #4a4a4a !default;
+$navbar-items-padding:  1rem !default;
 
 
 .navbar {
@@ -80,9 +54,9 @@ $navbar-border-bottom: 1px solid #ddd;
     -webkit-box-align: center;
     align-items: center;
     flex-shrink: 0;
-    color: #4a4a4a;
+    color: $navbar-items-color;
     display: block;
-    padding: 1rem;
+    padding: $navbar-items-padding;
     cursor: pointer;
     @include position(relative, null null null null);
   }

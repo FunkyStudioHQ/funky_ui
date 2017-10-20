@@ -1,40 +1,51 @@
 // Typography ---------------------------------------------
 // Text & Font
-$base-font-family: $sans-serif;
-$base-line-height: 1.5;
-$base-font-size: 16px;
-$small-font-size: 12px;
-$medium-font-size: 19px;
-$large-font-size: 23px;
-$font-dimensions: ("small": ($small-font-size), "medium": ($medium-font-size), "large": ($large-font-size)) !default;
-// headings
-$heading-font-family: $base-font-family;
-$heading-font-weight: 600;
-$heading-line-height: 1.2;
-$headings-transform: capitalize;
+$base-font-family:  $sans-serif;
+$base-font-size:    16px;
+$base-font-color:   $black;
+$base-font-weight:  600;
+
+$small-font-size:   12px;
+$medium-font-size:  19px;
+$large-font-size:   23px;
+
+
+$font-dimensions: (
+  "small":  ($small-font-size),
+  "medium": ($medium-font-size),
+  "large":  ($large-font-size)
+) !default;
+
+$base-line-height:  1.5;
+$action-color:      $darken-grey;
+
+// Links
+$base-links-color:       inherit;
+$base-links-hover-color: inherit;
+
 // Sizes --------------------------------------------------
 $base-border-radius: 3px;
-$base-spacing: 1em;
-$small-spacing: $base-spacing / 2;
-$base-z-index: 0;
+$base-spacing:       1em;
+$small-spacing:      $base-spacing / 2;
+$base-z-index:       0;
 
-// Font Colors
-$base-font-color: $black;
-$action-color: $darken-grey;
-$link: $blue;
 // Border
 $base-border-color: $light-grey;
 $base-border: 1px solid shade($base-border-color, 10%);
+
 // Background Colors
 $base-background-color: $white;
 $secondary-background-color: tint($base-border-color, 75%);
+
 // Focus
 $focus-outline-color: transparentize($action-color, 0.4);
 $focus-outline-width: 1px;
 $focus-outline: $focus-outline-width solid $focus-outline-color;
 $focus-outline-offset: 2px;
+
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
 // Alignments
 $directions: left, center, right;

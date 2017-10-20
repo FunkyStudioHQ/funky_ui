@@ -1,3 +1,4 @@
+$lauoyt-body-margin: 0  !default;
 //$lauoyt-conatainer-widths: list
 //$lauoyt-conatainer-paddings: list
 
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: $lauoyt-body-margin;
 }
 
 .container {

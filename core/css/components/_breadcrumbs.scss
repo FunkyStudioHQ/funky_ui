@@ -1,6 +1,6 @@
-$breadcrumb-item-color: $link !default;
-$breadcrumb-item-hover-color: $link !default;
-$breadcrumb-item-active-color: $base-font-color !default;
+$breadcrumb-item-color:           $base-links-color !default;
+$breadcrumb-item-hover-color:     $base-links-hover-color !default;
+$breadcrumb-item-active-color:    $base-font-color !default;
 $breadcrumb-item-separator-color: $base-font-color !default;
 
 .breadcrumb {
