@@ -1,3 +1,14 @@
+// $notifications-border-radius:;
+// $notifications-margin:;
+// $notifications-padding:;
+// $notifications-bg:;
+// $notifications-color:;
+// $notifications-close-width:;
+// $notifications-close-heigth:;
+// $notifications-close-border-radius:;
+// $notifications-closed-transition:;
+
+
 .notification {
   border-radius: $base-border-radius;
   padding: 1.25rem 2.5rem 1.25rem 1.5rem;
@@ -5,7 +16,6 @@
   @include position(relative, null null null null);
   background: $grey;
   color: black;
-  position: relative;
 
   // Elements
   @include element(close){
@@ -13,6 +23,7 @@
     &:before {
       content: $fa-var-times;
     }
+    @include position(absolute, 0.5em 0.5em null null);
     width: 20px;
     height: 20px;
     padding: 0;
@@ -21,9 +32,6 @@
     background-color: inherit;
     color: inherit;
     vertical-align: top;
-    position: absolute;
-    right: 0.5em;
-    top: 0.5em;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;

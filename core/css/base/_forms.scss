@@ -1,3 +1,13 @@
+// $forms-font-family:;
+// $forms-font-weigth:;
+// $forms-border-radius:;
+// $forms-border-color:;
+// $forms-border-size:;
+// $forms-box-shadow:;
+// $forms-disabled-bg:;
+// $forms-textarea-max-height: 600px;
+// $forms-textarea-min-height: 120px;
+
 fieldset {
   background-color: transparent;
   border: 1px solid $base-border-color;
@@ -163,7 +173,7 @@ select {
     border-width: thin;
     border-style: solid;
     border-color: shade($base-border-color, 20%);
-    
+
     content: " ";
     display: block;
     height: 0.5em;

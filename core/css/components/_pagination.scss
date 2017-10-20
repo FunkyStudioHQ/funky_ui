@@ -1,3 +1,23 @@
+// $pagination-font-family:;
+// $pagination-font-size:;
+// $pagination-font-weigth:;
+// $pagination-text-transform:;
+// $pagination-color:;
+// $pagination-display-until:;
+// $pagination-border-color:;
+// $pagination-border-radius:;
+// $pagination-border:;
+
+//
+// $pagination-link-color:;
+// $pagination-link-bg:;
+// $pagination-link-hover-bg:;
+// $pagination-link-hover-color:;
+// $pagination-link-hover-border-color:;
+// $pagination-link-disabled-bg:;
+// $pagination-link-disabled-color:;
+// $pagination-link-disabled-border-color:;
+
 .pagination {
   @include display-flex;
   @include flex-alignment(center);
