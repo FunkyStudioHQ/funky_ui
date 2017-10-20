@@ -2,7 +2,7 @@
   "name": "funky_ui",
   "version": "0.0.2",
   "description": "An SCSS Framework based on Bourbon",
-  "main": "index.js",
+  "main": "core/js/index.js",
   "repository": "https://github.com/FunkyStudioHQ/funky_ui.git",
   "author": "FunkyStudio <info@funky.studio>",
   "license": "MIT",
