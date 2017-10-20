@@ -1,11 +1,19 @@
-// $buttons-font-family:;
-// $buttons-font-size:;
-// $buttons-font-weight:;
+$buttons-font-family:   $base-font-family;
+$buttons-font-size:     $base-font-size;
+$buttons-font-weight:   600;
+$buttons-line-heigth:   1;
+$buttons-cursor:        pointer;
+$buttons-border:        0;
+$buttons-border-radius: $base-border-radius;
 // $buttons-text-transform:;
+$buttons-text-align: center;
+$buttons-padding:       $small-spacing $base-spacing;
 // $buttons-color:;
-// $buttons-bg:;
-// $buttons-hover-bg:;
+$buttons-bg:            $base-button-bg;
+$buttons-hover-bg:      shade($base-button-bg, 20%);
+// $buttons-hover-color:;
 // $buttons-disabled-bg:;
+// $buttons-disabled-color:;
 
 
 ////////
@@ -15,18 +23,18 @@ $base-button-bg-hover: shade($action-color, 20%);
 // Block
 .button {
   appearance: none;
-  background-color: $base-button-bg;
-  border: 0;
-  border-radius: $base-border-radius;
+  background-color: $buttons-bg;
+  border: $buttons-border;
+  border-radius: $buttons-border-radius;
   color: contrast-switch($base-button-bg);
-  cursor: pointer;
+  cursor: $buttons-cursor;
   display: inline-block;
-  font-family: $base-font-family;
+  font-family: $buttons-font-family;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
-  line-height: 1;
-  padding: $small-spacing $base-spacing;
-  text-align: center;
+  font-weight: $buttons-font-weight;
+  line-height: $buttons-line-heigth;
+  padding: $buttons-padding;
+  text-align: $buttons-text-align;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
