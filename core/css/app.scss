@@ -1,0 +1,38 @@
+@charset "utf-8";
+$fa-font-path: "/fonts/font-awesome";
+@import "font-awesome";
+@import "./settings";
+@import "~bourbon/core/bourbon";
+@import "~bourbon-neat/core/neat";
+@import "./base/base";
+@import "./components/components";
+
+main.content {
+  padding-bottom: 20px;
+  min-height: calc(100vh - 145px);
+}
+
+.box {
+  padding: 1.25rem;
+  border-radius: $base-border-radius;
+  border: 1px solid #ddd;
+}
+
+.auth {
+  @include grid-container;
+
+  main {
+    text-align: center;
+
+    .box {
+      text-align: left;
+    }
+    @include from($tablet) {
+       @include grid-column(4);
+      @include grid-push(4);
+    }
+    @include until($tablet) {
+      padding: 0 20px 20px;
+    }
+  }
+}

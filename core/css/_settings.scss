@@ -1,0 +1,15 @@
+$output-bourbon-deprecation-warnings: false !default;
+// Font Face
+$sans-serif: "Fira Sans" !default;
+@font-face {
+  font-family: $sans-serif;
+  src: url('/fonts/FiraSans-Regular.woff2') format('woff2'), url('/fonts/FiraSans-Regular.woff') format('woff'), url('/fonts/FiraSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: $sans-serif;
+  src: url('/fonts/FiraSans-Bold.woff2') format('woff2'), url('/fonts/FiraSans-Bold.woff') format('woff'), url('/fonts/FiraSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

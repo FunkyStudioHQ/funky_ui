@@ -1,0 +1,81 @@
+$breadcrumb-item-color: $link !default;
+$breadcrumb-item-hover-color: $link !default;
+$breadcrumb-item-active-color: $base-font-color !default;
+$breadcrumb-item-separator-color: $base-font-color !default;
+
+.breadcrumb {
+  display: block;
+  // @include block;
+  // @include unselectable;
+  align-items: stretch;
+  display: flex;
+  font-size: $base-font-size;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  a {
+    align-items: center;
+    color: $breadcrumb-item-color;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0.75em;
+
+    &:hover {
+      color: $breadcrumb-item-hover-color;
+    }
+  }
+  @include element(item) {
+    align-items: center;
+    display: flex;
+
+    &:first-child a {
+      padding-left: 0;
+    }
+
+    &:last-child a {
+      cursor: text;
+      font-weight: bolder;
+    }
+    @include modifier(active) {
+      a {
+        color: $breadcrumb-item-active-color;
+        cursor: default;
+        pointer-events: none;
+      }
+    }
+
+    & + li::before {
+      color: $breadcrumb-item-separator-color;
+      content: "/";
+    }
+  }
+
+  ol,
+  ul {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    justify-content: flex-start;
+  }
+  // Alignment
+  @include modifier(centered) {
+    ol,
+    ul {
+      justify-content: center;
+    }
+  }
+  @include modifier(right) {
+    ol,
+    ul {
+      justify-content: flex-end;
+    }
+  }
+  // Sizes
+  @each $dimension, $value in $font-dimensions {
+     @include modifier($dimension){
+      font-size: nth($value, 1);
+    }
+  }
+}

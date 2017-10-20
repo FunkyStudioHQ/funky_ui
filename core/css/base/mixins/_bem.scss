@@ -1,0 +1,14 @@
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin modifier($name) {
+  @at-root {
+    $selector: nth(&, 1);
+    $direct-parent: nth($selector, length($selector));
+    #{$direct-parent}--#{$name} { @extend #{$direct-parent}; }
+    #{&}--#{$name} { @content; }
+  }
+}

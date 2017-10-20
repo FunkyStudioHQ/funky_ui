@@ -1,0 +1,70 @@
+html {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: 100%;
+  line-height: $base-line-height;
+}
+// Headings
+@for $i from 1 through 6 {
+  .h--#{$i},
+  h#{$i} {
+    $index: $i;
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: $heading-line-height;
+    text-transform: $headings-transform;
+    margin: 0 0 $small-spacing;
+    font-size: modular-scale(6 - $index);
+  }
+}
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+a {
+  color: inherit;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:hover {
+    color: shade($action-color, 25%);
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}
+
+hr {
+  @include _directional-property(border, null, 0 0 0 null);
+  border-bottom: $base-border;
+  margin: $base-spacing 0;
+}
+
+* {
+  @include modifier(bold) {
+    font-weight: bolder;
+  }
+}
+// font size modifiers
+@each $name, $value in $font-dimensions {
+  .t--#{$name} {
+    font-size: nth($value, 1);
+  }
+}
+// Text alignments modifiers
+@each $direction in $directions {
+  .t--#{$direction} {
+    text-align: $direction;
+  }
+}
+// Text colors modifiers
+@each $name, $color in $palette {
+  .t--#{$name}{
+    color: nth($color, 1);
+  }
+}

@@ -1,0 +1,64 @@
+// Palette
+$black:        #263238;
+$dark:         #2E3C43;
+$darken-grey:  #314549;
+$dark-grey:    #546E7A;
+$grey:         #d3e2e8;
+$light-grey:   #dee9ee;
+$lighten-grey: #f4f8f9;
+$white:        #FFFFFF;
+$red:          #E74C3C;
+$orange:       #E67E22;
+$yellow:       #FFCB6B;
+$green:        #C3E88D;
+$turquoise:    #89DDFF;
+$blue:         #3498DB;
+$purple:       #9B59B6;
+$brown:        #be643c;
+
+// Palette inverse
+$black-inverse:        $white;
+$dark-inverse:         $lighten-grey;
+$darken-grey-inverse:  $light-grey;
+$dark-grey-inverse:    $grey;
+$grey-inverse:         $black;
+$light-grey-inverse:   $dark-grey;
+$lighten-grey-inverse: $darken-grey;
+$white-inverse:        $black;
+$red-inverse:          $white;
+$orange-inverse:       $white;
+$yellow-inverse:       darken($yellow, 50); //$black;
+$green-inverse:        darken($green, 45);
+$turquoise-inverse:    darken($turquoise, 50);
+$blue-inverse:         $white;
+$purple-inverse:       $white;
+$brown-inverse:        $white;
+
+// Custom Colors
+$danger:      $red;
+$info:        $blue;
+$warning:     $yellow;
+$success:     $green;
+
+
+$palette:
+  "black"         ($black, $black-inverse),
+  "dark"          ($dark, $dark-inverse),
+  "darken-grey"   ($darken-grey, $darken-grey-inverse),
+  "dark-grey"     ($dark-grey, $dark-grey-inverse),
+  "grey"          ($grey, $grey-inverse),
+  "light-grey"    ($light-grey, $light-grey-inverse),
+  "lighten-grey"  ($lighten-grey, $lighten-grey-inverse),
+  "white"         ($white, $white-inverse),
+  "red"           ($red, $red-inverse),
+  "orange"        ($orange, $orange-inverse),
+  "yellow"        ($yellow, $yellow-inverse),
+  "green"         ($green, $green-inverse),
+  "turquoise"     ($turquoise, $turquoise-inverse),
+  "blue"          ($blue, $blue-inverse),
+  "purple"        ($purple, $purple-inverse),
+  "brown"         ($brown, $brown-inverse),
+  "danger"        ($red, $red-inverse),
+  "info"          ($blue, $blue-inverse),
+  "warning"       ($yellow, $yellow-inverse),
+  "success"       ($green, $green-inverse);

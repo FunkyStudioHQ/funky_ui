@@ -1,0 +1,63 @@
+@mixin display-flex($flex-type:"") {
+  @if $flex-type == 'inline' {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  @else {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    @include value-prefixer(display, flex, ("webkit"));    
+  }
+}
+
+@mixin flex-start {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+@mixin flex-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+@mixin flex-wrap($value) {
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
+}
+
+@mixin flex-order($order) {
+  -webkit-box-ordinal-group: $order + 1;
+  -ms-flex-order: $order;
+  order: $order;
+}
+
+@mixin flex-grow($value) {
+  -webkit-box-flex: $value;
+  -ms-flex-positive: $value;
+  -ms-flex-negative: $value;
+  flex-grow: $value;
+}
+
+@mixin flex-alignment($position) {
+  @if $position == 'center' {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @if $position == 'justify' {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}

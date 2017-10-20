@@ -1,0 +1,47 @@
+$base-button-bg: $action-color;
+$base-button-bg-hover: shade($action-color, 20%);
+
+// Block
+.button {
+  appearance: none;
+  background-color: $base-button-bg;
+  border: 0;
+  border-radius: $base-border-radius;
+  color: contrast-switch($base-button-bg);
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: $small-spacing $base-spacing;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: $base-font-size;
+
+  &:hover{
+    color: contrast-switch($base-button-bg);
+  }
+
+  // Dimesions modifiers
+  @each $name, $pair in $font-dimensions {
+     @include modifier($name){
+      font-size: nth($pair, 1);
+    }
+  }
+
+  // Color modifiers
+  @each $name, $value in $palette{
+    @include modifier($name){
+      background-color: nth($value, 1);
+      color: nth($value, 2);
+      &:hover{
+        color: nth($value, 2);
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.table {
+  width: 100%;
+  table-layout: fixed;
+  background-color: white;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 0 $small-spacing;
+
+  td,
+  th {
+    @include padding(0.5em 0.75em);
+    border-bottom: 1px solid $base-border-color;
+  }
+
+  th {
+    text-align: left;
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    font-variant: small-caps;
+    text-transform: uppercase;
+  }
+
+  td.table__actions {
+    text-align: right;
+  }
+  // Modifiers
+  @include modifier(bordered) {
+    tr:last-child {
+      td,
+      th {
+        border-bottom-width: 1px;
+      }
+    }
+
+    td,
+    th {
+      border: 1px solid #dbdbdb;
+      border-width: 1px;
+    }
+  }
+  @include modifier(striped) {
+    tbody tr:nth-child(2n):not(.is-selected) {
+      background-color: #fafafa;
+    }
+  }
+  // mobile style
+  @include until($desktop) {
+    display: block;
+    border-bottom-width: 0;
+
+    tbody,
+    td,
+    th,
+    thead,
+    tr {
+      display: block;
+    }
+
+    thead {
+      background-color: transparent;
+      border-width: 0;
+
+      tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+    }
+
+    tr {
+      display: block;
+      border: 1px solid $base-border-color;
+      margin-bottom: $small-spacing;
+    }
+
+    td {
+      border-bottom: 1px solid $base-border-color;
+      white-space: normal;
+      text-align: left;
+
+      &:last-child {
+        border-bottom-width: 0;
+      }
+
+      &:before {
+        color: grey;
+        font-size: 10pt;
+        content: attr(data-title);
+        font-variant: small-caps;
+        text-transform: uppercase;
+        display: block;
+      }
+    }
+  }
+}

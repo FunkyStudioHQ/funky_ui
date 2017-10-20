@@ -1,0 +1,110 @@
+$navbar-bg: white;
+$navbar-height: 52px;
+$navbar-margin-bottom: 0;
+$navbar-border-bottom: 1px solid #ddd;
+
+.navbar {
+  @include position(relative, null null null null);
+  @include display-flex;
+  background-color: $navbar-bg;
+  height: $navbar-height;
+  margin-bottom: $navbar-margin-bottom;
+  border-bottom: $navbar-border-bottom;
+  // Element
+  @include element(brand) {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    @include display-flex;
+    flex-shrink: 0;
+    .navbar__item {
+      padding: 0;
+      img {
+        max-height: $navbar-height;
+      }
+    }
+  }
+  // Element with modifiers
+  @include element(menu) {
+    @include display-flex;
+    @include flex-grow(1);
+    flex-shrink: 0;
+    @include mobile {
+      display: none;
+    }
+    @include modifier(left) {
+      @include display-flex;
+      @include flex-start;
+      margin-right: auto;
+    }
+    @include modifier(right) {
+      @include display-flex;
+      @include flex-end;
+      -webkit-box-align: stretch;
+      align-items: stretch;
+      margin-left: auto;
+    }
+  }
+  // Element with modifiers
+  @include element(item) {
+    @include display-flex;
+    @include flex-grow(0);
+    -webkit-box-align: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #4a4a4a;
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    @include position(relative, null null null null);
+  }
+  // Element
+  @include element(burger) {
+    cursor: pointer;
+    display: block;
+    height: 3.25rem;
+    @include position(relative, null null null null);
+    width: 3.25rem;
+    margin-left: auto;
+
+    span {
+      background-color: currentColor;
+      display: block;
+      @include position(absolute, 50% null null 50%);
+      height: 1px;
+      margin-left: -7px;
+      width: 15px;
+
+      &:first-child {
+        margin-top: -6px;
+      }
+
+      &:nth-child(2) {
+        margin-top: -1px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 4px;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(0,0,0,.05);
+    }
+    @include from($tablet) {
+      display: none;
+    }
+  }
+}
+
+.navbar {
+  .container {
+    display: block;
+    @include until($tablet) {
+      padding: 0 0 0 10px;
+    }
+    @include from($tablet) {
+      align-items: stretch;
+      @include display-flex;
+    }
+  }
+}

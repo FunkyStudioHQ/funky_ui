@@ -1,0 +1,11 @@
+@mixin no-select {
+  @include prefixer(user-select, none, ("webkit", "moz", "ms"));
+  @include prefixer(user-select, none, ("webkit", "ms"));
+  @include prefixer(touch-callout, none, ("webkit"));
+  @include prefixer(tap-highlight-color, rgba(0,0,0,0), ("webkit"));
+}
+
+@mixin rem-rule($rule, $size-in-px) {
+  #{$rule}: $size-in-px;
+  #{$rule}: ($size-in-px / 16px) * 1rem;
+}
