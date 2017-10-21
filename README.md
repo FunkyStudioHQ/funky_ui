@@ -142,6 +142,14 @@ $typography-link-font-weight:       bolder !default;
 $typography-link-decoration:        none !default;
 ```
 
+###### Lists:
+```scss
+$lists-margin:          0 !default;
+$lists-padding:         0 !default;
+$list-style-type:       none !default;
+$lists-dt-font-weight:  600 !default;
+```
+
 ###### Buttons:
 ```scss
 $buttons-font-family:     $base-font-family !default;
@@ -158,4 +166,136 @@ $buttons-bg:              $action-color !default;
 $buttons-hover-bg:        shade($buttons-bg, 20%) !default;
 $buttons-color:           contrast-switch($buttons-bg) !default;
 $buttons-hover-color:     $buttons-color !default;
+```
+
+###### Forms:
+```scss
+$forms-font-family:         $base-font-family !default;
+$forms-font-weigth:         600 !default;
+$forms-font-size:           $base-font-size !default;
+$forms-border-radius:       $base-border-radius !default;
+$forms-border-color:        $base-border-color !default;
+$forms-border-size:         1px !default;
+$forms-border-style:        solid !default;
+$forms-box-shadow:          inset 0 0 1px $light-grey, 0 2px 4px darken($white, 10%) !default;
+$forms-disabled-bg:         shade($base-background-color, 5%) !default;
+
+$forms-inputs-bg:           $white !default;
+$forms-textarea-min-height: 120px !default;
+$forms-textarea-max-height: 600px !default;
+```
+
+###### Notifications:
+```scss
+$notifications-border-radius: $base-border-radius !default;
+$notifications-margin:        0 0 $small-spacing !default;
+$notifications-padding:       1.25rem 2.5rem 1.25rem 1.5rem !default;
+$notifications-bg:            $grey !default;
+$notifications-color:         black !default;
+```
+
+###### Tables:
+```scss
+$tables-width:                  100% !default;
+$tables-layout:                 fixed !default;
+$tables-border-collapse:        collapse !default;
+$tables-border-spacing:         0 !default;
+$tables-margin:                 0 0 $small-spacing !default;
+$tables-cells-padding:          0.5em 0.75em !default;
+$tables-bg:                     white !default;
+$tables-cells-border:           0 0 1px 0 solid $base-border-color !default;
+
+$tables-th-text-align:          left !default;
+$tables-th-font-family:         $base-font-family !default;
+$tables-th-font-weight:         $base-font-weight !default;
+$tables-th-font-variant:        small-caps !default;
+$tables-th-text-transform:      uppercase !default;
+
+$tables-actions-text-align:     right !default;
+
+$tables-striped-bg:             #fafafa !default;
+$tables-bordered-border:        1px solid #dbdbdb !default;
+
+$tables-mobile-th-color:        grey !default;
+$tables-mobile-th-font-size:    10pt !default;
+$tables-mobile-border:          1px solid $base-border-color !default;
+$tables-mobile-bottom-margin:   $small-spacing !default;
+```
+
+##### Components variables
+
+###### Flex Boxes:
+```scss
+$boxes-background-color:     $white !default;
+$boxes-font-color:           $dark-grey !default;
+$boxes-box-border-color:     $light-grey !default;
+$boxes-box-border:           1px solid $boxes-box-border-color !default;
+$boxes-box-background:       $white !default;
+$boxes-box-gutter:           0.4em !default;
+$boxes-box-width:            18em !default;
+$boxes-box-color:            transparentize($boxes-font-color, 0.3) !default;
+$boxes-box-top-colors:       $red, $turquoise, $purple, $yellow, $grey, $orange !default;
+```
+
+###### Breadcrumb:
+```scss
+$breadcrumb-item-color:           $base-links-color !default;
+$breadcrumb-item-hover-color:     $base-links-hover-color !default;
+$breadcrumb-item-active-color:    $base-font-color !default;
+$breadcrumb-item-separator-color: $base-font-color !default;
+```
+
+###### Dropdown:
+```scss
+$dropdown-content-background-color: $base-background-color !default;
+$dropdown-content-arrow:            $base-font-color !default;
+$dropdown-content-offset:           0.5rem !default;
+$dropdown-content-radius:           $base-border-radius !default;
+$dropdown-content-shadow:           0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
+$dropdown-content-z:                20 !default;
+
+$dropdown-item-color:                   $dark-grey !default;
+$dropdown-item-hover-color:             $black !default;
+$dropdown-item-hover-background-color:  darken($grey, 20) !default;
+$dropdown-item-active-color:            darken($grey, 20) !default;
+$dropdown-item-active-background-color: $base-links-color !default;
+
+$dropdown-divider-background-color:     $buttons-hover-bg !default;
+```
+
+###### Footer:
+```scss
+$footer-font-family:  $base-font-family !default;
+$footer-font-size:    $base-font-size !default;
+$footer-text-align:   center !default;
+$footer-padding:      10px 0 5px !default;
+$footer-bg:           $white !default;
+$footer-color:        $black !default;
+$footer-border-top:   1px solid #ddd !default;
+```
+
+###### Navbar:
+```scss
+$navbar-bg:             white !default;
+$navbar-height:         52px !default;
+$navbar-margin-bottom:  1rem !default;
+$navbar-border-bottom:  1px solid #ddd !default;
+$navbar-items-color:    #4a4a4a !default;
+$navbar-items-padding:  1rem !default;
+```
+
+###### Pagination:
+```scss
+$pagination-hide-until:     $tablet !default;
+$pagination-border-color:   #dbdbdb !default;
+$pagination-border-radius:  $base-border-radius !default;
+
+$pagination-links-color:          #fff !default;
+$pagination-links-hover-color:    #363636 !default;
+$pagination-links-bg:             $dark !default;
+```
+###### Tooltip:
+```scss
+$tooltip-background-color:  $dark-grey !default;
+$tooltip-max-width:         24rem !default;
 ```

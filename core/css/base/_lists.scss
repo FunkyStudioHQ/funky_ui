@@ -1,7 +1,7 @@
-$lists-margin:          0;
-$lists-padding:         0;
-$list-style-type:       none;
-$lists-dt-font-weight:  600;
+$lists-margin:          0 !default;
+$lists-padding:         0 !default;
+$list-style-type:       none !default;
+$lists-dt-font-weight:  600 !default;
 
 ol,
 ul {
