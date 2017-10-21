@@ -1,44 +1,44 @@
 // Palette
-$black:        #263238;
-$dark:         #2E3C43;
-$darken-grey:  #314549;
-$dark-grey:    #546E7A;
-$grey:         #d3e2e8;
-$light-grey:   #dee9ee;
-$lighten-grey: #f4f8f9;
-$white:        #FFFFFF;
-$red:          #E74C3C;
-$orange:       #E67E22;
-$yellow:       #FFCB6B;
-$green:        #C3E88D;
-$turquoise:    #89DDFF;
-$blue:         #3498DB;
-$purple:       #9B59B6;
-$brown:        #be643c;
+$black:        #263238 !default;
+$dark:         #2E3C43 !default;
+$darken-grey:  #314549 !default;
+$dark-grey:    #546E7A !default;
+$grey:         #d3e2e8 !default;
+$light-grey:   #dee9ee !default;
+$lighten-grey: #f4f8f9 !default;
+$white:        #FFFFFF !default;
+$red:          #E74C3C !default;
+$orange:       #E67E22 !default;
+$yellow:       #FFCB6B !default;
+$green:        #C3E88D !default;
+$turquoise:    #89DDFF !default;
+$blue:         #3498DB !default;
+$purple:       #9B59B6 !default;
+$brown:        #be643c !default;
 
 // Palette inverse
-$black-inverse:        $white;
-$dark-inverse:         $lighten-grey;
-$darken-grey-inverse:  $light-grey;
-$dark-grey-inverse:    $grey;
-$grey-inverse:         $black;
-$light-grey-inverse:   $dark-grey;
-$lighten-grey-inverse: $darken-grey;
-$white-inverse:        $black;
-$red-inverse:          $white;
-$orange-inverse:       $white;
-$yellow-inverse:       darken($yellow, 50); //$black;
-$green-inverse:        darken($green, 45);
-$turquoise-inverse:    darken($turquoise, 50);
-$blue-inverse:         $white;
-$purple-inverse:       $white;
-$brown-inverse:        $white;
+$black-inverse:        $white !default;
+$dark-inverse:         $lighten-grey !default;
+$darken-grey-inverse:  $light-grey !default;
+$dark-grey-inverse:    $grey !default;
+$grey-inverse:         $black !default;
+$light-grey-inverse:   $dark-grey !default;
+$lighten-grey-inverse: $darken-grey !default;
+$white-inverse:        $black !default;
+$red-inverse:          $white !default;
+$orange-inverse:       $white !default;
+$yellow-inverse:       darken($yellow, 50 )!default;
+$green-inverse:        darken($green, 45 )!default;
+$turquoise-inverse:    darken($turquoise, 50 )!default;
+$blue-inverse:         $white !default;
+$purple-inverse:       $white !default;
+$brown-inverse:        $white !default;
 
 // Custom Colors
-$danger:      $red;
-$info:        $blue;
-$warning:     $yellow;
-$success:     $green;
+$danger:      $red !default;
+$info:        $blue !default;
+$warning:     $yellow !default;
+$success:     $green !default;
 
 
 $palette:

@@ -1,8 +1,8 @@
-$breakpoints-gap: 32px;
-$tablet:          769px;
-$desktop:         960px + (2 * $breakpoints-gap);
-$widescreen:      1152px + (2 * $breakpoints-gap);
-$fullhd:          1344px + (2 * $breakpoints-gap);
+$breakpoints-gap: 32px !default;
+$tablet:          769px !default;
+$desktop:         960px + (2 * $breakpoints-gap) !default;
+$widescreen:      1152px + (2 * $breakpoints-gap) !default;
+$fullhd:          1344px + (2 * $breakpoints-gap) !default;
 
 // Responsiveness
 @mixin from($device) {
