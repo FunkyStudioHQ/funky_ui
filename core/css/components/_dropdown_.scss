@@ -1,0 +1,112 @@
+$dropdown-content-background-color: $base-background-color !default;
+$dropdown-content-arrow:            $base-font-color !default;
+$dropdown-content-offset:           0.5rem !default;
+$dropdown-content-radius:           $base-border-radius !default;
+$dropdown-content-shadow:           0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
+$dropdown-content-z:                20 !default;
+
+$dropdown-item-color:                   $dark-grey !default;
+$dropdown-item-hover-color:             $black !default;
+$dropdown-item-hover-bg:  darken($grey, 20) !default;
+$dropdown-item-active-color:            darken($grey, 20) !default;
+$dropdown-item-active-background-color: $base-links-color !default;
+
+$dropdown-divider-background-color:     $buttons-hover-bg !default;
+
+.dropdown, .dropdown__submenu > .dropdown {
+  display: inline-flex;
+  position: relative;
+  vertical-align: top;
+
+  &--active,
+  &--hoverable:hover {
+    .dropdown__menu {
+      display: block;
+    }
+  }
+
+  .dropdown__menu {
+    display: none;
+    left: 0;
+    min-width: 12rem;
+    padding-top: $dropdown-content-offset;
+    position: absolute;
+    top: 100%;
+    z-index: $dropdown-content-z;
+  }
+
+  .dropdown__content {
+    background-color: $dropdown-content-background-color;
+    border-radius: $dropdown-content-radius;
+    box-shadow: $dropdown-content-shadow;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .dropdown__item {
+    color: $dropdown-item-color;
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    padding: 0.375rem 1rem;
+    position: relative;
+  }
+
+  .dropdown__item {
+    padding-right: 3rem;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $dropdown-item-hover-bg;
+      color: $dropdown-item-hover-color;
+    }
+
+    &--active {
+      background-color: $dropdown-item-active-background-color;
+      color: $dropdown-item-active-color;
+    }
+  }
+
+  .dropdown__divider {
+    background-color: $dropdown-divider-background-color;
+    border: none;
+    display: block;
+    height: 1px;
+    margin: 0.5rem 0;
+  }
+
+  .dropdown__trigger {
+    &:after {
+      @include position(relative, null null null 0.5rem);
+      @include fa-icon;
+    }
+    padding-right: 1.5rem;
+  }
+}
+
+.dropdown {
+  .dropdown__trigger {
+    &:after {
+      content: $fa-var-angle-down;
+    }
+  }
+
+  .dropdown__item.dropdown__submenu:hover {
+    .dropdown__menu {
+      display: block;
+    }
+  }
+}
+
+.dropdown__submenu {
+  .dropdown__trigger {
+    &:after {
+      content: $fa-var-angle-right;
+    }
+  }
+
+  .dropdown__menu {
+    margin-left: 180%;
+    margin-top: -170%;
+  }
+}

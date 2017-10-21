@@ -4,109 +4,115 @@ $dropdown-content-offset:           0.5rem !default;
 $dropdown-content-radius:           $base-border-radius !default;
 $dropdown-content-shadow:           0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
 $dropdown-content-z:                20 !default;
+$dropdown-content-font-size:        $base-font-size !default;
 
+$dropdown-item-padding:                 0.5rem 4rem 0.5rem 0.5rem !default;
 $dropdown-item-color:                   $dark-grey !default;
 $dropdown-item-hover-color:             $black !default;
-$dropdown-item-hover-background-color:  darken($grey, 20) !default;
-$dropdown-item-active-color:            darken($grey, 20) !default;
-$dropdown-item-active-background-color: $base-links-color !default;
-
+$dropdown-item-hover-bg:                darken($grey, 20) !default;
+$dropdown-item-active-color:            $white !default;
+$dropdown-item-active-bg:               $blue !default;
 $dropdown-divider-background-color:     $buttons-hover-bg !default;
 
-.dropdown, .dropdown__submenu > .dropdown {
-  display: inline-flex;
-  position: relative;
-  vertical-align: top;
+$dropdown-item-button-color:            $white !default;
+$dropdown-item-button-bg:               $dark !default;
+$dropdown-item-button-hover-bg:         darken($grey, 20) !default;
+$dropdown-item-button-hover-color:      $white !default;
+$dropdown-item-button-active-bg:        darken($grey, 20) !default;
+$dropdown-item-button-active-color:     $white !default;
 
-  &--active,
-  &--hoverable:hover {
-    .dropdown__menu {
-      display: block;
+.dropdown {
+  display: inline-block;
+  position: relative;
+  .dropdown__item {
+    display: inline-block;
+    cursor: pointer;
+    color: $dropdown-item-color;
+    width: 100%;
+    &:after {
+      @include position(relative, null null null 0.5rem);
+      @include fa-icon;
+      content: $fa-var-angle-down;
+    }
+    @include modifier(active){
+      color: $navbar-item-active-color;
+      &:hover {
+        color: $navbar-item-active-color;
+      }
     }
   }
 
   .dropdown__menu {
     display: none;
-    left: 0;
-    min-width: 12rem;
-    padding-top: $dropdown-content-offset;
-    position: absolute;
-    top: 100%;
-    z-index: $dropdown-content-z;
-  }
-
-  .dropdown__content {
+    @include position(absolute, 100% null null null);
+    @include border-bottom-radius($dropdown-content-radius);
+    min-width: 100%;
+    z-index: 1;
     background-color: $dropdown-content-background-color;
-    border-radius: $dropdown-content-radius;
+    -webkit-box-shadow: $dropdown-content-shadow;
     box-shadow: $dropdown-content-shadow;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-  }
+    font-size: $dropdown-content-font-size;
 
-  .dropdown__item {
-    color: $dropdown-item-color;
-    display: block;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    padding: 0.375rem 1rem;
-    position: relative;
-  }
-
-  .dropdown__item {
-    padding-right: 3rem;
-    white-space: nowrap;
-
-    &:hover {
-      background-color: $dropdown-item-hover-background-color;
-      color: $dropdown-item-hover-color;
+    hr {
+      margin: 0;
     }
 
-    &--active {
-      background-color: $dropdown-item-active-background-color;
-      color: $dropdown-item-active-color;
-    }
-  }
+    .dropdown__menu-item {
+      @include display-flex;
+      @include flex-grow(0);
+      display: block;
+      -webkit-box-align: center;
+      align-item: center;
+      flex-shrink: 0;
+      cursor: pointer;
+      color: $dropdown-item-color;
+      padding: $dropdown-item-padding;
+      &:hover {
+        background-color: $dropdown-item-hover-bg;
+      }
 
-  .dropdown__divider {
-    background-color: $dropdown-divider-background-color;
-    border: none;
-    display: block;
-    height: 1px;
-    margin: 0.5rem 0;
-  }
-
-  .dropdown__trigger {
-    &:after {
-      @include position(relative, null null null 0.5rem);
-      @include fa-icon;
-    }
-    padding-right: 1.5rem;
-  }
-}
-
-.dropdown {
-  .dropdown__trigger {
-    &:after {
-      content: $fa-var-angle-down;
+      @include modifier(active){
+        background-color: $dropdown-item-active-bg;
+        color: $dropdown-item-active-color;
+        &:hover {
+          background-color: darken($dropdown-item-hover-bg, 20);
+          color: $dropdown-item-hover-color;
+        }
+      }
     }
   }
 
-  .dropdown__item.dropdown__submenu:hover {
+  &:hover {
     .dropdown__menu {
       display: block;
     }
   }
-}
 
-.dropdown__submenu {
-  .dropdown__trigger {
-    &:after {
-      content: $fa-var-angle-right;
+  .dropdown{
+    @include clearfix;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    .dropdown__item {
+      padding: $dropdown-item-padding;
+      &:after {
+        @include position(relative, 0 null null 100%);
+        @include fa-icon;
+        content: $fa-var-angle-right;
+      }
+      &:hover {
+        background-color: $dropdown-item-hover-bg;
+      }
+    }
+    .dropdown__menu{
+      @include position(absolute, 0 null null 100%);
+      display: none;
+    }
+    &:hover {
+      .dropdown__menu {
+        display: block;
+      }
     }
   }
 
-  .dropdown__menu {
-    margin-left: 180%;
-    margin-top: -170%;
-  }
 }

@@ -1,9 +1,11 @@
-$navbar-bg:             white !default;
-$navbar-height:         52px !default;
-$navbar-margin-bottom:  1rem !default;
-$navbar-border-bottom:  1px solid #ddd !default;
-$navbar-items-color:    #4a4a4a !default;
-$navbar-items-padding:  1rem !default;
+$navbar-bg:                          white !default;
+$navbar-height:                      52px !default;
+$navbar-margin-bottom:               1rem !default;
+$navbar-border-bottom:               1px solid #ddd !default;
+$navbar-items-color:                 #4a4a4a !default;
+$navbar-items-active-color:          #4a4a4a !default;
+$navbar-items-active-font-weight:    700;
+$navbar-items-padding:               1rem !default;
 
 
 .navbar {
@@ -59,6 +61,9 @@ $navbar-items-padding:  1rem !default;
     padding: $navbar-items-padding;
     cursor: pointer;
     @include position(relative, null null null null);
+    @include modifier(active){
+      font-weight: $navbar-items-active-font-weight;
+    }
   }
   // Element
   @include element(burger) {

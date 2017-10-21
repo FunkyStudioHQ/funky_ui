@@ -6,6 +6,7 @@ $footer-bg:           $white !default;
 $footer-color:        $black !default;
 $footer-border-top:   1px solid #ddd !default;
 
+$footer-mobile-font-size: $small-font-size !default;
 
 
 .footer {
@@ -15,4 +16,7 @@ $footer-border-top:   1px solid #ddd !default;
   text-align: $footer-text-align;
   border-top: $footer-border-top;
   color: $footer-color;
+  @include until($tablet){
+    font-size: $footer-mobile-font-size;
+  }
 }

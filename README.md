@@ -266,7 +266,7 @@ $dropdown-content-z:                20 !default;
 
 $dropdown-item-color:                   $dark-grey !default;
 $dropdown-item-hover-color:             $black !default;
-$dropdown-item-hover-background-color:  darken($grey, 20) !default;
+$dropdown-item-hover-bg:  darken($grey, 20) !default;
 $dropdown-item-active-color:            darken($grey, 20) !default;
 $dropdown-item-active-background-color: $base-links-color !default;
 
