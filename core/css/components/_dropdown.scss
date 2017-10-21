@@ -10,7 +10,7 @@ $dropdown-item-padding:                 0.5rem 4rem 0.5rem 0.5rem !default;
 $dropdown-item-color:                   $dark-grey !default;
 $dropdown-item-hover-color:             $black !default;
 $dropdown-item-hover-bg:                darken($grey, 20) !default;
-$dropdown-item-active-color:            $white !default;
+$dropdown-item-active-color:            $black !default;
 $dropdown-item-active-bg:               $blue !default;
 $dropdown-divider-background-color:     $buttons-hover-bg !default;
 
@@ -35,9 +35,9 @@ $dropdown-item-button-active-color:     $white !default;
       content: $fa-var-angle-down;
     }
     @include modifier(active){
-      color: $navbar-item-active-color;
+      color: $dropdown-item-active-color;
       &:hover {
-        color: $navbar-item-active-color;
+        color: $dropdown-item-active-color;
       }
     }
   }
