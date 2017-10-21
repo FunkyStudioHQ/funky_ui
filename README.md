@@ -1,11 +1,11 @@
-## FunkyUI
+# FunkyUI
 An SCSS Framework based on Bourbon
 
-#### installation
+## installation
 Add package to your package.json with: ```yarn add funky_ui```
 
 
-#### Use
+## Use
 Put into css:
 ```scss
 @import "funky_ui";
@@ -19,10 +19,20 @@ import { CloseNotification, InputUpload } from 'funky_ui'
 
 
 
-##### Override variable values
+## Override variable values
+You can override variables values before import **funky_ui**
+
+es.
+```scss
+
+$base-font-color: purple;
+
+@import "funky_ui";
+```
+
 below a complete list of variables used by framework:
 
-###### Color Palette:
+### Color Palette:
 ```scss
 // Palette
 $black:        #263238 !default;
@@ -67,7 +77,7 @@ $warning:     $yellow !default;
 $success:     $green !default;
 ```
 
-###### Breakpoints:
+### Breakpoints:
 ```scss
 $breakpoints-gap: 32px !default;
 $tablet:          769px !default;
@@ -76,7 +86,7 @@ $widescreen:      1152px + (2 * $breakpoints-gap) !default;
 $fullhd:          1344px + (2 * $breakpoints-gap) !default;
 ```
 
-###### Base variables:
+### Base variables:
 ```scss
 // Text & Font
 $base-font-family:  $sans-serif !default;
@@ -119,7 +129,7 @@ $base-focus-outline-offset: 2px !default;
 $base-duration: 150ms !default;
 $base-timing: ease !default;
 ```
-###### Layout:
+### Layout:
 ```scss
 $layout-body-margin:                0  !default;
 $layout-conatainer-width:           960px !default;
@@ -127,7 +137,7 @@ $layout-mobile-conatainer-width:    100% !default;
 $layout-mobile-conatainer-padding:  0 20px !default;
 ```
 
-###### Typography:
+### Typography:
 ```scss
 $typography-font-family:            $base-font-family !default;
 $typography-line-height:            $base-line-height !default;
@@ -142,7 +152,7 @@ $typography-link-font-weight:       bolder !default;
 $typography-link-decoration:        none !default;
 ```
 
-###### Lists:
+### Lists:
 ```scss
 $lists-margin:          0 !default;
 $lists-padding:         0 !default;
@@ -150,7 +160,7 @@ $list-style-type:       none !default;
 $lists-dt-font-weight:  600 !default;
 ```
 
-###### Buttons:
+### Buttons:
 ```scss
 $buttons-font-family:     $base-font-family !default;
 $buttons-font-size:       $base-font-size !default;
@@ -168,7 +178,7 @@ $buttons-color:           contrast-switch($buttons-bg) !default;
 $buttons-hover-color:     $buttons-color !default;
 ```
 
-###### Forms:
+### Forms:
 ```scss
 $forms-font-family:         $base-font-family !default;
 $forms-font-weigth:         600 !default;
@@ -185,7 +195,7 @@ $forms-textarea-min-height: 120px !default;
 $forms-textarea-max-height: 600px !default;
 ```
 
-###### Notifications:
+### Notifications:
 ```scss
 $notifications-border-radius: $base-border-radius !default;
 $notifications-margin:        0 0 $small-spacing !default;
@@ -194,7 +204,7 @@ $notifications-bg:            $grey !default;
 $notifications-color:         black !default;
 ```
 
-###### Tables:
+### Tables:
 ```scss
 $tables-width:                  100% !default;
 $tables-layout:                 fixed !default;
@@ -222,9 +232,9 @@ $tables-mobile-border:          1px solid $base-border-color !default;
 $tables-mobile-bottom-margin:   $small-spacing !default;
 ```
 
-##### Components variables
+## Components variables
 
-###### Flex Boxes:
+### Flex Boxes:
 ```scss
 $boxes-background-color:     $white !default;
 $boxes-font-color:           $dark-grey !default;
@@ -237,7 +247,7 @@ $boxes-box-color:            transparentize($boxes-font-color, 0.3) !default;
 $boxes-box-top-colors:       $red, $turquoise, $purple, $yellow, $grey, $orange !default;
 ```
 
-###### Breadcrumb:
+### Breadcrumb:
 ```scss
 $breadcrumb-item-color:           $base-links-color !default;
 $breadcrumb-item-hover-color:     $base-links-hover-color !default;
@@ -245,7 +255,7 @@ $breadcrumb-item-active-color:    $base-font-color !default;
 $breadcrumb-item-separator-color: $base-font-color !default;
 ```
 
-###### Dropdown:
+### Dropdown:
 ```scss
 $dropdown-content-background-color: $base-background-color !default;
 $dropdown-content-arrow:            $base-font-color !default;
@@ -263,7 +273,7 @@ $dropdown-item-active-background-color: $base-links-color !default;
 $dropdown-divider-background-color:     $buttons-hover-bg !default;
 ```
 
-###### Footer:
+### Footer:
 ```scss
 $footer-font-family:  $base-font-family !default;
 $footer-font-size:    $base-font-size !default;
@@ -274,7 +284,7 @@ $footer-color:        $black !default;
 $footer-border-top:   1px solid #ddd !default;
 ```
 
-###### Navbar:
+### Navbar:
 ```scss
 $navbar-bg:             white !default;
 $navbar-height:         52px !default;
@@ -284,7 +294,7 @@ $navbar-items-color:    #4a4a4a !default;
 $navbar-items-padding:  1rem !default;
 ```
 
-###### Pagination:
+### Pagination:
 ```scss
 $pagination-hide-until:     $tablet !default;
 $pagination-border-color:   #dbdbdb !default;
@@ -294,7 +304,7 @@ $pagination-links-color:          #fff !default;
 $pagination-links-hover-color:    #363636 !default;
 $pagination-links-bg:             $dark !default;
 ```
-###### Tooltip:
+### Tooltip:
 ```scss
 $tooltip-background-color:  $dark-grey !default;
 $tooltip-max-width:         24rem !default;
