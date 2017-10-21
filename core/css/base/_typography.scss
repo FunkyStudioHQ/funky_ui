@@ -46,8 +46,8 @@ a {
   }
 
   &:focus {
-    outline: $focus-outline;
-    outline-offset: $focus-outline-offset;
+    outline: $base-focus-outline;
+    outline-offset: $base-focus-outline-offset;
   }
 }
 
@@ -69,7 +69,7 @@ hr {
   }
 }
 // Text alignments modifiers
-@each $direction in $directions {
+@each $direction in $alignments {
   .t--#{$direction} {
     text-align: $direction;
   }

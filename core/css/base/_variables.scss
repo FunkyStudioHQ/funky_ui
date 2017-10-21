@@ -1,13 +1,13 @@
 // Typography ---------------------------------------------
 // Text & Font
-$base-font-family:  $sans-serif;
-$base-font-size:    16px;
-$base-font-color:   $black;
-$base-font-weight:  600;
+$base-font-family:  $sans-serif !default;
+$base-font-size:    16px !default;
+$base-font-color:   $black !default;
+$base-font-weight:  600 !default;
 
-$small-font-size:   12px;
-$medium-font-size:  19px;
-$large-font-size:   23px;
+$small-font-size:   12px !default;
+$medium-font-size:  19px !default;
+$large-font-size:   23px !default;
 
 
 $font-dimensions: (
@@ -20,32 +20,32 @@ $base-line-height:  1.5;
 $action-color:      $darken-grey;
 
 // Links
-$base-links-color:       inherit;
-$base-links-hover-color: inherit;
+$base-links-color:       inherit !default;
+$base-links-hover-color: inherit !default;
 
 // Sizes --------------------------------------------------
-$base-border-radius: 3px;
-$base-spacing:       1em;
-$small-spacing:      $base-spacing / 2;
-$base-z-index:       0;
+$base-border-radius: 3px !default;
+$base-spacing:       1em !default;
+$small-spacing:      $base-spacing / 2 !default;
+$base-z-index:       0 !default;
 
 // Border
-$base-border-color: $light-grey;
-$base-border: 1px solid shade($base-border-color, 10%);
+$base-border-color: $light-grey !default;
+$base-border: 1px solid shade($base-border-color, 10%) !default;
 
 // Background Colors
-$base-background-color: $white;
-$secondary-background-color: tint($base-border-color, 75%);
+$base-background-color: $white !default;
+$secondary-background-color: tint($base-border-color, 75%) !default;
 
 // Focus
-$focus-outline-color: transparentize($action-color, 0.4);
-$focus-outline-width: 1px;
-$focus-outline: $focus-outline-width solid $focus-outline-color;
-$focus-outline-offset: 2px;
+$base-focus-outline-color: transparentize($action-color, 0.4) !default;
+$base-focus-outline-width: 0px !default;
+$base-focus-outline: $base-focus-outline-width solid $base-focus-outline-color !default;
+$base-focus-outline-offset: 2px !default;
 
 // Animations
-$base-duration: 150ms;
-$base-timing: ease;
+$base-duration: 150ms !default;
+$base-timing: ease !default;
 
 // Alignments
-$directions: left, center, right;
+$alignments: left, center, right;
