@@ -141,9 +141,6 @@ $base-focus-outline-offset: 2px !default;
 // Animations
 $base-duration: 150ms !default;
 $base-timing:   ease !default;
-
-// Alignments
-$alignments: left, center, right;
 ```
 
 ### Layout:
