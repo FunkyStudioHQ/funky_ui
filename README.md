@@ -220,11 +220,9 @@ $tables-th-font-family:         $base-font-family !default;
 $tables-th-font-weight:         $base-font-weight !default;
 $tables-th-font-variant:        small-caps !default;
 $tables-th-text-transform:      uppercase !default;
-
 $tables-actions-text-align:     right !default;
 
 $tables-striped-bg:             #fafafa !default;
-$tables-bordered-border:        1px solid #dbdbdb !default;
 
 $tables-mobile-th-color:        grey !default;
 $tables-mobile-th-font-size:    10pt !default;

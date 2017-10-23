@@ -5,7 +5,8 @@ $tables-border-spacing:         0 !default;
 $tables-margin:                 0 0 $small-spacing !default;
 $tables-cells-padding:          0.5em 0.75em !default;
 $tables-bg:                     white !default;
-$tables-cells-border:           0 0 1px 0 solid $base-border-color !default;
+$tables-cells-border:           1px solid $base-border-color !default;
+$tables-cells-border-width:     0 0 1px 0 !default;
 
 $tables-th-text-align:          left !default;
 $tables-th-font-family:         $base-font-family !default;
@@ -16,7 +17,8 @@ $tables-th-text-transform:      uppercase !default;
 $tables-actions-text-align:     right !default;
 
 $tables-striped-bg:             #fafafa !default;
-$tables-bordered-border:        1px solid #dbdbdb !default;
+$tables-cells-border-width:     0 0 1px 0;
+
 
 $tables-mobile-th-color:        grey !default;
 $tables-mobile-th-font-size:    10pt !default;
@@ -34,7 +36,8 @@ $tables-mobile-bottom-margin:   $small-spacing !default;
   td,
   th {
     @include padding($tables-cells-padding);
-    border-bottom: $tables-cells-border;
+    border: $tables-cells-border;
+    border-width: $tables-cells-border-width;
   }
 
   th {
@@ -59,7 +62,7 @@ $tables-mobile-bottom-margin:   $small-spacing !default;
 
     td,
     th {
-      border: $tables-bordered-border;
+      border: $tables-cells-border;
       border-width: 1px;
     }
   }

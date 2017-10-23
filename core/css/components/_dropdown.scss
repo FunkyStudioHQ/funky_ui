@@ -7,12 +7,12 @@ $dropdown-content-z:                20 !default;
 $dropdown-content-font-size:        $base-font-size !default;
 
 $dropdown-item-padding:                 0.5rem 4rem 0.5rem 0.5rem !default;
-$dropdown-item-color:                   $dark-grey !default;
+$dropdown-item-color:                   $base-links-color !default;
 $dropdown-item-hover-color:             $black !default;
 $dropdown-item-hover-bg:                darken($grey, 20) !default;
 $dropdown-item-active-color:            $black !default;
 $dropdown-item-active-bg:               $blue !default;
-$dropdown-divider-bg:     $buttons-hover-bg !default;
+$dropdown-divider-bg:                   $buttons-hover-bg !default;
 
 $dropdown-item-button-color:            $white !default;
 $dropdown-item-button-bg:               $dark !default;
@@ -34,10 +34,24 @@ $dropdown-item-button-active-color:     $white !default;
       @include fa-icon;
       content: $fa-var-angle-down;
     }
+
+    &.button{
+      color: $buttons-color;
+      &:hover{
+        color: $buttons-hover-color;
+      }
+    }
+
     @include modifier(active){
       color: $dropdown-item-active-color;
       &:hover {
         color: $dropdown-item-active-color;
+      }
+      &.button{
+        color: $buttons-color;
+        &:hover{
+          color: $buttons-hover-color;
+        }
       }
     }
   }
@@ -102,6 +116,12 @@ $dropdown-item-button-active-color:     $white !default;
       }
       &:hover {
         background-color: $dropdown-item-hover-bg;
+      }
+      &.button{
+        color: $buttons-color;
+        &:hover{
+          color: $buttons-hover-color;
+        }
       }
     }
     .dropdown__menu{
