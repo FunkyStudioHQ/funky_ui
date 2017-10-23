@@ -91,13 +91,11 @@ $fullhd:          1344px + (2 * $breakpoints-gap) !default;
 // Text & Font
 $base-font-family:  $sans-serif !default;
 $base-font-size:    16px !default;
-$base-color:   $black !default;
+$base-color:        $black !default;
 $base-font-weight:  600 !default;
-
 $small-font-size:   12px !default;
 $medium-font-size:  19px !default;
 $large-font-size:   23px !default;
-
 $base-line-height:  1.5;
 $action-color:      $darken-grey;
 
@@ -111,23 +109,23 @@ $small-spacing:      $base-spacing / 2 !default;
 $base-z-index:       0 !default;
 
 // Border
-$base-border-radius: 3px !default;
-$base-border-color: $light-grey !default;
-$base-border: 1px solid shade($base-border-color, 10%) !default;
+$base-border-radius:  3px !default;
+$base-border-color:   $light-grey !default;
+$base-border:         1px solid shade($base-border-color, 10%) !default;
 
 // Background Colors
-$base-bg: $white !default;
-$secondary-bg: tint($base-border-color, 75%) !default;
+$base-bg:       $white !default;
+$secondary-bg:  tint($base-border-color, 75%) !default;
 
 // Focus
-$base-focus-outline-color: transparentize($action-color, 0.4) !default;
-$base-focus-outline-width: 1px !default;
-$base-focus-outline: $base-focus-outline-width solid $base-focus-outline-color !default;
-$base-focus-outline-offset: 2px !default;
+$base-focus-outline-color:    transparentize($action-color, 0.4) !default;
+$base-focus-outline-width:    1px !default;
+$base-focus-outline:          $base-focus-outline-width solid $base-focus-outline-color !default;
+$base-focus-outline-offset:   2px !default;
 
 // Animations
 $base-duration: 150ms !default;
-$base-timing: ease !default;
+$base-timing:   ease !default;
 ```
 ### Layout:
 ```scss
@@ -214,16 +212,13 @@ $tables-margin:                 0 0 $small-spacing !default;
 $tables-cells-padding:          0.5em 0.75em !default;
 $tables-bg:                     white !default;
 $tables-cells-border:           0 0 1px 0 solid $base-border-color !default;
-
 $tables-th-text-align:          left !default;
 $tables-th-font-family:         $base-font-family !default;
 $tables-th-font-weight:         $base-font-weight !default;
 $tables-th-font-variant:        small-caps !default;
 $tables-th-text-transform:      uppercase !default;
 $tables-actions-text-align:     right !default;
-
 $tables-striped-bg:             #fafafa !default;
-
 $tables-mobile-th-color:        grey !default;
 $tables-mobile-th-font-size:    10pt !default;
 $tables-mobile-border:          1px solid $base-border-color !default;
@@ -234,8 +229,8 @@ $tables-mobile-bottom-margin:   $small-spacing !default;
 
 ### Flex Boxes:
 ```scss
-$boxes-bg:     $white !default;
-$boxes-color:           $dark-grey !default;
+$boxes-bg:                   $white !default;
+$boxes-color:                $dark-grey !default;
 $boxes-box-border-color:     $light-grey !default;
 $boxes-box-border:           1px solid $boxes-box-border-color !default;
 $boxes-box-background:       $white !default;
@@ -255,21 +250,19 @@ $breadcrumb-item-separator-color: $base-color !default;
 
 ### Dropdown:
 ```scss
-$dropdown-content-bg: $base-bg !default;
+$dropdown-content-bg:               $base-bg !default;
 $dropdown-content-arrow:            $base-color !default;
 $dropdown-content-offset:           0.5rem !default;
 $dropdown-content-radius:           $base-border-radius !default;
 $dropdown-content-shadow:           0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
 $dropdown-navbar-content-shadow:    0 2px 3px rgba($black, 0.1), 0 0 0 0 rgba($black, 0.1) !default;
 $dropdown-content-z:                20 !default;
-
-$dropdown-item-color:                   $dark-grey !default;
-$dropdown-item-hover-color:             $black !default;
-$dropdown-item-hover-bg:  darken($grey, 20) !default;
-$dropdown-item-active-color:            darken($grey, 20) !default;
-$dropdown-item-active-bg: $base-links-color !default;
-
-$dropdown-divider-bg:     $buttons-hover-bg !default;
+$dropdown-item-color:               $dark-grey !default;
+$dropdown-item-hover-color:         $black !default;
+$dropdown-item-hover-bg:            darken($grey, 20) !default;
+$dropdown-item-active-color:        darken($grey, 20) !default;
+$dropdown-item-active-bg:           $base-links-color !default;
+$dropdown-divider-bg:               $buttons-hover-bg !default;
 ```
 
 ### Footer:
@@ -295,16 +288,15 @@ $navbar-items-padding:  1rem !default;
 
 ### Pagination:
 ```scss
-$pagination-hide-until:     $tablet !default;
-$pagination-border-color:   #dbdbdb !default;
-$pagination-border-radius:  $base-border-radius !default;
-
+$pagination-hide-until:           $tablet !default;
+$pagination-border-color:         #dbdbdb !default;
+$pagination-border-radius:        $base-border-radius !default;
 $pagination-links-color:          #fff !default;
 $pagination-links-hover-color:    #363636 !default;
 $pagination-links-bg:             $dark !default;
 ```
 ### Tooltip:
 ```scss
-$tooltip-bg:  $dark-grey !default;
-$tooltip-max-width:         24rem !default;
+$tooltip-bg:          $dark-grey !default;
+$tooltip-max-width:   24rem !default;
 ```
