@@ -4,7 +4,7 @@ $tables-border-collapse:        collapse !default;
 $tables-border-spacing:         0 !default;
 $tables-margin:                 0 0 $small-spacing !default;
 $tables-cells-padding:          0.5em 0.75em !default;
-$tables-bg:                     white !default;
+$tables-bg:                     $base-bg !default;
 $tables-cells-border:           1px solid $base-border-color !default;
 $tables-cells-border-width:     0 0 1px 0 !default;
 
@@ -16,11 +16,11 @@ $tables-th-text-transform:      uppercase !default;
 
 $tables-actions-text-align:     right !default;
 
-$tables-striped-bg:             #fafafa !default;
+$tables-striped-bg:             $lighten-grey !default;
 $tables-cells-border-width:     0 0 1px 0;
 
 
-$tables-mobile-th-color:        grey !default;
+$tables-mobile-th-color:        $base-color !default;
 $tables-mobile-th-font-size:    10pt !default;
 $tables-mobile-border:          1px solid $base-border-color !default;
 $tables-mobile-bottom-margin:   $small-spacing !default;

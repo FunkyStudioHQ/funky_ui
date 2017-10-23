@@ -5,6 +5,7 @@ $layout-mobile-conatainer-padding:  0 20px !default;
 
 html {
   box-sizing: border-box;
+  background: $base-bg;
 }
 
 *,
@@ -20,6 +21,7 @@ html {
 
 body {
   margin: $layout-body-margin;
+  color: $base-color;
 }
 
 .container {

@@ -88,45 +88,64 @@ $fullhd:          1344px + (2 * $breakpoints-gap) !default;
 
 ### Base variables:
 ```scss
+// Typography ---------------------------------------------
+
 // Text & Font
 $base-font-family:  $sans-serif !default;
 $base-font-size:    16px !default;
 $base-color:        $black !default;
 $base-font-weight:  600 !default;
+
 $small-font-size:   12px !default;
 $medium-font-size:  19px !default;
 $large-font-size:   23px !default;
+
+
+$font-dimensions: (
+  "small":  ($small-font-size),
+  "medium": ($medium-font-size),
+  "large":  ($large-font-size)
+) !default;
+
+// Background Colors
+$base-bg:      $white !default;
+$secondary-bg: tint($white, 75%) !default;
+
+
 $base-line-height:  1.5;
 $action-color:      $darken-grey;
 
 // Links
-$base-links-color:       inherit !default;
-$base-links-hover-color: inherit !default;
+$base-links-color:          $black !default;
+$base-links-hover-bg:       $base-bg !default;
+$base-links-hover-color:    $base-color !default;
+$base-links-active-bg:      $base-bg !default;
+$base-links-active-color:   $base-color !default;
 
-//Spacing & z-index
+// Sizes --------------------------------------------------
+$base-border-radius: 3px !default;
 $base-spacing:       1em !default;
 $small-spacing:      $base-spacing / 2 !default;
 $base-z-index:       0 !default;
 
 // Border
-$base-border-radius:  3px !default;
-$base-border-color:   $light-grey !default;
-$base-border:         1px solid shade($base-border-color, 10%) !default;
-
-// Background Colors
-$base-bg:       $white !default;
-$secondary-bg:  tint($base-border-color, 75%) !default;
+$base-border-color: $grey !default;
+$base-border:       1px solid shade($base-border-color, 10%) !default;
 
 // Focus
-$base-focus-outline-color:    transparentize($action-color, 0.4) !default;
-$base-focus-outline-width:    1px !default;
-$base-focus-outline:          $base-focus-outline-width solid $base-focus-outline-color !default;
-$base-focus-outline-offset:   2px !default;
+$base-focus-outline-color:  transparentize($action-color, 0.4) !default;
+$base-focus-outline-width:  0px !default;
+$base-focus-outline:        $base-focus-outline-width solid $base-focus-outline-color !default;
+$base-focus-outline-offset: 2px !default;
 
 // Animations
 $base-duration: 150ms !default;
 $base-timing:   ease !default;
+
+// Alignments
+$alignments: left, center, right;
 ```
+
 ### Layout:
 ```scss
 $layout-body-margin:                0  !default;

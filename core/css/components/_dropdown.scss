@@ -9,10 +9,10 @@ $dropdown-content-font-size:        $base-font-size !default;
 
 $dropdown-item-padding:                 0.5rem 4rem 0.5rem 0.5rem !default;
 $dropdown-item-color:                   $base-links-color !default;
-$dropdown-item-hover-color:             $black !default;
-$dropdown-item-hover-bg:                darken($grey, 20) !default;
-$dropdown-item-active-color:            $black !default;
-$dropdown-item-active-bg:               $blue !default;
+$dropdown-item-hover-color:             $base-links-hover-color !default;
+$dropdown-item-hover-bg:                darken($base-links-hover-bg, 20) !default;
+$dropdown-item-active-color:            $base-links-active-color !default;
+$dropdown-item-active-bg:               $base-links-active-bg !default;
 $dropdown-divider-bg:                   $buttons-hover-bg !default;
 
 $dropdown-item-button-color:            $white !default;
@@ -123,11 +123,13 @@ $dropdown-item-button-active-color:     $white !default;
       }
       &:hover {
         background-color: $dropdown-item-hover-bg;
+        background: $dropdown-item-hover-color;
       }
       &.button{
         color: $buttons-color;
         &:hover{
-          color: $buttons-hover-color;
+          background-color: $dropdown-item-hover-bg;
+          color: $dropdown-item-hover-color;
         }
       }
     }
