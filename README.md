@@ -260,6 +260,7 @@ $dropdown-content-arrow:            $base-color !default;
 $dropdown-content-offset:           0.5rem !default;
 $dropdown-content-radius:           $base-border-radius !default;
 $dropdown-content-shadow:           0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
+$dropdown-navbar-content-shadow:    0 2px 3px rgba($black, 0.1), 0 0 0 0 rgba($black, 0.1) !default;
 $dropdown-content-z:                20 !default;
 
 $dropdown-item-color:                   $dark-grey !default;
