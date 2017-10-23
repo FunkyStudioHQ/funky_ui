@@ -1,12 +1,12 @@
-$boxes-background-color:     $white !default;
-$boxes-font-color:           $dark-grey !default;
+$boxes-bg:     $white !default;
+$boxes-color:           $dark-grey !default;
 $boxes-box-border-color:     $light-grey !default;
 $boxes-border-radius:        $base-border-radius !default;
 $boxes-box-border:           1px solid $boxes-box-border-color !default;
 $boxes-box-background:       $white !default;
 $boxes-box-gutter:           0.4em !default;
 $boxes-box-width:            18em !default;
-$boxes-box-color:            transparentize($boxes-font-color, 0.3) !default;
+$boxes-box-color:            transparentize($boxes-color, 0.3) !default;
 $boxes-box-top-colors:       $red, $turquoise, $purple, $yellow, $grey, $orange !default;
 
 .flex-boxes {
@@ -22,7 +22,7 @@ $boxes-box-top-colors:       $red, $turquoise, $purple, $yellow, $grey, $orange 
     align-self: stretch;
     background: $boxes-box-background;
     border-radius: $boxes-border-radius;
-    box-shadow: inset 0 0 1px $boxes-box-border-color, 0 2px 4px darken($boxes-background-color, 10%);
+    box-shadow: inset 0 0 1px $boxes-box-border-color, 0 2px 4px darken($boxes-bg, 10%);
     display: block;
     flex: 2 2 15em;
     margin: $boxes-box-gutter;

@@ -2,7 +2,7 @@
 // Text & Font
 $base-font-family:  $sans-serif !default;
 $base-font-size:    16px !default;
-$base-font-color:   $black !default;
+$base-color:   $black !default;
 $base-font-weight:  600 !default;
 
 $small-font-size:   12px !default;
@@ -34,8 +34,8 @@ $base-border-color: $light-grey !default;
 $base-border: 1px solid shade($base-border-color, 10%) !default;
 
 // Background Colors
-$base-background-color: $white !default;
-$secondary-background-color: tint($base-border-color, 75%) !default;
+$base-bg: $white !default;
+$secondary-bg: tint($base-border-color, 75%) !default;
 
 // Focus
 $base-focus-outline-color: transparentize($action-color, 0.4) !default;

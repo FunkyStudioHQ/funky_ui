@@ -1,4 +1,4 @@
-$tooltip-background-color:  $dark-grey !default;
+$tooltip-bg:  $dark-grey !default;
 $tooltip-max-width:         24rem !default;
 
 .tooltip {
@@ -29,7 +29,7 @@ $tooltip-max-width:         24rem !default;
       font-weight: normal;
       padding: 0.4rem 0.8rem;
       transform: translate(-50%, 1rem);
-      background: rgba($tooltip-background-color, 0.9);
+      background: rgba($tooltip-bg, 0.9);
       border-radius: $base-border-radius;
       color: $white;
       max-width: $tooltip-max-width;
@@ -45,7 +45,7 @@ $tooltip-max-width:         24rem !default;
       opacity: 1;
       margin-left: -0.5rem;
       margin-top: -0.5rem;
-      border-color: rgba($tooltip-background-color, 0.9) transparent transparent transparent;
+      border-color: rgba($tooltip-bg, 0.9) transparent transparent transparent;
     }
 
     &::after {
@@ -71,7 +71,7 @@ $tooltip-max-width:         24rem !default;
         top: 50%;
         left: 100%;
         right: auto;
-        border-color: transparent rgba($tooltip-background-color, 0.9) transparent transparent;
+        border-color: transparent rgba($tooltip-bg, 0.9) transparent transparent;
       }
 
       &::after {
@@ -95,7 +95,7 @@ $tooltip-max-width:         24rem !default;
         bottom: auto;
         left: 50%;
         right: auto;
-        border-color: transparent transparent rgba($tooltip-background-color, 0.9) transparent;
+        border-color: transparent transparent rgba($tooltip-bg, 0.9) transparent;
       }
 
       &::after {
@@ -118,7 +118,7 @@ $tooltip-max-width:         24rem !default;
         top: 50%;
         left: auto;
         right: calc(100% - .5rem);
-        border-color: transparent transparent transparent rgba($tooltip-background-color, 0.9);
+        border-color: transparent transparent transparent rgba($tooltip-bg, 0.9);
       }
 
       &::after {

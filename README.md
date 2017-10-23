@@ -25,7 +25,7 @@ You can override variables values before import **funky_ui**
 es.
 ```scss
 
-$base-font-color: purple;
+$base-color: purple;
 
 @import "funky_ui";
 ```
@@ -91,7 +91,7 @@ $fullhd:          1344px + (2 * $breakpoints-gap) !default;
 // Text & Font
 $base-font-family:  $sans-serif !default;
 $base-font-size:    16px !default;
-$base-font-color:   $black !default;
+$base-color:   $black !default;
 $base-font-weight:  600 !default;
 
 $small-font-size:   12px !default;
@@ -116,8 +116,8 @@ $base-border-color: $light-grey !default;
 $base-border: 1px solid shade($base-border-color, 10%) !default;
 
 // Background Colors
-$base-background-color: $white !default;
-$secondary-background-color: tint($base-border-color, 75%) !default;
+$base-bg: $white !default;
+$secondary-bg: tint($base-border-color, 75%) !default;
 
 // Focus
 $base-focus-outline-color: transparentize($action-color, 0.4) !default;
@@ -141,7 +141,7 @@ $layout-mobile-conatainer-padding:  0 20px !default;
 ```scss
 $typography-font-family:            $base-font-family !default;
 $typography-line-height:            $base-line-height !default;
-$typography-color:                  $base-font-color !default;
+$typography-color:                  $base-color !default;
 $typography-headings-font-family:   $base-font-family !default;
 $typography-headings-font-weight:   600 !default;
 $typography-headings-line-height:   1.2 !default;
@@ -188,7 +188,7 @@ $forms-border-color:        $base-border-color !default;
 $forms-border-size:         1px !default;
 $forms-border-style:        solid !default;
 $forms-box-shadow:          inset 0 0 1px $light-grey, 0 2px 4px darken($white, 10%) !default;
-$forms-disabled-bg:         shade($base-background-color, 5%) !default;
+$forms-disabled-bg:         shade($base-bg, 5%) !default;
 
 $forms-inputs-bg:           $white !default;
 $forms-textarea-min-height: 120px !default;
@@ -236,14 +236,14 @@ $tables-mobile-bottom-margin:   $small-spacing !default;
 
 ### Flex Boxes:
 ```scss
-$boxes-background-color:     $white !default;
-$boxes-font-color:           $dark-grey !default;
+$boxes-bg:     $white !default;
+$boxes-color:           $dark-grey !default;
 $boxes-box-border-color:     $light-grey !default;
 $boxes-box-border:           1px solid $boxes-box-border-color !default;
 $boxes-box-background:       $white !default;
 $boxes-box-gutter:           0.4em !default;
 $boxes-box-width:            18em !default;
-$boxes-box-color:            transparentize($boxes-font-color, 0.3) !default;
+$boxes-box-color:            transparentize($boxes-color, 0.3) !default;
 $boxes-box-top-colors:       $red, $turquoise, $purple, $yellow, $grey, $orange !default;
 ```
 
@@ -251,14 +251,14 @@ $boxes-box-top-colors:       $red, $turquoise, $purple, $yellow, $grey, $orange 
 ```scss
 $breadcrumb-item-color:           $base-links-color !default;
 $breadcrumb-item-hover-color:     $base-links-hover-color !default;
-$breadcrumb-item-active-color:    $base-font-color !default;
-$breadcrumb-item-separator-color: $base-font-color !default;
+$breadcrumb-item-active-color:    $base-color !default;
+$breadcrumb-item-separator-color: $base-color !default;
 ```
 
 ### Dropdown:
 ```scss
-$dropdown-content-background-color: $base-background-color !default;
-$dropdown-content-arrow:            $base-font-color !default;
+$dropdown-content-bg: $base-bg !default;
+$dropdown-content-arrow:            $base-color !default;
 $dropdown-content-offset:           0.5rem !default;
 $dropdown-content-radius:           $base-border-radius !default;
 $dropdown-content-shadow:           0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
@@ -268,9 +268,9 @@ $dropdown-item-color:                   $dark-grey !default;
 $dropdown-item-hover-color:             $black !default;
 $dropdown-item-hover-bg:  darken($grey, 20) !default;
 $dropdown-item-active-color:            darken($grey, 20) !default;
-$dropdown-item-active-background-color: $base-links-color !default;
+$dropdown-item-active-bg: $base-links-color !default;
 
-$dropdown-divider-background-color:     $buttons-hover-bg !default;
+$dropdown-divider-bg:     $buttons-hover-bg !default;
 ```
 
 ### Footer:
@@ -306,6 +306,6 @@ $pagination-links-bg:             $dark !default;
 ```
 ### Tooltip:
 ```scss
-$tooltip-background-color:  $dark-grey !default;
+$tooltip-bg:  $dark-grey !default;
 $tooltip-max-width:         24rem !default;
 ```

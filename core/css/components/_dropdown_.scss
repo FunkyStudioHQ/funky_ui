@@ -1,5 +1,5 @@
-$dropdown-content-background-color: $base-background-color !default;
-$dropdown-content-arrow:            $base-font-color !default;
+$dropdown-content-bg: $base-bg !default;
+$dropdown-content-arrow:            $base-color !default;
 $dropdown-content-offset:           0.5rem !default;
 $dropdown-content-radius:           $base-border-radius !default;
 $dropdown-content-shadow:           0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
@@ -9,9 +9,9 @@ $dropdown-item-color:                   $dark-grey !default;
 $dropdown-item-hover-color:             $black !default;
 $dropdown-item-hover-bg:  darken($grey, 20) !default;
 $dropdown-item-active-color:            darken($grey, 20) !default;
-$dropdown-item-active-background-color: $base-links-color !default;
+$dropdown-item-active-bg: $base-links-color !default;
 
-$dropdown-divider-background-color:     $buttons-hover-bg !default;
+$dropdown-divider-bg:     $buttons-hover-bg !default;
 
 .dropdown, .dropdown__submenu > .dropdown {
   display: inline-flex;
@@ -36,7 +36,7 @@ $dropdown-divider-background-color:     $buttons-hover-bg !default;
   }
 
   .dropdown__content {
-    background-color: $dropdown-content-background-color;
+    background-color: $dropdown-content-bg;
     border-radius: $dropdown-content-radius;
     box-shadow: $dropdown-content-shadow;
     padding-bottom: 0.5rem;
@@ -62,13 +62,13 @@ $dropdown-divider-background-color:     $buttons-hover-bg !default;
     }
 
     &--active {
-      background-color: $dropdown-item-active-background-color;
+      background-color: $dropdown-item-active-bg;
       color: $dropdown-item-active-color;
     }
   }
 
   .dropdown__divider {
-    background-color: $dropdown-divider-background-color;
+    background-color: $dropdown-divider-bg;
     border: none;
     display: block;
     height: 1px;
