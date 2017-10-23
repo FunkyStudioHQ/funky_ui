@@ -78,11 +78,6 @@
 .row__left {
   align-items: center;
   justify-content: flex-start;
-  @include mobile {
-    & + .row__right {
-      margin-top: 1.5rem;
-    }
-  }
   @include tablet {
     display: flex;
   }
