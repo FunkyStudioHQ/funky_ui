@@ -2,13 +2,37 @@
   "name": "funky_ui",
   "version": "0.0.10",
   "description": "An SCSS Framework based on Bourbon",
-  "main": "index.js",
   "repository": "https://github.com/FunkyStudioHQ/funky_ui.git",
   "author": "FunkyStudio <info@funky.studio>",
   "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "compression-webpack-plugin": "^1.0.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.7",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0"
+  },
   "dependencies": {
     "bourbon": "^5.0.0-beta.8",
     "bourbon-neat": "^2.1.0",
     "font-awesome": "^4.7.0"
+  },
+  "scripts": {
+    "build": "webpack --color -d --display-error-details",
+    "deploy": "NODE_ENV=production webpack -p --no-color",
+    "watch": "webpack --watch-stdin --color -d --display-error-details"
   }
 }
