@@ -8,13 +8,17 @@ Add package to your package.json with: ```yarn add funky_ui```
 ## Use
 Put into css:
 ```scss
-@import "funky_ui";
+@import "~funky_ui/all";
 ```
 
 Put into js:
 ```js
 import { CloseNotification, InputUpload } from 'funky_ui'
 
+window.onload = function() {
+  CloseNotification()
+  InputUpload()
+}
 ```
 
 
@@ -25,9 +29,17 @@ You can override variables values before import **funky_ui**
 es.
 ```scss
 
+
+// Override base colors using default palette
+@import "~funky_ui/core/css/base/colors";
+
+$base-bg: $darken-grey;
+$base-color: $light-grey;
+
+// Custom color
 $base-color: purple;
 
-@import "funky_ui";
+@import "~funky_ui/all";
 ```
 
 below a complete list of variables used by framework:
