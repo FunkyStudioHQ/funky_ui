@@ -1,5 +1,6 @@
 $typography-font-family:            $base-font-family !default;
 $typography-line-height:            $base-line-height !default;
+$typography-bg:                     $base-bg !default;
 $typography-color:                  $base-color !default;
 $typography-headings-font-family:   $base-font-family !default;
 $typography-headings-font-weight:   600 !default;
@@ -11,11 +12,16 @@ $typography-link-font-weight:       bolder !default;
 $typography-link-decoration:        none !default;
 
 html {
-  color: $typography-color;
   font-family: $typography-font-family;
   font-size: 100%;
   line-height: $typography-line-height;
+  background: $typography-bg;
 }
+
+body{
+  color: $typography-color;
+}
+
 // Headings
 @for $i from 1 through 6 {
   .h--#{$i},
