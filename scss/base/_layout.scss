@@ -1,11 +1,10 @@
-$layout-body-margin:                0  !default;
-$layout-conatainer-width:           960px !default;
-$layout-mobile-conatainer-width:    100% !default;
-$layout-mobile-conatainer-padding:  0 20px !default;
+$layout-body-margin:                $base-body-margin !default;
+$layout-conatainer-width:           $base-conatainer-width !default;
+$layout-mobile-conatainer-width:    $base-mobile-conatainer-width !default;
+$layout-mobile-conatainer-padding:  $base-mobile-conatainer-padding !default;
 
 html {
   box-sizing: border-box;
-  background: $base-bg;
 }
 
 *,
@@ -21,7 +20,6 @@ html {
 
 body {
   margin: $layout-body-margin;
-  color: $base-color;
 }
 
 .container {
