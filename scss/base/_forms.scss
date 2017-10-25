@@ -117,18 +117,19 @@ select {
 
   div {
     &:first-child {
-      [class^="button"] {
+      #{$all-text-inputs} {
         border-radius: $base-border-radius 0 0 $base-border-radius;
       }
     }
 
     &:last-child {
-      [class^="button"] {
+      #{$all-text-inputs} {
         border-radius: 0 $base-border-radius $base-border-radius 0;
       }
 
       [class^="button"] {
-        padding-bottom: 0.53em;
+        padding-bottom: 0.33em;
+        border-radius: 0 $base-border-radius $base-border-radius 0;
       }
     }
 
@@ -136,12 +137,12 @@ select {
       margin-right: -1px;
 
       [class^="button"] {
-        padding-bottom: 0.53em;
+        padding-bottom: 0.33em;
       }
     }
 
     &:not(:first-child):not(:last-child) {
-      [class^="button"] {
+      #{$all-text-inputs} {
         border-radius: 0;
       }
     }
