@@ -328,3 +328,11 @@ $pagination-links-bg:             $dark !default;
 $tooltip-bg:          $dark-grey !default;
 $tooltip-max-width:   24rem !default;
 ```
+
+### Layouts
+```scss
+$base-body-margin:                0  !default;
+$base-conatainer-width:           960px !default;
+$base-mobile-conatainer-width:    100% !default;
+$base-mobile-conatainer-padding:  0 20px !default;
+```
