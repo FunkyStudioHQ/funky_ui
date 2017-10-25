@@ -72,8 +72,8 @@
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/andrea/Code/Npm/funky_ui/demo/app.scss */1);
-module.exports = __webpack_require__(/*! /Users/andrea/Code/Npm/funky_ui/demo/app.js */2);
+__webpack_require__(/*! /Users/pagano_l/code/FunkyStudio/funky_ui/demo/app.scss */1);
+module.exports = __webpack_require__(/*! /Users/pagano_l/code/FunkyStudio/funky_ui/demo/app.js */2);
 
 
 /***/ }),
