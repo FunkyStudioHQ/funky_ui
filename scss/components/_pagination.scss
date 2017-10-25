@@ -55,14 +55,14 @@ $pagination-links-bg:             $dark !default;
   .pagination__previous {
     border-color: $pagination-border-color;
     min-width: 2.25em;
-
+    color: $pagination-links-color;
     &:hover {
       border-color: $pagination-border-color;
       color: $pagination-links-hover-color;
     }
 
     &:focus {
-      border-color: #3273dc;
+      border-color: $pagination-border-color;
     }
 
     &:active {
