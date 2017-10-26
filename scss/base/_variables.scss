@@ -33,7 +33,6 @@ $base-links-active-bg:      $base-bg !default;
 $base-links-active-color:   $base-color !default;
 
 // Sizes --------------------------------------------------
-$base-border-radius: 3px !default;
 $base-spacing:       1em !default;
 $small-spacing:      $base-spacing / 2 !default;
 $base-z-index:       0 !default;
@@ -41,6 +40,7 @@ $base-z-index:       0 !default;
 // Border
 $base-border-color: $grey !default;
 $base-border:       1px solid shade($base-border-color, 10%) !default;
+$base-border-radius: 3px !default;
 
 // Focus
 $base-focus-outline-color:  transparentize($action-color, 0.4) !default;
