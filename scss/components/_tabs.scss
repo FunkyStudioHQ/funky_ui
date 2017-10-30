@@ -22,7 +22,7 @@ $tabs-toggle-link-border-width: 1px !default;
 $tabs-toggle-link-hover-background-color: $base-bg !default;
 $tabs-toggle-link-hover-border-color: $base-border-color !default;
 $tabs-toggle-link-radius: $base-border-radius !default;
-$tabs-toggle-link-active-background-color: $base-color !default;
+$tabs-toggle-link-active-background-color: $base-action-active-bg !default;
 $tabs-toggle-link-active-border-color: $base-color !default;
 $tabs-toggle-link-active-color: $base-bg !default;
 
@@ -83,7 +83,7 @@ $tabs-toggle-link-active-color: $base-bg !default;
   }
 
   .tabs-content{
-    width: 100%;    
+    width: 100%;
     display: flex;
     margin: 0;
     flex-direction: column;
@@ -129,7 +129,7 @@ $tabs-toggle-link-active-color: $base-bg !default;
     li {
       &.active {
         a {
-          background-color: $tabs-boxed-link-active-background-color;
+          background-color: $tabs-toggle-link-active-background-color;
           border-color: $tabs-boxed-link-active-border-color;
           border-bottom-color: $tabs-boxed-link-active-border-bottom-color !important;
         }
