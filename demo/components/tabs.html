@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Funky UI Demo</title>
+  <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+  <header role="navbar" class="navbar">
+    <div class="container">
+      <div class="navbar__brand">
+        <h1><a class="navbar__item" href="/">Funky UI</a></h1>
+
+        <div class="navbar__burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <nav class="navbar__menu">
+        <div class="navbar__menu--right">
+          <div class="navbar__item dropdown">
+            <a class="dropdown__item">Dropdown</a>
+            <div class="dropdown__menu">
+              <a class="dropdown__menu-item">One</a>
+              <a class="dropdown__menu-item">Two</a>
+              <a class="dropdown__menu-item">Three</a>
+              <hr class="dropdown__menu__divider">
+              <a class="dropdown__menu-item">Separated</a>
+            </div>
+          </div>
+          <a class="navbar__item" href="/accounts/login">
+            <span class="icon">
+              <i class="fa fa-sign-in"></i>
+            </span>
+            <span>Login</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section>
+    <main class="container content">
+      <h1>Tabs</h1>
+      <div class="tabs">
+        <ul>
+          <li class="active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+
+        <div class="tabs-content">
+          <div class="tab-panel--active">Pictures</div>
+          <div class="tab-panel">Music</div>
+          <div class="tab-panel">Videos</div>
+          <div class="tab-panel">Documents</div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="tabs--boxed">
+        <ul>
+          <li class="active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+
+        <div class="tabs-content">
+          <div class="tab-panel--active">Pictures</div>
+          <div class="tab-panel">Music</div>
+          <div class="tab-panel">Videos</div>
+          <div class="tab-panel">Documents</div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="tabs--bar">
+        <ul>
+          <li class="active"><a>Pictures</a></li>
+          <li><a>Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+
+        <div class="tabs-content">
+          <div class="tab-panel--active">Pictures</div>
+          <div class="tab-panel">Music</div>
+          <div class="tab-panel">Videos</div>
+          <div class="tab-panel">Documents</div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <p>crafted with <i class="fa fa-heart pulse"></i> by humans.</p>
+      <p>&copy;2016-2017 / Powered by Hands</a></p>
+    </footer>
+
+  </section>
+
+  <script src="/assets/js/app.js"></script>
+</body>
+</html>

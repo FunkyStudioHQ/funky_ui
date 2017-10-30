@@ -7,7 +7,7 @@ $pagination-links-hover-color:    $base-link-hover-color !default;
 $pagination-links-bg:             $base-link-hover-bg !default;
 
 $pagination-links-active-bg:      $base-action-active-bg !default;
-$pagination-links-active-color:   $action-active-color !default;
+$pagination-links-active-color:   $base-action-active-color !default;
 
 .pagination {
   @include display-flex;

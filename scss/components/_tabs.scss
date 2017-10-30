@@ -1,30 +1,30 @@
-$tabs-border-bottom-color: $base-border !default;
-$tabs-border-bottom-style: solid !default;
-$tabs-border-bottom-width: 1px !default;
-$tabs-link-color: $base-color !default;
-$tabs-link-hover-border-bottom-color: $black !default;
-$tabs-link-hover-color: $base-color !default;
-$tabs-link-active-border-bottom-color: $base-color !default;
-$tabs-link-active-color: $base-bg !default;
-$tabs-link-padding: 0.5em 1em !default;
+$tabs-border-bottom-color:              $base-border !default;
+$tabs-border-bottom-style:              solid !default;
+$tabs-border-bottom-width:              1px !default;
+$tabs-link-color:                       $base-color !default;
+$tabs-link-hover-border-bottom-color:   $black !default;
+$tabs-link-hover-color:                 $base-color !default;
+$tabs-link-active-border-bottom-color:  $base-color !default;
+$tabs-link-active-color:                $base-bg !default;
+$tabs-link-padding:                     0.5em 1em !default;
 
-$tabs-boxed-link-radius: $base-border-radius !default;
-$tabs-boxed-link-hover-background-color: $base-bg !default;
+$tabs-boxed-link-radius:                    $base-border-radius !default;
+$tabs-boxed-link-hover-background-color:    $base-bg !default;
 $tabs-boxed-link-hover-border-bottom-color: $base-color !default;
 
-$tabs-boxed-link-active-background-color: $white !default;
-$tabs-boxed-link-active-border-color: $base-border !default;
-$tabs-boxed-link-active-border-bottom-color: transparent !default;
+$tabs-boxed-link-active-background-color:     $white !default;
+$tabs-boxed-link-active-border-color:         $base-border !default;
+$tabs-boxed-link-active-border-bottom-color:  transparent !default;
 
-$tabs-toggle-link-border-color: $base-border-color !default;
-$tabs-toggle-link-border-style: solid !default;
-$tabs-toggle-link-border-width: 1px !default;
-$tabs-toggle-link-hover-background-color: $base-bg !default;
-$tabs-toggle-link-hover-border-color: $base-border-color !default;
-$tabs-toggle-link-radius: $base-border-radius !default;
-$tabs-toggle-link-active-background-color: $base-action-active-bg !default;
-$tabs-toggle-link-active-border-color: $base-color !default;
-$tabs-toggle-link-active-color: $base-bg !default;
+$tabs-toggle-link-border-color:             $base-border-color !default;
+$tabs-toggle-link-border-style:             solid !default;
+$tabs-toggle-link-border-width:             1px !default;
+$tabs-toggle-link-hover-background-color:   $base-bg !default;
+$tabs-toggle-link-hover-border-color:       $base-border-color !default;
+$tabs-toggle-link-radius:                   $base-border-radius !default;
+$tabs-toggle-link-active-background-color:  $base-action-active-bg !default;
+$tabs-toggle-link-active-border-color:      $base-action-active-color !default;
+$tabs-toggle-link-active-color:             $base-bg !default;
 
 .tabs {
   // @include block;
@@ -37,6 +37,8 @@ $tabs-toggle-link-active-color: $base-bg !default;
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
+  flex-direction: column;
+
   a {
     align-items: center;
     border-bottom-color: $tabs-border-bottom-color;
@@ -57,8 +59,8 @@ $tabs-toggle-link-active-color: $base-bg !default;
     display: block;
     &.active {
       a {
-        border-bottom-color: $tabs-link-active-border-bottom-color;
-        color: $tabs-link-active-color;
+        border-bottom-color: $base-action-active-bg;
+        color: $base-action-active-bg;
       }
     }
   }
@@ -84,13 +86,13 @@ $tabs-toggle-link-active-color: $base-bg !default;
 
   .tabs-content{
     width: 100%;
-    display: flex;
     margin: 0;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    margin: 10px 30px;
-    flex: 1 1;
+    .tab-panel{
+      display: none;
+      @include modifier(active){
+        display: block;
+      }
+    }
   }
 
   // modifiers for alignments
@@ -124,6 +126,7 @@ $tabs-toggle-link-active-color: $base-bg !default;
       &:hover {
         background-color: $tabs-boxed-link-hover-background-color;
         border-bottom-color: $tabs-boxed-link-hover-border-bottom-color;
+
       }
     }
     li {
@@ -132,6 +135,7 @@ $tabs-toggle-link-active-color: $base-bg !default;
           background-color: $tabs-toggle-link-active-background-color;
           border-color: $tabs-boxed-link-active-border-color;
           border-bottom-color: $tabs-boxed-link-active-border-bottom-color !important;
+          color: $base-action-active-color;
         }
       }
     }
