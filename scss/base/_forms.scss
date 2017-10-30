@@ -137,12 +137,16 @@ select {
       margin-right: -1px;
 
       [class^="button"] {
+        border-top-left-radius: $base-border-radius;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: $base-border-radius;
         padding-bottom: 0.33em;
       }
     }
 
     &:not(:first-child):not(:last-child) {
-      #{$all-text-inputs} {
+      #{$all-text-inputs}, [class^="button"] {
         border-radius: 0;
       }
     }

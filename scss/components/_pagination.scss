@@ -1,11 +1,13 @@
 $pagination-hide-until:     $tablet !default;
-$pagination-border-color:   #dbdbdb !default;
+$pagination-border-color:   $base-border-color !default;
 $pagination-border-radius:  $base-border-radius !default;
 
-$pagination-links-color:          #fff !default;
-$pagination-links-hover-color:    #363636 !default;
-$pagination-links-bg:             $dark !default;
+$pagination-links-color:          $base-link-color !default;
+$pagination-links-hover-color:    $base-link-hover-color !default;
+$pagination-links-bg:             $base-link-hover-bg !default;
 
+$pagination-links-active-bg:      $action-active-bg !default;
+$pagination-links-active-color:   $action-active-color !default;
 
 .pagination {
   @include display-flex;
@@ -29,11 +31,11 @@ $pagination-links-bg:             $dark !default;
     border-radius: $pagination-border-radius;
     -webkit-box-shadow: none;
     box-shadow: none;
-    margin: 0.25rem;
+    margin: 0 0.25rem;
     @include flex-alignment(center);
     @include display-flex(inline);
     @include flex-start;
-    @include padding(calc(0.375em - 1px) calc(0.625em - 1px) calc(0.375em - 1px) calc(0.625em - 1px));
+    @include padding(calc(0.375em - 1px) calc(0.625em - 1px) calc(0.275em - 1px) calc(0.625em - 1px));
     @include position(relative, null null null null);
     @include no-select;
     @include flex-alignment(center);
@@ -95,11 +97,12 @@ $pagination-links-bg:             $dark !default;
 // Active page
 .pagination__link {
   @include modifier(active) {
-    background-color: $pagination-links-bg;
-    border-color: $pagination-border-color;
-    color: $pagination-links-color;
+    background-color: $pagination-links-active-bg;
+    border-color: $pagination-links-active-bg;
+    color: $pagination-links-active-color;
   }
 }
+
 @media screen and (max-width: 768px) {
   .pagination {
     @include flex-wrap(wrap);
@@ -112,6 +115,7 @@ $pagination-links-bg:             $dark !default;
     flex-shrink: 1;
   }
 }
+
 @media screen and (min-width: 769px), print {
   .pagination__list {
     @include flex-grow(1);

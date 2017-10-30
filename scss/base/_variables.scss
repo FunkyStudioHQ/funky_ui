@@ -17,20 +17,32 @@ $font-dimensions: (
   "large":  ($large-font-size)
 ) !default;
 
-// Background Colors
+
+$base-line-height:  1.5;
+
+// Background & Colors
 $base-bg:      $white !default;
 $secondary-bg: tint($white, 75%) !default;
 
-
-$base-line-height:  1.5;
-$action-color:      $darken-grey;
+$action-color:        $darken-grey !default;
+$action-bg:           $grey !default;
+$action-active-color: $white !default;
+$action-active-bg:    $blue !default;
 
 // Links
-$base-links-color:          $black !default;
-$base-links-hover-bg:       $base-bg !default;
-$base-links-hover-color:    $base-color !default;
-$base-links-active-bg:      $base-bg !default;
-$base-links-active-color:   $base-color !default;
+$base-link-color:          $base-color !default;
+$base-link-font-weight:    bolder !default;
+$base-link-decoration:     none !default;
+
+$base-link-hover-color:         shade($base-link-color, 25%) !default;
+$base-link-hover-font-weight:   bolder !default;
+$base-link-hover-decoration:    none !default;
+$base-link-hover-bg:            shade($base-bg, 25%) !default;
+
+$base-link-active-color:         $base-link-color !default;
+$base-link-active-font-weight:   bolder !default;
+$base-link-active-decoration:    none !default;
+$base-link-active-bg:            shade($base-link-color, 20%) !default;
 
 // Sizes --------------------------------------------------
 $base-spacing:       1em !default;
@@ -38,9 +50,9 @@ $small-spacing:      $base-spacing / 2 !default;
 $base-z-index:       0 !default;
 
 // Border
-$base-border-color: $grey !default;
-$base-border:       1px solid shade($base-border-color, 10%) !default;
-$base-border-radius: 3px !default;
+$base-border-color:   $grey !default;
+$base-border:         1px solid shade($base-border-color, 10%) !default;
+$base-border-radius:  3px !default;
 
 // Focus
 $base-focus-outline-color:  transparentize($action-color, 0.4) !default;

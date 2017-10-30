@@ -1,15 +1,18 @@
 $typography-font-family:            $base-font-family !default;
 $typography-line-height:            $base-line-height !default;
+
 $typography-bg:                     $base-bg !default;
 $typography-color:                  $base-color !default;
+
 $typography-headings-font-family:   $base-font-family !default;
 $typography-headings-font-weight:   600 !default;
 $typography-headings-line-height:   1.2 !default;
 $typography-headings-transform:     capitalize !default;
-$typography-link-color:             $base-links-color !default;
-$typography-link-hover-color:       shade($action-color, 25%) !default;
-$typography-link-font-weight:       bolder !default;
-$typography-link-decoration:        none !default;
+
+$typography-link-color:             $base-link-color !default;
+$typography-link-hover-color:       $base-link-hover-color !default;
+$typography-link-font-weight:       $base-link-font-weight !default;
+$typography-link-decoration:        $base-link-decoration !default;
 
 html {
   font-family: $typography-font-family;
@@ -33,6 +36,9 @@ body{
     text-transform: $typography-headings-transform;
     margin: 0 0 $small-spacing;
     font-size: modular-scale(6 - $index);
+    @include mobile{
+      font-size: modular-scale(5 - $index);
+    }
   }
 }
 

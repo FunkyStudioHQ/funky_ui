@@ -119,20 +119,30 @@ $font-dimensions: (
   "large":  ($large-font-size)
 ) !default;
 
+
+$base-line-height:  1.5;
+
+
 // Background Colors
 $base-bg:      $white !default;
 $secondary-bg: tint($white, 75%) !default;
 
-
-$base-line-height:  1.5;
 $action-color:      $darken-grey;
 
-// Links
-$base-links-color:          $black !default;
-$base-links-hover-bg:       $base-bg !default;
-$base-links-hover-color:    $base-color !default;
-$base-links-active-bg:      $base-bg !default;
-$base-links-active-color:   $base-color !default;
+// Link
+$base-link-color:          $base-color !default;
+$base-link-font-weight:    bolder !default;
+$base-link-decoration:     none !default;
+// Link Hover
+$base-link-hover-color:         shade($base-link-color, 25%) !default;
+$base-link-hover-font-weight:   bolder !default;
+$base-link-hover-decoration:    none !default;
+$base-link-hover-bg:            shade($base-bg, 25%) !default;
+// Link Active
+$base-link-active-color:         $base-link-color !default;
+$base-link-active-font-weight:   bolder !default;
+$base-link-active-decoration:    none !default;
+$base-link-active-bg:            shade($base-link-color, 20%) !default;
 
 // Sizes --------------------------------------------------
 $base-border-radius: 3px !default;
@@ -172,7 +182,7 @@ $typography-headings-font-family:   $base-font-family !default;
 $typography-headings-font-weight:   600 !default;
 $typography-headings-line-height:   1.2 !default;
 $typography-headings-transform:     capitalize !default;
-$typography-link-color:             $base-links-color !default;
+$typography-link-color:             $base-link-color !default;
 $typography-link-hover-color:       shade($action-color, 25%) !default;
 $typography-link-font-weight:       bolder !default;
 $typography-link-decoration:        none !default;
@@ -270,8 +280,8 @@ $boxes-box-top-colors:       $red, $turquoise, $purple, $yellow, $grey, $orange 
 
 ### Breadcrumb:
 ```scss
-$breadcrumb-item-color:           $base-links-color !default;
-$breadcrumb-item-hover-color:     $base-links-hover-color !default;
+$breadcrumb-item-color:           $base-link-color !default;
+$breadcrumb-item-hover-color:     $base-link-hover-color !default;
 $breadcrumb-item-active-color:    $base-color !default;
 $breadcrumb-item-separator-color: $base-color !default;
 ```
@@ -289,7 +299,7 @@ $dropdown-item-color:               $dark-grey !default;
 $dropdown-item-hover-color:         $black !default;
 $dropdown-item-hover-bg:            darken($grey, 20) !default;
 $dropdown-item-active-color:        darken($grey, 20) !default;
-$dropdown-item-active-bg:           $base-links-color !default;
+$dropdown-item-active-bg:           $base-link-color !default;
 $dropdown-divider-bg:               $buttons-hover-bg !default;
 ```
 

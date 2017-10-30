@@ -2,11 +2,11 @@ $navbar-bg:                          $base-bg !default;
 $navbar-height:                      52px !default;
 $navbar-margin-bottom:               1rem !default;
 $navbar-border-bottom:               1px solid #ddd !default;
-$navbar-items-color:                 $base-links-color !default;
-$navbar-items-hover-color:           $base-links-hover-color !default;
-$navbar-items-hover-bg:              $base-links-hover-bg !default;
-$navbar-items-active-color:          $base-links-active-color !default;
-$navbar-items-active-bg:             $base-links-active-bg !default;
+$navbar-items-color:                 $base-link-color !default;
+$navbar-items-hover-color:           $base-link-hover-color !default;
+$navbar-items-hover-bg:              $base-link-hover-bg !default;
+$navbar-items-active-color:          $base-link-active-color !default;
+$navbar-items-active-bg:             $base-link-active-bg !default;
 $navbar-items-active-font-weight:    700;
 $navbar-items-padding:               1rem !default;
 

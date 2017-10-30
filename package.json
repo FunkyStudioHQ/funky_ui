@@ -28,7 +28,8 @@
   "dependencies": {
     "bourbon": "^5.0.0-beta.8",
     "bourbon-neat": "^2.1.0",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "slideout": "^1.0.1"
   },
   "scripts": {
     "build": "webpack --color -d --display-error-details",

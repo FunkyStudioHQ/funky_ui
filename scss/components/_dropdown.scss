@@ -8,11 +8,11 @@ $dropdown-content-z:                20 !default;
 $dropdown-content-font-size:        $base-font-size !default;
 
 $dropdown-item-padding:                 0.5rem 4rem 0.5rem 0.5rem !default;
-$dropdown-item-color:                   $base-links-color !default;
-$dropdown-item-hover-color:             $base-links-hover-color !default;
-$dropdown-item-hover-bg:                darken($base-links-hover-bg, 20) !default;
-$dropdown-item-active-color:            $base-links-active-color !default;
-$dropdown-item-active-bg:               $base-links-active-bg !default;
+$dropdown-item-color:                   $base-link-color !default;
+$dropdown-item-hover-color:             $base-link-hover-color !default;
+$dropdown-item-hover-bg:                darken($base-link-hover-bg, 20) !default;
+$dropdown-item-active-color:            $base-link-active-color !default;
+$dropdown-item-active-bg:               $base-link-active-bg !default;
 $dropdown-divider-bg:                   $buttons-hover-bg !default;
 
 $dropdown-item-button-color:            $white !default;
