@@ -71,19 +71,6 @@ $tabs-toggle-link-active-color: $base-bg !default;
     flex-grow: 1;
     flex-shrink: 0;
     justify-content: flex-start;
-    &.is-left {
-      padding-right: 0.75em;
-    }
-    &.is-center {
-      flex: none;
-      justify-content: center;
-      padding-left: 0.75em;
-      padding-right: 0.75em;
-    }
-    &.is-right {
-      justify-content: flex-end;
-      padding-left: 0.75em;
-    }
   }
 
   .icon {
@@ -95,6 +82,16 @@ $tabs-toggle-link-active-color: $base-bg !default;
     }
   }
 
+  .tabs-content{
+    width: 100%;    
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    margin: 10px 30px;
+    flex: 1 1;
+  }
 
   // modifiers for alignments
   @include modifier(centered){
@@ -111,7 +108,7 @@ $tabs-toggle-link-active-color: $base-bg !default;
       padding-right: 0.75em;
     }
   }
-  
+
   @include modifier(right){
     ul {
       justify-content: flex-end;
@@ -184,14 +181,15 @@ $tabs-toggle-link-active-color: $base-bg !default;
     }
   }
 
-  // Sizes
-  // &.is-small {
-  //   font-size: $size-small;
-  // }
-  // &.is-medium {
-  //   font-size: $size-medium;
-  // }
-  // &.is-large {
-  //   font-size: $size-large;
-  // }
+  @include modifier(small){
+    font-size: $small-font-size;
+  }
+
+  @include modifier(medium){
+    font-size: $medium-font-size;
+  }
+
+  @include modifier(large){
+    font-size: $large-font-size;
+  }
 }
