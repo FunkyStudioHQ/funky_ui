@@ -127,7 +127,7 @@ $base-line-height:  1.5;
 $base-bg:      $white !default;
 $secondary-bg: tint($white, 75%) !default;
 
-$action-color:      $darken-grey;
+$base-action-color:      $darken-grey;
 
 // Link
 $base-link-color:          $base-color !default;
@@ -155,7 +155,7 @@ $base-border-color: $grey !default;
 $base-border:       1px solid shade($base-border-color, 10%) !default;
 
 // Focus
-$base-focus-outline-color:  transparentize($action-color, 0.4) !default;
+$base-focus-outline-color:  transparentize($base-action-color, 0.4) !default;
 $base-focus-outline-width:  0px !default;
 $base-focus-outline:        $base-focus-outline-width solid $base-focus-outline-color !default;
 $base-focus-outline-offset: 2px !default;
@@ -183,7 +183,7 @@ $typography-headings-font-weight:   600 !default;
 $typography-headings-line-height:   1.2 !default;
 $typography-headings-transform:     capitalize !default;
 $typography-link-color:             $base-link-color !default;
-$typography-link-hover-color:       shade($action-color, 25%) !default;
+$typography-link-hover-color:       shade($base-action-color, 25%) !default;
 $typography-link-font-weight:       bolder !default;
 $typography-link-decoration:        none !default;
 ```
@@ -208,7 +208,7 @@ $buttons-border-radius:   $base-border-radius !default;
 $buttons-text-transform:  none !default;
 $buttons-text-align:      center !default;
 $buttons-padding:         $small-spacing $base-spacing !default;
-$buttons-bg:              $action-color !default;
+$buttons-bg:              $base-action-color !default;
 $buttons-hover-bg:        shade($buttons-bg, 20%) !default;
 $buttons-color:           contrast-switch($buttons-bg) !default;
 $buttons-hover-color:     $buttons-color !default;
