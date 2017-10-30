@@ -24,10 +24,10 @@ $base-line-height:  1.5;
 $base-bg:      $white !default;
 $secondary-bg: tint($white, 75%) !default;
 
-$action-color:        $darken-grey !default;
-$action-bg:           $grey !default;
-$action-active-color: $white !default;
-$action-active-bg:    $blue !default;
+$base-action-color:        $darken-grey !default;
+$base-action-bg:           $grey !default;
+$base-action-active-color: $white !default;
+$base-action-active-bg:    $blue !default;
 
 // Links
 $base-link-color:          $base-color !default;
@@ -55,7 +55,7 @@ $base-border:         1px solid shade($base-border-color, 10%) !default;
 $base-border-radius:  3px !default;
 
 // Focus
-$base-focus-outline-color:  transparentize($action-color, 0.4) !default;
+$base-focus-outline-color:  transparentize($base-action-color, 0.4) !default;
 $base-focus-outline-width:  0px !default;
 $base-focus-outline:        $base-focus-outline-width solid $base-focus-outline-color !default;
 $base-focus-outline-offset: 2px !default;

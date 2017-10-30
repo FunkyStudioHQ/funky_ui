@@ -8,7 +8,7 @@ $buttons-border-radius:   $base-border-radius !default;
 $buttons-text-transform:  none !default;
 $buttons-text-align:      center !default;
 $buttons-padding:         $small-spacing $base-spacing !default;
-$buttons-bg:              $action-color !default;
+$buttons-bg:              $base-action-color !default;
 $buttons-hover-bg:        shade($buttons-bg, 20%) !default;
 $buttons-color:           contrast-switch($buttons-bg) !default;
 $buttons-hover-color:     $buttons-color !default;
