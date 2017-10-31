@@ -1,0 +1,53 @@
+$menu-item-color:                   $base-color !default;
+$menu-item-radius:                  $base-border-radius !default;
+$menu-item-hover-color:             $base-color !default;
+$menu-item-hover-background-color:  $base-bg !default;
+$menu-item-active-color:            $base-color !default;
+$menu-item-active-background-color: $base-color !default;
+$menu-list-border-left:             1px solid $base-border-color !default;
+$menu-label-color:                  $base-color !default;
+
+.menu{
+  font-size: $base-font-size;
+  background: $black;
+  @include element(list){
+    line-height: 1.25;
+    a{
+      border-radius: $menu-item-radius;
+      color: $menu-item-color;
+      display: block;
+      padding: 0.5em 0.75em;
+      &:hover{
+        background-color: $menu-item-hover-background-color;
+        color: $menu-item-hover-color;
+      }
+
+      // Modifiers
+      @include modifier(active){
+        background-color: $menu-item-active-background-color;
+        color: $menu-item-active-color;
+      }
+    }
+
+    li{
+      ul{
+        border-left: $menu-list-border-left;
+        margin: 0.75em;
+        padding-left: 0.75em;
+      }
+    }
+  }
+
+  @include element(label){
+    color: $menu-label-color;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    &:not(:first-child){ margin-top: 1em;}
+    &:not(:last-child){ margin-bottom: 1em;}
+  }
+
+  @include modifier(small){ font-size: $small-font-size; }
+  @include modifier(medium){ font-size: $medium-font-size; }
+  @include modifier(large){ font-size: $large-font-size; }
+}

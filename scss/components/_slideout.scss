@@ -1,3 +1,6 @@
+$slide-menu-width:    256px !default;
+$slide-menu-bg:       $base-bg !default;
+
 .slide__menu{
   display: none;
   @include mobile{
@@ -6,30 +9,23 @@
 }
 
 .slideout-menu {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 256px;
+  @include position(fixed,0 null 0 null);
+  width: $slide-menu-width;
   min-height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
+  background-color: $slide-menu-bg;
 }
 
-.slideout-menu-left {
-  left: 0;
-}
-
-.slideout-menu-right {
-  right: 0;
-}
+.slideout-menu-left{left: 0;}
+.slideout-menu-right{right: 0;}
 
 .slideout-panel {
-  position: relative;
+  @include position(relative,null null null null);
   z-index: 1;
   will-change: transform;
-  background-color: #FFF; /* A background-color is required */
   min-height: 100vh;
 }
 
