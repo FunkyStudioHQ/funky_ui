@@ -2340,12 +2340,12 @@
   font-weight: bold;
   font-style: normal; }
 
-.button, .button--small, .button--medium, .button--large, .button--black, .button--dark, .button--darken-grey, .button--dark-grey, .button--grey, .button--light-grey, .button--lighten-grey, .button--white, .button--red, .button--orange, .button--yellow, .button--green, .button--turquoise, .button--blue, .button--purple, .button--brown, .button--danger, .button--info, .button--warning, .button--success {
+.button, .button--small, .button--medium, .button--large, .button--active, .button--black, .button--dark, .button--darken-grey, .button--dark-grey, .button--grey, .button--light-grey, .button--lighten-grey, .button--white, .button--red, .button--orange, .button--yellow, .button--green, .button--turquoise, .button--blue, .button--purple, .button--brown, .button--danger, .button--info, .button--warning, .button--success {
   appearance: none;
-  background-color: #314549;
+  background-color: #d3e2e8;
   border: 0;
   border-radius: 3px;
-  color: #fff;
+  color: #263238;
   cursor: pointer;
   display: inline-block;
   font-family: "Helvetica";
@@ -2360,114 +2360,138 @@
   vertical-align: middle;
   white-space: nowrap;
   font-size: 16px; }
-  .button:hover, .button--small:hover, .button--medium:hover, .button--large:hover, .button--black:hover, .button--dark:hover, .button--darken-grey:hover, .button--dark-grey:hover, .button--grey:hover, .button--light-grey:hover, .button--lighten-grey:hover, .button--white:hover, .button--red:hover, .button--orange:hover, .button--yellow:hover, .button--green:hover, .button--turquoise:hover, .button--blue:hover, .button--purple:hover, .button--brown:hover, .button--danger:hover, .button--info:hover, .button--warning:hover, .button--success:hover {
-    color: #fff; }
+  .button:hover, .button--small:hover, .button--medium:hover, .button--large:hover, .button--active:hover, .button--black:hover, .button--dark:hover, .button--darken-grey:hover, .button--dark-grey:hover, .button--grey:hover, .button--light-grey:hover, .button--lighten-grey:hover, .button--white:hover, .button--red:hover, .button--orange:hover, .button--yellow:hover, .button--green:hover, .button--turquoise:hover, .button--blue:hover, .button--purple:hover, .button--brown:hover, .button--danger:hover, .button--info:hover, .button--warning:hover, .button--success:hover {
+    color: #546E7A;
+    background-color: #dee9ee; }
   .button--small {
     font-size: 12px; }
   .button--medium {
     font-size: 19px; }
   .button--large {
     font-size: 23px; }
+  .button--active {
+    color: #FFFFFF;
+    background-color: #3498DB; }
   .button--black {
     background-color: #263238;
     color: #FFFFFF; }
     .button--black:hover {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      background-color: #fff; }
   .button--dark {
     background-color: #2E3C43;
     color: #f4f8f9; }
     .button--dark:hover {
-      color: #f4f8f9; }
+      color: #f4f8f9;
+      background-color: #fff; }
   .button--darken-grey {
     background-color: #314549;
     color: #dee9ee; }
     .button--darken-grey:hover {
-      color: #dee9ee; }
+      color: #dee9ee;
+      background-color: #fff; }
   .button--dark-grey {
     background-color: #546E7A;
     color: #d3e2e8; }
     .button--dark-grey:hover {
-      color: #d3e2e8; }
+      color: #d3e2e8;
+      background-color: #fff; }
   .button--grey {
     background-color: #d3e2e8;
     color: #263238; }
     .button--grey:hover {
-      color: #263238; }
+      color: #263238;
+      background-color: #000; }
   .button--light-grey {
     background-color: #dee9ee;
     color: #546E7A; }
     .button--light-grey:hover {
-      color: #546E7A; }
+      color: #546E7A;
+      background-color: #000; }
   .button--lighten-grey {
     background-color: #f4f8f9;
     color: #314549; }
     .button--lighten-grey:hover {
-      color: #314549; }
+      color: #314549;
+      background-color: #000; }
   .button--white {
     background-color: #FFFFFF;
     color: #263238; }
     .button--white:hover {
-      color: #263238; }
+      color: #263238;
+      background-color: #000; }
   .button--red {
     background-color: #E74C3C;
     color: #FFFFFF; }
     .button--red:hover {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      background-color: #000; }
   .button--orange {
     background-color: #E67E22;
     color: #FFFFFF; }
     .button--orange:hover {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      background-color: #000; }
   .button--yellow {
     background-color: #FFCB6B;
     color: #6b4500; }
     .button--yellow:hover {
-      color: #6b4500; }
+      color: #6b4500;
+      background-color: #000; }
   .button--green {
     background-color: #C3E88D;
     color: #517718; }
     .button--green:hover {
-      color: #517718; }
+      color: #517718;
+      background-color: #000; }
   .button--turquoise {
     background-color: #89DDFF;
     color: #006289; }
     .button--turquoise:hover {
-      color: #006289; }
+      color: #006289;
+      background-color: #000; }
   .button--blue {
     background-color: #3498DB;
     color: #FFFFFF; }
     .button--blue:hover {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      background-color: #000; }
   .button--purple {
     background-color: #9B59B6;
     color: #FFFFFF; }
     .button--purple:hover {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      background-color: #fff; }
   .button--brown {
     background-color: #be643c;
     color: #FFFFFF; }
     .button--brown:hover {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      background-color: #000; }
   .button--danger {
     background-color: #E74C3C;
     color: #FFFFFF; }
     .button--danger:hover {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      background-color: #000; }
   .button--info {
     background-color: #3498DB;
     color: #FFFFFF; }
     .button--info:hover {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      background-color: #000; }
   .button--warning {
     background-color: #FFCB6B;
     color: #6b4500; }
     .button--warning:hover {
-      color: #6b4500; }
+      color: #6b4500;
+      background-color: #000; }
   .button--success {
     background-color: #C3E88D;
     color: #517718; }
     .button--success:hover {
-      color: #517718; }
+      color: #517718;
+      background-color: #000; }
 
 fieldset {
   background-color: transparent;
@@ -2509,15 +2533,15 @@ textarea {
   [type='color']:hover, [type='date']:hover, [type='datetime']:hover, [type='datetime-local']:hover, [type='email']:hover, [type='month']:hover, [type='number']:hover, [type='password']:hover, [type='search']:hover, [type='tel']:hover, [type='text']:hover, [type='time']:hover, [type='url']:hover, [type='week']:hover, input:not([type]):hover, textarea:hover {
     border-color: #a9b5ba; }
   [type='color']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='email']:focus, [type='month']:focus, [type='number']:focus, [type='password']:focus, [type='search']:focus, [type='tel']:focus, [type='text']:focus, [type='time']:focus, [type='url']:focus, [type='week']:focus, input:not([type]):focus, textarea:focus {
-    border-color: #314549;
+    border-color: #263238;
     outline: none; }
   [type='color']:disabled, [type='date']:disabled, [type='datetime']:disabled, [type='datetime-local']:disabled, [type='email']:disabled, [type='month']:disabled, [type='number']:disabled, [type='password']:disabled, [type='search']:disabled, [type='tel']:disabled, [type='text']:disabled, [type='time']:disabled, [type='url']:disabled, [type='week']:disabled, input:not([type]):disabled, textarea:disabled {
-    background-color: black;
+    background-color: #f2f2f2;
     cursor: not-allowed; }
     [type='color']:disabled:hover, [type='date']:disabled:hover, [type='datetime']:disabled:hover, [type='datetime-local']:disabled:hover, [type='email']:disabled:hover, [type='month']:disabled:hover, [type='number']:disabled:hover, [type='password']:disabled:hover, [type='search']:disabled:hover, [type='tel']:disabled:hover, [type='text']:disabled:hover, [type='time']:disabled:hover, [type='url']:disabled:hover, [type='week']:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover {
       border: 1px solid #becbd1; }
   [type='color']::placeholder, [type='date']::placeholder, [type='datetime']::placeholder, [type='datetime-local']::placeholder, [type='email']::placeholder, [type='month']::placeholder, [type='number']::placeholder, [type='password']::placeholder, [type='search']::placeholder, [type='tel']::placeholder, [type='text']::placeholder, [type='time']::placeholder, [type='url']::placeholder, [type='week']::placeholder, input:not([type])::placeholder, textarea::placeholder {
-    color: white; }
+    color: #7d8488; }
 
 textarea {
   resize: vertical; }
@@ -2542,7 +2566,7 @@ select {
 [type="file"]:focus,
 [type="radio"]:focus,
 select:focus {
-  outline: 0px solid rgba(49, 69, 73, 0.6);
+  outline: 0px solid rgba(38, 50, 56, 0.6);
   outline-offset: 2px; }
 
 .chained-fields {
@@ -2557,8 +2581,12 @@ select:focus {
   .chained-fields div:not(:last-child) {
     margin-right: -1px; }
     .chained-fields div:not(:last-child) [class^="button"] {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 3px;
       padding-bottom: 0.33em; }
-  .chained-fields div:not(:first-child):not(:last-child) [type='color'], .chained-fields div:not(:first-child):not(:last-child) [type='date'], .chained-fields div:not(:first-child):not(:last-child) [type='datetime'], .chained-fields div:not(:first-child):not(:last-child) [type='datetime-local'], .chained-fields div:not(:first-child):not(:last-child) [type='email'], .chained-fields div:not(:first-child):not(:last-child) [type='month'], .chained-fields div:not(:first-child):not(:last-child) [type='number'], .chained-fields div:not(:first-child):not(:last-child) [type='password'], .chained-fields div:not(:first-child):not(:last-child) [type='search'], .chained-fields div:not(:first-child):not(:last-child) [type='tel'], .chained-fields div:not(:first-child):not(:last-child) [type='text'], .chained-fields div:not(:first-child):not(:last-child) [type='time'], .chained-fields div:not(:first-child):not(:last-child) [type='url'], .chained-fields div:not(:first-child):not(:last-child) [type='week'], .chained-fields div:not(:first-child):not(:last-child) input:not([type]), .chained-fields div:not(:first-child):not(:last-child) textarea {
+  .chained-fields div:not(:first-child):not(:last-child) [type='color'], .chained-fields div:not(:first-child):not(:last-child) [type='date'], .chained-fields div:not(:first-child):not(:last-child) [type='datetime'], .chained-fields div:not(:first-child):not(:last-child) [type='datetime-local'], .chained-fields div:not(:first-child):not(:last-child) [type='email'], .chained-fields div:not(:first-child):not(:last-child) [type='month'], .chained-fields div:not(:first-child):not(:last-child) [type='number'], .chained-fields div:not(:first-child):not(:last-child) [type='password'], .chained-fields div:not(:first-child):not(:last-child) [type='search'], .chained-fields div:not(:first-child):not(:last-child) [type='tel'], .chained-fields div:not(:first-child):not(:last-child) [type='text'], .chained-fields div:not(:first-child):not(:last-child) [type='time'], .chained-fields div:not(:first-child):not(:last-child) [type='url'], .chained-fields div:not(:first-child):not(:last-child) [type='week'], .chained-fields div:not(:first-child):not(:last-child) input:not([type]), .chained-fields div:not(:first-child):not(:last-child) textarea, .chained-fields div:not(:first-child):not(:last-child) [class^="button"] {
     border-radius: 0; }
 
 .grouped-fields--fullwidth div {
@@ -2751,7 +2779,7 @@ picture {
 .table, .table--bordered, .table--striped {
   width: 100%;
   table-layout: fixed;
-  background-color: black;
+  background-color: #FFFFFF;
   border-collapse: collapse;
   border-spacing: 0;
   margin: 0 0 0.5em; }
@@ -2774,9 +2802,9 @@ picture {
     border: 1px solid #d3e2e8;
     border-width: 1px; }
   .table--striped tbody tr:nth-child(2n):not(.is-selected) {
-    background-color: white; }
+    background-color: #d3e2e8; }
     .table--striped tbody tr:nth-child(2n):not(.is-selected) th, .table--striped tbody tr:nth-child(2n):not(.is-selected) td {
-      color: black; }
+      color: #263238; }
   @media screen and (max-width: 1023px) {
     .table, .table--bordered, .table--striped {
       display: block;
@@ -2805,7 +2833,7 @@ picture {
         .table td:last-child, .table--bordered td:last-child, .table--striped td:last-child {
           border-bottom-width: 0; }
         .table td:before, .table--bordered td:before, .table--striped td:before {
-          color: white;
+          color: #263238;
           font-size: 10pt;
           content: attr(data-title);
           font-variant: small-caps;
@@ -2816,10 +2844,10 @@ html {
   font-family: "Helvetica";
   font-size: 100%;
   line-height: 1.5;
-  background: black; }
+  background: #FFFFFF; }
 
 body {
-  color: white; }
+  color: #263238; }
 
 .h--1,
 h1 {
@@ -2829,6 +2857,10 @@ h1 {
   text-transform: capitalize;
   margin: 0 0 0.5em;
   font-size: 3.05176em; }
+  @media screen and (max-width: 768px) {
+    .h--1,
+    h1 {
+      font-size: 2.44141em; } }
 
 .h--2,
 h2 {
@@ -2838,6 +2870,10 @@ h2 {
   text-transform: capitalize;
   margin: 0 0 0.5em;
   font-size: 2.44141em; }
+  @media screen and (max-width: 768px) {
+    .h--2,
+    h2 {
+      font-size: 1.95312em; } }
 
 .h--3,
 h3 {
@@ -2847,6 +2883,10 @@ h3 {
   text-transform: capitalize;
   margin: 0 0 0.5em;
   font-size: 1.95312em; }
+  @media screen and (max-width: 768px) {
+    .h--3,
+    h3 {
+      font-size: 1.5625em; } }
 
 .h--4,
 h4 {
@@ -2856,6 +2896,10 @@ h4 {
   text-transform: capitalize;
   margin: 0 0 0.5em;
   font-size: 1.5625em; }
+  @media screen and (max-width: 768px) {
+    .h--4,
+    h4 {
+      font-size: 1.25em; } }
 
 .h--5,
 h5 {
@@ -2865,6 +2909,10 @@ h5 {
   text-transform: capitalize;
   margin: 0 0 0.5em;
   font-size: 1.25em; }
+  @media screen and (max-width: 768px) {
+    .h--5,
+    h5 {
+      font-size: 1em; } }
 
 .h--6,
 h6 {
@@ -2874,6 +2922,10 @@ h6 {
   text-transform: capitalize;
   margin: 0 0 0.5em;
   font-size: 1em; }
+  @media screen and (max-width: 768px) {
+    .h--6,
+    h6 {
+      font-size: 0.8em; } }
 
 p {
   margin: 0 0 0.5em; }
@@ -2884,10 +2936,10 @@ a {
   text-decoration: none;
   transition: color 150ms ease; }
   a:hover {
-    color: #253437;
+    color: #1d262a;
     cursor: pointer; }
   a:focus {
-    outline: 0px solid rgba(49, 69, 73, 0.6);
+    outline: 0px solid rgba(38, 50, 56, 0.6);
     outline-offset: 2px; }
 
 hr {
@@ -3109,7 +3161,7 @@ hr {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  background-color: black;
+  background-color: #FFFFFF;
   height: 52px;
   margin-bottom: 1rem;
   border-bottom: 1px solid #ddd; }
@@ -3225,12 +3277,12 @@ hr {
       display: flex; } }
 
 .footer {
-  background-color: black;
+  background-color: #FFFFFF;
   padding: 10px 0 5px;
   font-size: 16px;
   text-align: center;
   border-top: 1px solid #ddd;
-  color: white; }
+  color: #263238; }
   @media screen and (max-width: 768px) {
     .footer {
       font-size: 12px; } }
@@ -3429,7 +3481,7 @@ hr {
     border-radius: 3px;
     -webkit-box-shadow: none;
     box-shadow: none;
-    margin: 0.25rem;
+    margin: 0 0.25rem;
     -webkit-box-align: center;
     -webkit-box-pack: center;
     -ms-flex-align: center;
@@ -3443,7 +3495,7 @@ hr {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    padding: calc(0.375em - 1px) calc(0.625em - 1px);
+    padding: calc(0.375em - 1px) calc(0.625em - 1px) calc(0.275em - 1px);
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -3490,18 +3542,18 @@ hr {
   .pagination .pagination__link, .pagination .pagination__link--active,
   .pagination .pagination__next,
   .pagination .pagination__previous {
-    border-color: #dbdbdb;
+    border-color: #d3e2e8;
     min-width: 2.25em;
-    color: #fff; }
+    color: #263238; }
     .pagination .pagination__link:hover, .pagination .pagination__link--active:hover,
     .pagination .pagination__next:hover,
     .pagination .pagination__previous:hover {
-      border-color: #dbdbdb;
-      color: #363636; }
+      border-color: #d3e2e8;
+      color: #1d262a; }
     .pagination .pagination__link:focus, .pagination .pagination__link--active:focus,
     .pagination .pagination__next:focus,
     .pagination .pagination__previous:focus {
-      border-color: #dbdbdb; }
+      border-color: #d3e2e8; }
     .pagination .pagination__link:active, .pagination .pagination__link--active:active,
     .pagination .pagination__next:active,
     .pagination .pagination__previous:active {
@@ -3510,8 +3562,8 @@ hr {
     .pagination .pagination__link[disabled], .pagination [disabled].pagination__link--active,
     .pagination .pagination__next[disabled],
     .pagination .pagination__previous[disabled] {
-      background-color: #dbdbdb;
-      border-color: #dbdbdb;
+      background-color: #d3e2e8;
+      border-color: #d3e2e8;
       -webkit-box-shadow: none;
       box-shadow: none;
       color: #7a7a7a;
@@ -3526,9 +3578,9 @@ hr {
     pointer-events: none; }
 
 .pagination__link--active {
-  background-color: #2E3C43;
-  border-color: #dbdbdb;
-  color: #fff; }
+  background-color: #3498DB;
+  border-color: #3498DB;
+  color: #FFFFFF; }
 
 @media screen and (max-width: 768px) {
   .pagination {
@@ -3584,7 +3636,7 @@ hr {
     justify-content: center;
     padding: 0.5em 0.75em; }
     .breadcrumb a:hover, .breadcrumb--centered a:hover, .breadcrumb--right a:hover, .breadcrumb--small a:hover, .breadcrumb--medium a:hover, .breadcrumb--large a:hover {
-      color: white; }
+      color: #1d262a; }
   .breadcrumb__item, .breadcrumb__item--active {
     align-items: center;
     display: flex; }
@@ -3594,11 +3646,11 @@ hr {
       cursor: text;
       font-weight: bolder; }
     .breadcrumb__item--active a {
-      color: white;
+      color: #263238;
       cursor: default;
       pointer-events: none; }
     .breadcrumb__item + li::before, .breadcrumb__item--active + li::before {
-      color: white;
+      color: #263238;
       content: "/"; }
   .breadcrumb ol, .breadcrumb--centered ol, .breadcrumb--right ol, .breadcrumb--small ol, .breadcrumb--medium ol, .breadcrumb--large ol,
   .breadcrumb ul, .breadcrumb--centered ul, .breadcrumb--right ul, .breadcrumb--small ul, .breadcrumb--medium ul, .breadcrumb--large ul {
@@ -3636,18 +3688,18 @@ hr {
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       content: "\F107"; }
-    .dropdown .dropdown__item.button, .dropdown .dropdown__item.button--small, .dropdown .button--small.dropdown__item--active, .dropdown .dropdown__item.button--medium, .dropdown .button--medium.dropdown__item--active, .dropdown .dropdown__item.button--large, .dropdown .button--large.dropdown__item--active, .dropdown .dropdown__item.button--black, .dropdown .button--black.dropdown__item--active, .dropdown .dropdown__item.button--dark, .dropdown .button--dark.dropdown__item--active, .dropdown .dropdown__item.button--darken-grey, .dropdown .button--darken-grey.dropdown__item--active, .dropdown .dropdown__item.button--dark-grey, .dropdown .button--dark-grey.dropdown__item--active, .dropdown .dropdown__item.button--grey, .dropdown .button--grey.dropdown__item--active, .dropdown .dropdown__item.button--light-grey, .dropdown .button--light-grey.dropdown__item--active, .dropdown .dropdown__item.button--lighten-grey, .dropdown .button--lighten-grey.dropdown__item--active, .dropdown .dropdown__item.button--white, .dropdown .button--white.dropdown__item--active, .dropdown .dropdown__item.button--red, .dropdown .button--red.dropdown__item--active, .dropdown .dropdown__item.button--orange, .dropdown .button--orange.dropdown__item--active, .dropdown .dropdown__item.button--yellow, .dropdown .button--yellow.dropdown__item--active, .dropdown .dropdown__item.button--green, .dropdown .button--green.dropdown__item--active, .dropdown .dropdown__item.button--turquoise, .dropdown .button--turquoise.dropdown__item--active, .dropdown .dropdown__item.button--blue, .dropdown .button--blue.dropdown__item--active, .dropdown .dropdown__item.button--purple, .dropdown .button--purple.dropdown__item--active, .dropdown .dropdown__item.button--brown, .dropdown .button--brown.dropdown__item--active, .dropdown .dropdown__item.button--danger, .dropdown .button--danger.dropdown__item--active, .dropdown .dropdown__item.button--info, .dropdown .button--info.dropdown__item--active, .dropdown .dropdown__item.button--warning, .dropdown .button--warning.dropdown__item--active, .dropdown .dropdown__item.button--success, .dropdown .button--success.dropdown__item--active, .dropdown .button.dropdown__item--active {
-      color: #fff; }
-      .dropdown .dropdown__item.button:hover, .dropdown .dropdown__item.button--small:hover, .dropdown .button--small.dropdown__item--active:hover, .dropdown .dropdown__item.button--medium:hover, .dropdown .button--medium.dropdown__item--active:hover, .dropdown .dropdown__item.button--large:hover, .dropdown .button--large.dropdown__item--active:hover, .dropdown .dropdown__item.button--black:hover, .dropdown .button--black.dropdown__item--active:hover, .dropdown .dropdown__item.button--dark:hover, .dropdown .button--dark.dropdown__item--active:hover, .dropdown .dropdown__item.button--darken-grey:hover, .dropdown .button--darken-grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--dark-grey:hover, .dropdown .button--dark-grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--grey:hover, .dropdown .button--grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--light-grey:hover, .dropdown .button--light-grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--lighten-grey:hover, .dropdown .button--lighten-grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--white:hover, .dropdown .button--white.dropdown__item--active:hover, .dropdown .dropdown__item.button--red:hover, .dropdown .button--red.dropdown__item--active:hover, .dropdown .dropdown__item.button--orange:hover, .dropdown .button--orange.dropdown__item--active:hover, .dropdown .dropdown__item.button--yellow:hover, .dropdown .button--yellow.dropdown__item--active:hover, .dropdown .dropdown__item.button--green:hover, .dropdown .button--green.dropdown__item--active:hover, .dropdown .dropdown__item.button--turquoise:hover, .dropdown .button--turquoise.dropdown__item--active:hover, .dropdown .dropdown__item.button--blue:hover, .dropdown .button--blue.dropdown__item--active:hover, .dropdown .dropdown__item.button--purple:hover, .dropdown .button--purple.dropdown__item--active:hover, .dropdown .dropdown__item.button--brown:hover, .dropdown .button--brown.dropdown__item--active:hover, .dropdown .dropdown__item.button--danger:hover, .dropdown .button--danger.dropdown__item--active:hover, .dropdown .dropdown__item.button--info:hover, .dropdown .button--info.dropdown__item--active:hover, .dropdown .dropdown__item.button--warning:hover, .dropdown .button--warning.dropdown__item--active:hover, .dropdown .dropdown__item.button--success:hover, .dropdown .button--success.dropdown__item--active:hover, .dropdown .button.dropdown__item--active:hover {
-        color: #fff; }
+    .dropdown .dropdown__item.button, .dropdown .dropdown__item.button--small, .dropdown .button--small.dropdown__item--active, .dropdown .dropdown__item.button--medium, .dropdown .button--medium.dropdown__item--active, .dropdown .dropdown__item.button--large, .dropdown .button--large.dropdown__item--active, .dropdown .dropdown__item.button--active, .dropdown .button--active.dropdown__item--active, .dropdown .dropdown__item.button--black, .dropdown .button--black.dropdown__item--active, .dropdown .dropdown__item.button--dark, .dropdown .button--dark.dropdown__item--active, .dropdown .dropdown__item.button--darken-grey, .dropdown .button--darken-grey.dropdown__item--active, .dropdown .dropdown__item.button--dark-grey, .dropdown .button--dark-grey.dropdown__item--active, .dropdown .dropdown__item.button--grey, .dropdown .button--grey.dropdown__item--active, .dropdown .dropdown__item.button--light-grey, .dropdown .button--light-grey.dropdown__item--active, .dropdown .dropdown__item.button--lighten-grey, .dropdown .button--lighten-grey.dropdown__item--active, .dropdown .dropdown__item.button--white, .dropdown .button--white.dropdown__item--active, .dropdown .dropdown__item.button--red, .dropdown .button--red.dropdown__item--active, .dropdown .dropdown__item.button--orange, .dropdown .button--orange.dropdown__item--active, .dropdown .dropdown__item.button--yellow, .dropdown .button--yellow.dropdown__item--active, .dropdown .dropdown__item.button--green, .dropdown .button--green.dropdown__item--active, .dropdown .dropdown__item.button--turquoise, .dropdown .button--turquoise.dropdown__item--active, .dropdown .dropdown__item.button--blue, .dropdown .button--blue.dropdown__item--active, .dropdown .dropdown__item.button--purple, .dropdown .button--purple.dropdown__item--active, .dropdown .dropdown__item.button--brown, .dropdown .button--brown.dropdown__item--active, .dropdown .dropdown__item.button--danger, .dropdown .button--danger.dropdown__item--active, .dropdown .dropdown__item.button--info, .dropdown .button--info.dropdown__item--active, .dropdown .dropdown__item.button--warning, .dropdown .button--warning.dropdown__item--active, .dropdown .dropdown__item.button--success, .dropdown .button--success.dropdown__item--active, .dropdown .button.dropdown__item--active {
+      color: #263238; }
+      .dropdown .dropdown__item.button:hover, .dropdown .dropdown__item.button--small:hover, .dropdown .button--small.dropdown__item--active:hover, .dropdown .dropdown__item.button--medium:hover, .dropdown .button--medium.dropdown__item--active:hover, .dropdown .dropdown__item.button--large:hover, .dropdown .button--large.dropdown__item--active:hover, .dropdown .dropdown__item.button--active:hover, .dropdown .button--active.dropdown__item--active:hover, .dropdown .dropdown__item.button--black:hover, .dropdown .button--black.dropdown__item--active:hover, .dropdown .dropdown__item.button--dark:hover, .dropdown .button--dark.dropdown__item--active:hover, .dropdown .dropdown__item.button--darken-grey:hover, .dropdown .button--darken-grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--dark-grey:hover, .dropdown .button--dark-grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--grey:hover, .dropdown .button--grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--light-grey:hover, .dropdown .button--light-grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--lighten-grey:hover, .dropdown .button--lighten-grey.dropdown__item--active:hover, .dropdown .dropdown__item.button--white:hover, .dropdown .button--white.dropdown__item--active:hover, .dropdown .dropdown__item.button--red:hover, .dropdown .button--red.dropdown__item--active:hover, .dropdown .dropdown__item.button--orange:hover, .dropdown .button--orange.dropdown__item--active:hover, .dropdown .dropdown__item.button--yellow:hover, .dropdown .button--yellow.dropdown__item--active:hover, .dropdown .dropdown__item.button--green:hover, .dropdown .button--green.dropdown__item--active:hover, .dropdown .dropdown__item.button--turquoise:hover, .dropdown .button--turquoise.dropdown__item--active:hover, .dropdown .dropdown__item.button--blue:hover, .dropdown .button--blue.dropdown__item--active:hover, .dropdown .dropdown__item.button--purple:hover, .dropdown .button--purple.dropdown__item--active:hover, .dropdown .dropdown__item.button--brown:hover, .dropdown .button--brown.dropdown__item--active:hover, .dropdown .dropdown__item.button--danger:hover, .dropdown .button--danger.dropdown__item--active:hover, .dropdown .dropdown__item.button--info:hover, .dropdown .button--info.dropdown__item--active:hover, .dropdown .dropdown__item.button--warning:hover, .dropdown .button--warning.dropdown__item--active:hover, .dropdown .dropdown__item.button--success:hover, .dropdown .button--success.dropdown__item--active:hover, .dropdown .button.dropdown__item--active:hover {
+        color: #546E7A; }
     .dropdown .dropdown__item--active {
-      color: white; }
+      color: #263238; }
       .dropdown .dropdown__item--active:hover {
-        color: white; }
-      .dropdown .dropdown__item--active.button, .dropdown .dropdown__item--active.button--small, .dropdown .dropdown__item--active.button--medium, .dropdown .dropdown__item--active.button--large, .dropdown .dropdown__item--active.button--black, .dropdown .dropdown__item--active.button--dark, .dropdown .dropdown__item--active.button--darken-grey, .dropdown .dropdown__item--active.button--dark-grey, .dropdown .dropdown__item--active.button--grey, .dropdown .dropdown__item--active.button--light-grey, .dropdown .dropdown__item--active.button--lighten-grey, .dropdown .dropdown__item--active.button--white, .dropdown .dropdown__item--active.button--red, .dropdown .dropdown__item--active.button--orange, .dropdown .dropdown__item--active.button--yellow, .dropdown .dropdown__item--active.button--green, .dropdown .dropdown__item--active.button--turquoise, .dropdown .dropdown__item--active.button--blue, .dropdown .dropdown__item--active.button--purple, .dropdown .dropdown__item--active.button--brown, .dropdown .dropdown__item--active.button--danger, .dropdown .dropdown__item--active.button--info, .dropdown .dropdown__item--active.button--warning, .dropdown .dropdown__item--active.button--success {
-        color: #fff; }
-        .dropdown .dropdown__item--active.button:hover, .dropdown .dropdown__item--active.button--small:hover, .dropdown .dropdown__item--active.button--medium:hover, .dropdown .dropdown__item--active.button--large:hover, .dropdown .dropdown__item--active.button--black:hover, .dropdown .dropdown__item--active.button--dark:hover, .dropdown .dropdown__item--active.button--darken-grey:hover, .dropdown .dropdown__item--active.button--dark-grey:hover, .dropdown .dropdown__item--active.button--grey:hover, .dropdown .dropdown__item--active.button--light-grey:hover, .dropdown .dropdown__item--active.button--lighten-grey:hover, .dropdown .dropdown__item--active.button--white:hover, .dropdown .dropdown__item--active.button--red:hover, .dropdown .dropdown__item--active.button--orange:hover, .dropdown .dropdown__item--active.button--yellow:hover, .dropdown .dropdown__item--active.button--green:hover, .dropdown .dropdown__item--active.button--turquoise:hover, .dropdown .dropdown__item--active.button--blue:hover, .dropdown .dropdown__item--active.button--purple:hover, .dropdown .dropdown__item--active.button--brown:hover, .dropdown .dropdown__item--active.button--danger:hover, .dropdown .dropdown__item--active.button--info:hover, .dropdown .dropdown__item--active.button--warning:hover, .dropdown .dropdown__item--active.button--success:hover {
-          color: #fff; }
+        color: #263238; }
+      .dropdown .dropdown__item--active.button, .dropdown .dropdown__item--active.button--small, .dropdown .dropdown__item--active.button--medium, .dropdown .dropdown__item--active.button--large, .dropdown .dropdown__item--active.button--active, .dropdown .dropdown__item--active.button--black, .dropdown .dropdown__item--active.button--dark, .dropdown .dropdown__item--active.button--darken-grey, .dropdown .dropdown__item--active.button--dark-grey, .dropdown .dropdown__item--active.button--grey, .dropdown .dropdown__item--active.button--light-grey, .dropdown .dropdown__item--active.button--lighten-grey, .dropdown .dropdown__item--active.button--white, .dropdown .dropdown__item--active.button--red, .dropdown .dropdown__item--active.button--orange, .dropdown .dropdown__item--active.button--yellow, .dropdown .dropdown__item--active.button--green, .dropdown .dropdown__item--active.button--turquoise, .dropdown .dropdown__item--active.button--blue, .dropdown .dropdown__item--active.button--purple, .dropdown .dropdown__item--active.button--brown, .dropdown .dropdown__item--active.button--danger, .dropdown .dropdown__item--active.button--info, .dropdown .dropdown__item--active.button--warning, .dropdown .dropdown__item--active.button--success {
+        color: #263238; }
+        .dropdown .dropdown__item--active.button:hover, .dropdown .dropdown__item--active.button--small:hover, .dropdown .dropdown__item--active.button--medium:hover, .dropdown .dropdown__item--active.button--large:hover, .dropdown .dropdown__item--active.button--active:hover, .dropdown .dropdown__item--active.button--black:hover, .dropdown .dropdown__item--active.button--dark:hover, .dropdown .dropdown__item--active.button--darken-grey:hover, .dropdown .dropdown__item--active.button--dark-grey:hover, .dropdown .dropdown__item--active.button--grey:hover, .dropdown .dropdown__item--active.button--light-grey:hover, .dropdown .dropdown__item--active.button--lighten-grey:hover, .dropdown .dropdown__item--active.button--white:hover, .dropdown .dropdown__item--active.button--red:hover, .dropdown .dropdown__item--active.button--orange:hover, .dropdown .dropdown__item--active.button--yellow:hover, .dropdown .dropdown__item--active.button--green:hover, .dropdown .dropdown__item--active.button--turquoise:hover, .dropdown .dropdown__item--active.button--blue:hover, .dropdown .dropdown__item--active.button--purple:hover, .dropdown .dropdown__item--active.button--brown:hover, .dropdown .dropdown__item--active.button--danger:hover, .dropdown .dropdown__item--active.button--info:hover, .dropdown .dropdown__item--active.button--warning:hover, .dropdown .dropdown__item--active.button--success:hover {
+          color: #546E7A; }
   .dropdown .dropdown__menu {
     display: none;
     position: absolute;
@@ -3656,7 +3708,7 @@ hr {
     border-bottom-right-radius: 3px;
     min-width: 100%;
     z-index: 1;
-    background-color: black;
+    background-color: #FFFFFF;
     -webkit-box-shadow: 0 2px 3px rgba(38, 50, 56, 0.1), 0 0 0 1px rgba(38, 50, 56, 0.1);
     box-shadow: 0 2px 3px rgba(38, 50, 56, 0.1), 0 0 0 1px rgba(38, 50, 56, 0.1);
     font-size: 16px; }
@@ -3680,13 +3732,13 @@ hr {
       color: #263238;
       padding: 0.5rem 4rem 0.5rem 0.5rem; }
       .dropdown .dropdown__menu .dropdown__menu-item:hover, .dropdown .dropdown__menu .dropdown__menu-item--active:hover {
-        background-color: black; }
+        background-color: #8c8c8c; }
       .dropdown .dropdown__menu .dropdown__menu-item--active {
-        background-color: black;
-        color: white; }
+        background-color: #1e282d;
+        color: #263238; }
         .dropdown .dropdown__menu .dropdown__menu-item--active:hover {
-          background-color: black;
-          color: white; }
+          background-color: #595959;
+          color: #1d262a; }
   .dropdown.navbar__item .dropdown__menu, .dropdown.navbar__item--active .dropdown__menu {
     box-shadow: 0 2px 3px rgba(38, 50, 56, 0.1), 0 0 0 0 rgba(38, 50, 56, 0.1); }
   .dropdown:hover .dropdown__menu {
@@ -3713,13 +3765,13 @@ hr {
         -moz-osx-font-smoothing: grayscale;
         content: "\F105"; }
       .dropdown .dropdown .dropdown__item:hover, .dropdown .dropdown .dropdown__item--active:hover {
-        background-color: black;
-        background: white; }
-      .dropdown .dropdown .dropdown__item.button, .dropdown .dropdown .dropdown__item.button--small, .dropdown .dropdown .button--small.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--medium, .dropdown .dropdown .button--medium.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--large, .dropdown .dropdown .button--large.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--black, .dropdown .dropdown .button--black.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--dark, .dropdown .dropdown .button--dark.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--darken-grey, .dropdown .dropdown .button--darken-grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--dark-grey, .dropdown .dropdown .button--dark-grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--grey, .dropdown .dropdown .button--grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--light-grey, .dropdown .dropdown .button--light-grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--lighten-grey, .dropdown .dropdown .button--lighten-grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--white, .dropdown .dropdown .button--white.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--red, .dropdown .dropdown .button--red.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--orange, .dropdown .dropdown .button--orange.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--yellow, .dropdown .dropdown .button--yellow.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--green, .dropdown .dropdown .button--green.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--turquoise, .dropdown .dropdown .button--turquoise.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--blue, .dropdown .dropdown .button--blue.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--purple, .dropdown .dropdown .button--purple.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--brown, .dropdown .dropdown .button--brown.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--danger, .dropdown .dropdown .button--danger.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--info, .dropdown .dropdown .button--info.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--warning, .dropdown .dropdown .button--warning.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--success, .dropdown .dropdown .button--success.dropdown__item--active, .dropdown .dropdown .button.dropdown__item--active {
-        color: #fff; }
-        .dropdown .dropdown .dropdown__item.button:hover, .dropdown .dropdown .dropdown__item.button--small:hover, .dropdown .dropdown .button--small.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--medium:hover, .dropdown .dropdown .button--medium.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--large:hover, .dropdown .dropdown .button--large.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--black:hover, .dropdown .dropdown .button--black.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--dark:hover, .dropdown .dropdown .button--dark.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--darken-grey:hover, .dropdown .dropdown .button--darken-grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--dark-grey:hover, .dropdown .dropdown .button--dark-grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--grey:hover, .dropdown .dropdown .button--grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--light-grey:hover, .dropdown .dropdown .button--light-grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--lighten-grey:hover, .dropdown .dropdown .button--lighten-grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--white:hover, .dropdown .dropdown .button--white.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--red:hover, .dropdown .dropdown .button--red.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--orange:hover, .dropdown .dropdown .button--orange.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--yellow:hover, .dropdown .dropdown .button--yellow.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--green:hover, .dropdown .dropdown .button--green.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--turquoise:hover, .dropdown .dropdown .button--turquoise.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--blue:hover, .dropdown .dropdown .button--blue.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--purple:hover, .dropdown .dropdown .button--purple.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--brown:hover, .dropdown .dropdown .button--brown.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--danger:hover, .dropdown .dropdown .button--danger.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--info:hover, .dropdown .dropdown .button--info.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--warning:hover, .dropdown .dropdown .button--warning.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--success:hover, .dropdown .dropdown .button--success.dropdown__item--active:hover, .dropdown .dropdown .button.dropdown__item--active:hover {
-          background-color: black;
-          color: white; }
+        background-color: #8c8c8c;
+        background: #1d262a; }
+      .dropdown .dropdown .dropdown__item.button, .dropdown .dropdown .dropdown__item.button--small, .dropdown .dropdown .button--small.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--medium, .dropdown .dropdown .button--medium.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--large, .dropdown .dropdown .button--large.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--active, .dropdown .dropdown .button--active.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--black, .dropdown .dropdown .button--black.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--dark, .dropdown .dropdown .button--dark.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--darken-grey, .dropdown .dropdown .button--darken-grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--dark-grey, .dropdown .dropdown .button--dark-grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--grey, .dropdown .dropdown .button--grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--light-grey, .dropdown .dropdown .button--light-grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--lighten-grey, .dropdown .dropdown .button--lighten-grey.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--white, .dropdown .dropdown .button--white.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--red, .dropdown .dropdown .button--red.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--orange, .dropdown .dropdown .button--orange.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--yellow, .dropdown .dropdown .button--yellow.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--green, .dropdown .dropdown .button--green.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--turquoise, .dropdown .dropdown .button--turquoise.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--blue, .dropdown .dropdown .button--blue.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--purple, .dropdown .dropdown .button--purple.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--brown, .dropdown .dropdown .button--brown.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--danger, .dropdown .dropdown .button--danger.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--info, .dropdown .dropdown .button--info.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--warning, .dropdown .dropdown .button--warning.dropdown__item--active, .dropdown .dropdown .dropdown__item.button--success, .dropdown .dropdown .button--success.dropdown__item--active, .dropdown .dropdown .button.dropdown__item--active {
+        color: #263238; }
+        .dropdown .dropdown .dropdown__item.button:hover, .dropdown .dropdown .dropdown__item.button--small:hover, .dropdown .dropdown .button--small.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--medium:hover, .dropdown .dropdown .button--medium.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--large:hover, .dropdown .dropdown .button--large.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--active:hover, .dropdown .dropdown .button--active.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--black:hover, .dropdown .dropdown .button--black.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--dark:hover, .dropdown .dropdown .button--dark.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--darken-grey:hover, .dropdown .dropdown .button--darken-grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--dark-grey:hover, .dropdown .dropdown .button--dark-grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--grey:hover, .dropdown .dropdown .button--grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--light-grey:hover, .dropdown .dropdown .button--light-grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--lighten-grey:hover, .dropdown .dropdown .button--lighten-grey.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--white:hover, .dropdown .dropdown .button--white.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--red:hover, .dropdown .dropdown .button--red.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--orange:hover, .dropdown .dropdown .button--orange.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--yellow:hover, .dropdown .dropdown .button--yellow.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--green:hover, .dropdown .dropdown .button--green.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--turquoise:hover, .dropdown .dropdown .button--turquoise.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--blue:hover, .dropdown .dropdown .button--blue.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--purple:hover, .dropdown .dropdown .button--purple.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--brown:hover, .dropdown .dropdown .button--brown.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--danger:hover, .dropdown .dropdown .button--danger.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--info:hover, .dropdown .dropdown .button--info.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--warning:hover, .dropdown .dropdown .button--warning.dropdown__item--active:hover, .dropdown .dropdown .dropdown__item.button--success:hover, .dropdown .dropdown .button--success.dropdown__item--active:hover, .dropdown .dropdown .button.dropdown__item--active:hover {
+          background-color: #8c8c8c;
+          color: #1d262a; }
     .dropdown .dropdown .dropdown__menu {
       position: absolute;
       top: 0;
@@ -3728,33 +3780,15 @@ hr {
     .dropdown .dropdown:hover .dropdown__menu {
       display: block; }
 
-.tabs, .tabs--centered, .tabs--left, .tabs--right, .tabs--boxed, .tabs--fullwidth, .tabs--bar {
+.tabs, .tabs--boxed, .tabs--bar, .tabs--fullwidth, .tabs--centered, .tabs--left, .tabs--right, .tabs--small, .tabs--medium, .tabs--large {
   align-items: stretch;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
   overflow-x: auto;
-  white-space: nowrap; }
-  .tabs a, .tabs--centered a, .tabs--left a, .tabs--right a, .tabs--boxed a, .tabs--fullwidth a, .tabs--bar a {
-    align-items: center;
-    border-bottom-color: 1px solid #becbd1;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -1px;
-    padding: 0.5em 1em;
-    vertical-align: top; }
-    .tabs a:hover, .tabs--centered a:hover, .tabs--left a:hover, .tabs--right a:hover, .tabs--boxed a:hover, .tabs--fullwidth a:hover, .tabs--bar a:hover {
-      border-bottom-color: #263238;
-      color: white; }
-  .tabs li, .tabs--centered li, .tabs--left li, .tabs--right li, .tabs--boxed li, .tabs--fullwidth li, .tabs--bar li {
-    display: block; }
-    .tabs li.active a, .tabs--centered li.active a, .tabs--left li.active a, .tabs--right li.active a, .tabs--boxed li.active a, .tabs--fullwidth li.active a, .tabs--bar li.active a {
-      border-bottom-color: white;
-      color: black; }
-  .tabs ul, .tabs--centered ul, .tabs--left ul, .tabs--right ul, .tabs--boxed ul, .tabs--fullwidth ul, .tabs--bar ul {
+  white-space: nowrap;
+  flex-direction: column; }
+  .tabs__list {
     align-items: center;
     border-bottom-color: 1px solid #becbd1;
     border-bottom-style: solid;
@@ -3763,63 +3797,86 @@ hr {
     flex-grow: 1;
     flex-shrink: 0;
     justify-content: flex-start; }
-    .tabs ul.is-left, .tabs--centered ul.is-left, .tabs--left ul.is-left, .tabs--right ul.is-left, .tabs--boxed ul.is-left, .tabs--fullwidth ul.is-left, .tabs--bar ul.is-left {
-      padding-right: 0.75em; }
-    .tabs ul.is-center, .tabs--centered ul.is-center, .tabs--left ul.is-center, .tabs--right ul.is-center, .tabs--boxed ul.is-center, .tabs--fullwidth ul.is-center, .tabs--bar ul.is-center {
-      flex: none;
-      justify-content: center;
-      padding-left: 0.75em;
-      padding-right: 0.75em; }
-    .tabs ul.is-right, .tabs--centered ul.is-right, .tabs--left ul.is-right, .tabs--right ul.is-right, .tabs--boxed ul.is-right, .tabs--fullwidth ul.is-right, .tabs--bar ul.is-right {
-      justify-content: flex-end;
-      padding-left: 0.75em; }
-  .tabs .icon:first-child, .tabs--centered .icon:first-child, .tabs--left .icon:first-child, .tabs--right .icon:first-child, .tabs--boxed .icon:first-child, .tabs--fullwidth .icon:first-child, .tabs--bar .icon:first-child {
-    margin-right: 0.5em; }
-  .tabs .icon:last-child, .tabs--centered .icon:last-child, .tabs--left .icon:last-child, .tabs--right .icon:last-child, .tabs--boxed .icon:last-child, .tabs--fullwidth .icon:last-child, .tabs--bar .icon:last-child {
-    margin-left: 0.5em; }
-  .tabs--centered ul {
+    .tabs__list__item, .tabs__list__item--active {
+      display: block; }
+      .tabs__list__item a, .tabs__list__item--active a {
+        align-items: center;
+        border-bottom-color: 1px solid #becbd1;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        color: #263238;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -1px;
+        padding: 0.5em 1em;
+        vertical-align: top; }
+        .tabs__list__item a:hover, .tabs__list__item--active a:hover {
+          border-bottom-color: #263238;
+          color: #263238; }
+      .tabs__list__item--active a {
+        border-bottom-color: #3498DB;
+        color: #3498DB; }
+  .tabs__content {
+    width: 100%;
+    margin: 0; }
+    .tabs__content__item, .tabs__content__item--active {
+      display: none; }
+      .tabs__content__item--active {
+        display: block; }
+  .tabs--boxed .tabs__list .tabs__list__item a, .tabs--boxed .tabs__list .tabs__list__item--active a {
+    border: 1px solid transparent;
+    border-radius: 3px 3px 0 0; }
+    .tabs--boxed .tabs__list .tabs__list__item a:hover, .tabs--boxed .tabs__list .tabs__list__item--active a:hover {
+      background-color: #FFFFFF;
+      border-bottom-color: #263238; }
+  .tabs--boxed .tabs__list .tabs__list__item--active a {
+    background-color: #3498DB;
+    border-color: 1px solid #becbd1;
+    border-bottom-color: transparent !important;
+    color: #FFFFFF; }
+  .tabs--bar .tabs__list {
+    border-bottom: none; }
+    .tabs--bar .tabs__list .tabs__list__item a, .tabs--bar .tabs__list .tabs__list__item--active a {
+      border-color: #d3e2e8;
+      border-style: solid;
+      border-width: 1px;
+      margin-bottom: 0;
+      position: relative; }
+      .tabs--bar .tabs__list .tabs__list__item a:hover, .tabs--bar .tabs__list .tabs__list__item--active a:hover {
+        background-color: #FFFFFF;
+        border-color: #d3e2e8;
+        z-index: 2; }
+    .tabs--bar .tabs__list .tabs__list__item + .tabs__list__item, .tabs--bar .tabs__list .tabs__list__item--active + .tabs__list__item, .tabs--bar .tabs__list .tabs__list__item + .tabs__list__item--active, .tabs--bar .tabs__list .tabs__list__item--active + .tabs__list__item--active {
+      margin-left: -1px; }
+    .tabs--bar .tabs__list .tabs__list__item:first-child a, .tabs--bar .tabs__list .tabs__list__item--active:first-child a {
+      border-radius: 3px 0 0 3px; }
+    .tabs--bar .tabs__list .tabs__list__item:last-child a, .tabs--bar .tabs__list .tabs__list__item--active:last-child a {
+      border-radius: 0 3px 3px 0; }
+    .tabs--bar .tabs__list .tabs__list__item--active a {
+      background-color: #3498DB;
+      border-color: #FFFFFF;
+      color: #FFFFFF;
+      z-index: 1; }
+  .tabs--fullwidth .tabs__list__item, .tabs--fullwidth .tabs__list__item--active {
+    flex-grow: 1;
+    flex-shrink: 0; }
+  .tabs--centered .tabs__list {
     flex: none;
     justify-content: center;
     padding-left: 0.75em;
     padding-right: 0.75em; }
-  .tabs--left ul {
+  .tabs--left .tabs__list {
     padding-right: 0.75em; }
-  .tabs--right ul {
+  .tabs--right .tabs__list {
     justify-content: flex-end;
     padding-left: 0.75em; }
-  .tabs--boxed a {
-    border: 1px solid transparent;
-    border-radius: 3px 3px 0 0; }
-    .tabs--boxed a:hover {
-      background-color: black;
-      border-bottom-color: white; }
-  .tabs--boxed li.active a {
-    background-color: #FFFFFF;
-    border-color: 1px solid #becbd1;
-    border-bottom-color: transparent !important; }
-  .tabs--fullwidth li {
-    flex-grow: 1;
-    flex-shrink: 0; }
-  .tabs--bar a {
-    border-color: #d3e2e8;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 0;
-    position: relative; }
-    .tabs--bar a:hover {
-      background-color: black;
-      border-color: #d3e2e8;
-      z-index: 2; }
-  .tabs--bar li + li {
-    margin-left: -1px; }
-  .tabs--bar li:first-child a {
-    border-radius: 3px 0 0 3px; }
-  .tabs--bar li:last-child a {
-    border-radius: 0 3px 3px 0; }
-  .tabs--bar li.active a {
-    background-color: white;
-    border-color: white;
-    color: black;
-    z-index: 1; }
-  .tabs--bar ul {
-    border-bottom: none; }
+  .tabs--small {
+    font-size: 12px; }
+  .tabs--medium {
+    font-size: 19px; }
+  .tabs--large {
+    font-size: 23px; }
+  .tabs .icon:first-child, .tabs--boxed .icon:first-child, .tabs--bar .icon:first-child, .tabs--fullwidth .icon:first-child, .tabs--centered .icon:first-child, .tabs--left .icon:first-child, .tabs--right .icon:first-child, .tabs--small .icon:first-child, .tabs--medium .icon:first-child, .tabs--large .icon:first-child {
+    margin-right: 0.5em; }
+  .tabs .icon:last-child, .tabs--boxed .icon:last-child, .tabs--bar .icon:last-child, .tabs--fullwidth .icon:last-child, .tabs--centered .icon:last-child, .tabs--left .icon:last-child, .tabs--right .icon:last-child, .tabs--small .icon:last-child, .tabs--medium .icon:last-child, .tabs--large .icon:last-child {
+    margin-left: 0.5em; }
