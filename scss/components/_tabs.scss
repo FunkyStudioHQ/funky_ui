@@ -64,7 +64,7 @@ $tabs-toggle-link-active-color:             $base-bg !default;
         }
       }
       @include modifier(active){
-        a {
+        a, a:hover {
           border-bottom-color: $base-action-active-bg;
           color: $base-action-active-bg;
         }
@@ -98,7 +98,7 @@ $tabs-toggle-link-active-color:             $base-bg !default;
         }
       }
       .tabs__list__item--active{
-        a {
+        a, a:hover {
           background-color: $tabs-toggle-link-active-background-color;
           border-color: $tabs-boxed-link-active-border-color;
           border-bottom-color: $tabs-boxed-link-active-border-bottom-color !important;
@@ -137,7 +137,7 @@ $tabs-toggle-link-active-color:             $base-bg !default;
         }
       }
       .tabs__list__item--active{
-        a {
+        a, a:hover {
           background-color: $tabs-toggle-link-active-background-color;
           border-color: $tabs-toggle-link-active-border-color;
           color: $tabs-toggle-link-active-color;
