@@ -27,16 +27,16 @@ $tabs-toggle-link-active-border-color:      $base-action-active-color !default;
 $tabs-toggle-link-active-color:             $base-bg !default;
 
 .tabs {
-
   align-items: stretch;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-  overflow-x: auto;
   white-space: nowrap;
   flex-direction: column;
 
   @include element(list){
+    overflow: hidden;
+    overflow-x: auto;
+
     align-items: center;
     border-bottom-color: $tabs-border-bottom-color;
     border-bottom-style: $tabs-border-bottom-style;
