@@ -27,44 +27,16 @@ $tabs-toggle-link-active-border-color:      $base-action-active-color !default;
 $tabs-toggle-link-active-color:             $base-bg !default;
 
 .tabs {
-  // @include block;
-  // @include overflow-touch;
-  // @include unselectable;
+
   align-items: stretch;
   display: flex;
-  //font-size: $size-normal;
   justify-content: space-between;
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
   flex-direction: column;
 
-  a {
-    align-items: center;
-    border-bottom-color: $tabs-border-bottom-color;
-    border-bottom-style: $tabs-border-bottom-style;
-    border-bottom-width: $tabs-border-bottom-width;
-    color: $tabs-link-color;
-    display: flex;
-    justify-content: center;
-    margin-bottom: -#{$tabs-border-bottom-width};
-    padding: $tabs-link-padding;
-    vertical-align: top;
-    &:hover {
-      border-bottom-color: $tabs-link-hover-border-bottom-color;
-      color: $tabs-link-hover-color;
-    }
-  }
-  li {
-    display: block;
-    &.active {
-      a {
-        border-bottom-color: $base-action-active-bg;
-        color: $base-action-active-bg;
-      }
-    }
-  }
-  ul {
+  @include element(list){
     align-items: center;
     border-bottom-color: $tabs-border-bottom-color;
     border-bottom-style: $tabs-border-bottom-style;
@@ -73,21 +45,37 @@ $tabs-toggle-link-active-color:             $base-bg !default;
     flex-grow: 1;
     flex-shrink: 0;
     justify-content: flex-start;
+    @include element(item){
+      display: block;
+      a {
+        align-items: center;
+        border-bottom-color: $tabs-border-bottom-color;
+        border-bottom-style: $tabs-border-bottom-style;
+        border-bottom-width: $tabs-border-bottom-width;
+        color: $tabs-link-color;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -#{$tabs-border-bottom-width};
+        padding: $tabs-link-padding;
+        vertical-align: top;
+        &:hover {
+          border-bottom-color: $tabs-link-hover-border-bottom-color;
+          color: $tabs-link-hover-color;
+        }
+      }
+      @include modifier(active){
+        a {
+          border-bottom-color: $base-action-active-bg;
+          color: $base-action-active-bg;
+        }
+      }
+    }
   }
 
-  .icon {
-    &:first-child {
-      margin-right: 0.5em;
-    }
-    &:last-child {
-      margin-left: 0.5em;
-    }
-  }
-
-  .tabs-content{
+  @include element(content){
     width: 100%;
     margin: 0;
-    .tab-panel{
+    @include element(item){
       display: none;
       @include modifier(active){
         display: block;
@@ -95,42 +83,21 @@ $tabs-toggle-link-active-color:             $base-bg !default;
     }
   }
 
-  // modifiers for alignments
-  @include modifier(centered){
-    ul {
-      flex: none;
-      justify-content: center;
-      padding-left: 0.75em;
-      padding-right: 0.75em;
-    }
-  }
-
-  @include modifier(left){
-    ul {
-      padding-right: 0.75em;
-    }
-  }
-
-  @include modifier(right){
-    ul {
-      justify-content: flex-end;
-      padding-left: 0.75em;
-    }
-  }
 
   // modifiers for style
   @include modifier(boxed){
-    a {
-      border: 1px solid transparent;
-      border-radius: $tabs-boxed-link-radius $tabs-boxed-link-radius 0 0;
-      &:hover {
-        background-color: $tabs-boxed-link-hover-background-color;
-        border-bottom-color: $tabs-boxed-link-hover-border-bottom-color;
-
+    .tabs__list{
+      .tabs__list__item{
+        a{
+          border: 1px solid transparent;
+          border-radius: $tabs-boxed-link-radius $tabs-boxed-link-radius 0 0;
+          &:hover {
+            background-color: $tabs-boxed-link-hover-background-color;
+            border-bottom-color: $tabs-boxed-link-hover-border-bottom-color;
+          }
+        }
       }
-    }
-    li {
-      &.active {
+      .tabs__list__item--active{
         a {
           background-color: $tabs-toggle-link-active-background-color;
           border-color: $tabs-boxed-link-active-border-color;
@@ -141,37 +108,35 @@ $tabs-toggle-link-active-color:             $base-bg !default;
     }
   }
 
-  @include modifier(fullwidth){
-    li {
-      flex-grow: 1;
-      flex-shrink: 0;
-    }
-  }
 
   @include modifier(bar){
-    a {
-      border-color: $tabs-toggle-link-border-color;
-      border-style: $tabs-toggle-link-border-style;
-      border-width: $tabs-toggle-link-border-width;
-      margin-bottom: 0;
-      position: relative;
-      &:hover {
-        background-color: $tabs-toggle-link-hover-background-color;
-        border-color: $tabs-toggle-link-hover-border-color;
-        z-index: 2;
+    .tabs__list{
+      border-bottom: none;
+      .tabs__list__item{
+        a {
+          border-color: $tabs-toggle-link-border-color;
+          border-style: $tabs-toggle-link-border-style;
+          border-width: $tabs-toggle-link-border-width;
+          margin-bottom: 0;
+          position: relative;
+          &:hover {
+            background-color: $tabs-toggle-link-hover-background-color;
+            border-color: $tabs-toggle-link-hover-border-color;
+            z-index: 2;
+          }
+        }
+
+        & + .tabs__list__item {
+          margin-left: -#{$tabs-toggle-link-border-width};
+        }
+        &:first-child a {
+          border-radius: $tabs-toggle-link-radius 0 0 $tabs-toggle-link-radius;
+        }
+        &:last-child a {
+          border-radius: 0 $tabs-toggle-link-radius $tabs-toggle-link-radius 0;
+        }
       }
-    }
-    li {
-      & + li {
-        margin-left: -#{$tabs-toggle-link-border-width};
-      }
-      &:first-child a {
-        border-radius: $tabs-toggle-link-radius 0 0 $tabs-toggle-link-radius;
-      }
-      &:last-child a {
-        border-radius: 0 $tabs-toggle-link-radius $tabs-toggle-link-radius 0;
-      }
-      &.active {
+      .tabs__list__item--active{
         a {
           background-color: $tabs-toggle-link-active-background-color;
           border-color: $tabs-toggle-link-active-border-color;
@@ -180,20 +145,50 @@ $tabs-toggle-link-active-color:             $base-bg !default;
         }
       }
     }
-    ul {
-      border-bottom: none;
+  }
+
+  // modifiers for alignments
+  @include modifier(fullwidth){
+    .tabs__list__item {
+      flex-grow: 1;
+      flex-shrink: 0;
     }
   }
 
-  @include modifier(small){
-    font-size: $small-font-size;
+  @include modifier(centered){
+    .tabs__list {
+      flex: none;
+      justify-content: center;
+      padding-left: 0.75em;
+      padding-right: 0.75em;
+    }
   }
 
-  @include modifier(medium){
-    font-size: $medium-font-size;
+  @include modifier(left){
+    .tabs__list {
+      padding-right: 0.75em;
+    }
   }
 
-  @include modifier(large){
-    font-size: $large-font-size;
+  @include modifier(right){
+    .tabs__list {
+      justify-content: flex-end;
+      padding-left: 0.75em;
+    }
+  }
+
+  // modifiers for dimensions
+  @include modifier(small){font-size: $small-font-size;}
+  @include modifier(medium){font-size: $medium-font-size;}
+  @include modifier(large){font-size: $large-font-size;}
+
+  // icon?
+  .icon {
+    &:first-child {
+      margin-right: 0.5em;
+    }
+    &:last-child {
+      margin-left: 0.5em;
+    }
   }
 }
