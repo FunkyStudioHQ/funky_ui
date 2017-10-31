@@ -11,7 +11,7 @@ $dropdown-item-hover-bg:  darken($grey, 20) !default;
 $dropdown-item-active-color:            darken($grey, 20) !default;
 $dropdown-item-active-bg: $base-link-color !default;
 
-$dropdown-divider-bg:     $buttons-hover-bg !default;
+$dropdown-divider-bg:     $button-hover-bg !default;
 
 .dropdown, .dropdown__submenu > .dropdown {
   display: inline-flex;

@@ -198,20 +198,20 @@ $lists-dt-font-weight:  600 !default;
 
 ### Buttons:
 ```scss
-$buttons-font-family:     $base-font-family !default;
-$buttons-font-size:       $base-font-size !default;
-$buttons-font-weight:     600 !default;
-$buttons-line-heigth:     1 !default;
-$buttons-cursor:          pointer !default;
-$buttons-border:          0 !default;
-$buttons-border-radius:   $base-border-radius !default;
-$buttons-text-transform:  none !default;
-$buttons-text-align:      center !default;
-$buttons-padding:         $small-spacing $base-spacing !default;
-$buttons-bg:              $base-action-color !default;
-$buttons-hover-bg:        shade($buttons-bg, 20%) !default;
-$buttons-color:           contrast-switch($buttons-bg) !default;
-$buttons-hover-color:     $buttons-color !default;
+$button-font-family:     $base-font-family !default;
+$button-font-size:       $base-font-size !default;
+$button-font-weight:     600 !default;
+$button-line-heigth:     1 !default;
+$button-cursor:          pointer !default;
+$button-border:          0 !default;
+$button-border-radius:   $base-border-radius !default;
+$button-text-transform:  none !default;
+$button-text-align:      center !default;
+$button-padding:         $small-spacing $base-spacing !default;
+$button-bg:              $base-action-color !default;
+$button-hover-bg:        shade($button-bg, 20%) !default;
+$button-color:           contrast-switch($button-bg) !default;
+$button-hover-color:     $button-color !default;
 ```
 
 ### Forms:
@@ -300,7 +300,7 @@ $dropdown-item-hover-color:         $black !default;
 $dropdown-item-hover-bg:            darken($grey, 20) !default;
 $dropdown-item-active-color:        darken($grey, 20) !default;
 $dropdown-item-active-bg:           $base-link-color !default;
-$dropdown-divider-bg:               $buttons-hover-bg !default;
+$dropdown-divider-bg:               $button-hover-bg !default;
 ```
 
 ### Footer:

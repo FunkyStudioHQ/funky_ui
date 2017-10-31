@@ -1,43 +1,48 @@
-$buttons-font-family:     $base-font-family !default;
-$buttons-font-size:       $base-font-size !default;
-$buttons-font-weight:     600 !default;
-$buttons-line-heigth:     1 !default;
-$buttons-cursor:          pointer !default;
-$buttons-border:          0 !default;
-$buttons-border-radius:   $base-border-radius !default;
-$buttons-text-transform:  none !default;
-$buttons-text-align:      center !default;
-$buttons-padding:         $small-spacing $base-spacing !default;
-$buttons-bg:              $base-action-color !default;
-$buttons-hover-bg:        shade($buttons-bg, 20%) !default;
-$buttons-color:           contrast-switch($buttons-bg) !default;
-$buttons-hover-color:     $buttons-color !default;
+$button-font-family:     $base-font-family !default;
+$button-font-size:       $base-font-size !default;
+$button-font-weight:     600 !default;
+$button-line-heigth:     1 !default;
+$button-cursor:          pointer !default;
+$button-border:          0 !default;
+$button-border-radius:   $base-border-radius !default;
+$button-text-transform:  none !default;
+$button-text-align:      center !default;
+$button-padding:         $small-spacing $base-spacing !default;
 
+$button-color:           $base-action-color !default;
+$button-bg:              $base-action-bg !default;
+
+$button-hover-color:     $base-action-hover-color !default;
+$button-hover-bg:        $base-action-hover-bg !default;
+
+$button-active-color:     $base-action-active-color !default;
+$button-active-bg:        $base-action-active-bg !default;
 
 // Block
 .button {
   appearance: none;
-  background-color: $buttons-bg;
-  border: $buttons-border;
-  border-radius: $buttons-border-radius;
-  color: $buttons-color;
-  cursor: $buttons-cursor;
+  background-color: $button-bg;
+  border: $button-border;
+  border-radius: $button-border-radius;
+  color: $button-color;
+  cursor: $button-cursor;
   display: inline-block;
-  font-family: $buttons-font-family;
+  font-family: $button-font-family;
   -webkit-font-smoothing: antialiased;
-  font-weight: $buttons-font-weight;
-  line-height: $buttons-line-heigth;
-  padding: $buttons-padding;
-  text-align: $buttons-text-align;
+  font-weight: $button-font-weight;
+  line-height: $button-line-heigth;
+  padding: $button-padding;
+  text-align: $button-text-align;
   text-decoration: none;
   transition: background-color $base-duration $base-timing;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  font-size: $buttons-font-size;
+  font-size: $button-font-size;
 
   &:hover{
-    color: $buttons-hover-color;
+    color: $button-hover-color;
+    background-color: $button-hover-bg;
   }
 
   // Dimesions modifiers
@@ -47,6 +52,11 @@ $buttons-hover-color:     $buttons-color !default;
     }
   }
 
+  @include modifier(active){
+    color: $button-active-color;
+    background-color: $button-active-bg;
+  }
+
   // Color modifiers
   @each $name, $value in $palette{
     @include modifier($name){
@@ -54,6 +64,7 @@ $buttons-hover-color:     $buttons-color !default;
       color: nth($value, 2);
       &:hover{
         color: nth($value, 2);
+        background-color: contrast-switch(nth($value, 1));
       }
     }
   }

@@ -13,7 +13,7 @@ $dropdown-item-hover-color:             $base-link-hover-color !default;
 $dropdown-item-hover-bg:                darken($base-link-hover-bg, 20) !default;
 $dropdown-item-active-color:            $base-link-active-color !default;
 $dropdown-item-active-bg:               $base-link-active-bg !default;
-$dropdown-divider-bg:                   $buttons-hover-bg !default;
+$dropdown-divider-bg:                   $button-hover-bg !default;
 
 $dropdown-item-button-color:            $white !default;
 $dropdown-item-button-bg:               $dark !default;
@@ -37,9 +37,9 @@ $dropdown-item-button-active-color:     $white !default;
     }
 
     &.button{
-      color: $buttons-color;
+      color: $button-color;
       &:hover{
-        color: $buttons-hover-color;
+        color: $button-hover-color;
       }
     }
 
@@ -49,9 +49,9 @@ $dropdown-item-button-active-color:     $white !default;
         color: $dropdown-item-active-color;
       }
       &.button{
-        color: $buttons-color;
+        color: $button-color;
         &:hover{
-          color: $buttons-hover-color;
+          color: $button-hover-color;
         }
       }
     }
@@ -126,7 +126,7 @@ $dropdown-item-button-active-color:     $white !default;
         background: $dropdown-item-hover-color;
       }
       &.button{
-        color: $buttons-color;
+        color: $button-color;
         &:hover{
           background-color: $dropdown-item-hover-bg;
           color: $dropdown-item-hover-color;

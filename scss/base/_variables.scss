@@ -24,10 +24,15 @@ $base-line-height:  1.5;
 $base-bg:      $white !default;
 $secondary-bg: tint($white, 75%) !default;
 
-$base-action-color:        $darken-grey !default;
+$base-action-color:        $grey-inverse !default;
 $base-action-bg:           $grey !default;
-$base-action-active-color: $white !default;
+
+$base-action-hover-bg:     $light-grey !default;
+$base-action-hover-color:  $light-grey-inverse !default;
+
+$base-action-active-color: $blue-inverse !default;
 $base-action-active-bg:    $blue !default;
+
 
 // Links
 $base-link-color:          $base-color !default;
