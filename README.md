@@ -13,11 +13,12 @@ Put into css:
 
 Put into js:
 ```js
-import { CloseNotification, InputUpload } from 'funky_ui'
+import { CloseNotification, InputUpload, Tabs } from 'funky_ui'
 
 window.onload = function() {
   CloseNotification()
   InputUpload()
+  Tabs()
 }
 ```
 
