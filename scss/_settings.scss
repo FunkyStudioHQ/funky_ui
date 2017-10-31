@@ -1,7 +1,8 @@
 $output-bourbon-deprecation-warnings: false;
 
 // Font Face
-$sans-serif: "Fira Sans";
+$sans-serif: Sans-Serif;
+
 @font-face {
   font-family: $sans-serif;
   src: url('/fonts/FiraSans-Regular.woff2') format('woff2'), url('/fonts/FiraSans-Regular.woff') format('woff'), url('/fonts/FiraSans-Regular.ttf') format('truetype');
