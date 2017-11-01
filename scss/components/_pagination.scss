@@ -21,13 +21,10 @@ $pagination-links-active-color:   $base-action-active-color !default;
     }
   }
 
-  .pagination__ellipsis,
-  .pagination__link,
-  .pagination__next,
-  .pagination__previous {
+  @include element(link){
     -moz-appearance: none;
     -webkit-appearance: none;
-    border: 1px solid transparent;
+    border: 1px solid $pagination-border-color;
     border-radius: $pagination-border-radius;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -40,39 +37,25 @@ $pagination-links-active-color:   $base-action-active-color !default;
     @include no-select;
     @include flex-alignment(center);
 
-    &.is-active,
-    &.is-focused,
-    &:active,
-    &:focus {
-      outline: none;
-    }
-
-    &[disabled] {
-      cursor: not-allowed;
-    }
-  }
-
-  .pagination__link,
-  .pagination__next,
-  .pagination__previous {
-    border-color: $pagination-border-color;
-    min-width: 2.25em;
-    color: $pagination-links-color;
     &:hover {
       border-color: $pagination-border-color;
       color: $pagination-links-hover-color;
+      outline: none;
     }
 
     &:focus {
       border-color: $pagination-border-color;
+      outline: none;
     }
 
     &:active {
       -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
       box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
+      outline: none;
     }
 
     &[disabled] {
+      cursor: not-allowed;
       background-color: $pagination-border-color;
       border-color: $pagination-border-color;
       -webkit-box-shadow: none;
@@ -80,27 +63,29 @@ $pagination-links-active-color:   $base-action-active-color !default;
       color: #7a7a7a;
       opacity: 0.5;
     }
+
+    @include modifier(next){
+      padding-left: 0.75em;
+      padding-right: 0.75em;
+      white-space: nowrap;
+    }
+    @include modifier(previous){
+      padding-left: 0.75em;
+      padding-right: 0.75em;
+      white-space: nowrap;
+    }
+    @include modifier(active){
+      background-color: $pagination-links-active-bg;
+      border-color: $pagination-links-active-bg;
+      color: $pagination-links-active-color;
+      outline: none;
+      &:hover{
+        color: $pagination-links-active-color;
+      }
+    }
+
   }
 
-  .pagination__next,
-  .pagination__previous {
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    white-space: nowrap;
-  }
-
-  .pagination__ellipsis {
-    color: #b5b5b5;
-    pointer-events: none;
-  }
-}
-// Active page
-.pagination__link {
-  @include modifier(active) {
-    background-color: $pagination-links-active-bg;
-    border-color: $pagination-links-active-bg;
-    color: $pagination-links-active-color;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -109,8 +94,8 @@ $pagination-links-active-color:   $base-action-active-color !default;
   }
 
   .pagination__list li,
-  .pagination__next,
-  .pagination__previous {
+  .pagination__link--next,
+  .pagination__link--previous {
     @include flex-grow(1);
     flex-shrink: 1;
   }
@@ -124,11 +109,11 @@ $pagination-links-active-color:   $base-action-active-color !default;
     @include flex-order(1);
   }
 
-  .pagination__previous {
+  .pagination__link--previous {
     @include flex-order(2);
   }
 
-  .pagination__next {
+  .pagination__link--next {
     @include flex-order(3);
   }
 
