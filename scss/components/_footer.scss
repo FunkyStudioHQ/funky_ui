@@ -16,6 +16,7 @@ $footer-mobile-font-size: $small-font-size !default;
   text-align: $footer-text-align;
   border-top: $footer-border-top;
   color: $footer-color;
+  margin-top: 4rem;
   @include until($tablet){
     font-size: $footer-mobile-font-size;
   }

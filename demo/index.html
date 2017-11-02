@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <div id="main">
+  <section id="main">
     <header role="navbar" class="navbar">
       <div class="container">
         <div class="navbar__brand">
@@ -48,9 +48,9 @@
         </nav>
       </div>
     </header>
-
     <section>
       <main class="container content">
+
         <h1>Headings h1</h1>
         <h2>Headings h2</h2>
         <h3>Headings h3</h3>
@@ -585,14 +585,43 @@
         <p>&copy;2016-2017 / Powered by Hands</a></p>
       </footer>
     </section>
-  </div>
+  </section>
 
 
   <nav id="slidemenu" class="slide__menu">
     <section>
-      <aside class="menu">
+      <aside class="menu--small">
+        <p class="menu__label">
+          General
+        </p>
         <ul class="menu__list">
-          <li><a class="active" href="/">Home</a></li>
+          <li><a>Dashboard</a></li>
+          <li><a>Customers</a></li>
+        </ul>
+        <p class="menu__label">
+          Administration
+        </p>
+        <ul class="menu__list">
+          <li><a>Team Settings</a></li>
+          <li>
+            <a class="active">Manage Your Team</a>
+            <ul>
+              <li><a>Members</a></li>
+              <li><a>Plugins</a></li>
+              <li><a>Add a member</a></li>
+            </ul>
+          </li>
+          <li><a>Invitations</a></li>
+          <li><a>Cloud Storage Environment Settings</a></li>
+          <li><a>Authentication</a></li>
+        </ul>
+        <p class="menu__label">
+          Transactions
+        </p>
+        <ul class="menu__list">
+          <li><a>Payments</a></li>
+          <li><a>Transfers</a></li>
+          <li><a>Balance</a></li>
         </ul>
       </aside>
     </section>

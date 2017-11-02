@@ -40,7 +40,7 @@ $pagination-links-active-color:   $base-action-active-color !default;
     &:hover {
       border-color: $pagination-border-color;
       color: $pagination-links-hover-color;
-      outline: none;
+      
     }
 
     &:focus {

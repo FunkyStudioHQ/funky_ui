@@ -21,9 +21,11 @@ html {
   background: $typography-bg;
 }
 
-body{
+body, section, main, header, .container{
   color: $typography-color;
+  background-color: $base-bg;
 }
+
 
 // Headings
 @for $i from 1 through 6 {

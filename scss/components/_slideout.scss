@@ -1,10 +1,11 @@
 $slide-menu-width:    256px !default;
-$slide-menu-bg:       $base-bg !default;
+$slide-menu-bg:       $base-action-bg !default;
 
 .slide__menu{
   display: none;
   @include mobile{
     display: block;
+    margin-bottom: 3rem;
   }
 }
 
@@ -16,7 +17,10 @@ $slide-menu-bg:       $base-bg !default;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
-  background-color: $slide-menu-bg;
+  section, aside, .menu{
+    background-color: $base-action-bg;
+    padding-bottom: 3rem;
+  }
 }
 
 .slideout-menu-left{left: 0;}

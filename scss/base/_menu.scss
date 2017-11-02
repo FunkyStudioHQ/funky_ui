@@ -1,30 +1,32 @@
 $menu-item-color:                   $base-color !default;
 $menu-item-radius:                  $base-border-radius !default;
-$menu-item-hover-color:             $base-color !default;
-$menu-item-hover-background-color:  $base-bg !default;
-$menu-item-active-color:            $base-color !default;
-$menu-item-active-background-color: $base-color !default;
+$menu-item-hover-color:             $base-action-hover-color !default;
+$menu-item-hover-bg:                $base-action-hover-bg !default;
+$menu-item-active-color:            $base-action-active-color !default;
+$menu-item-active-bg:               $base-action-active-bg !default;
 $menu-list-border-left:             1px solid $base-border-color !default;
-$menu-label-color:                  $base-color !default;
+$menu-label-color:                  $base-color !default
+$menu-font-size:                    $base-font-size !default;
 
 .menu{
-  font-size: $base-font-size;
-  background: $black;
+  font-size: $menu-font-size;
+  padding: 0.5rem;
   @include element(list){
-    line-height: 1.25;
     a{
       border-radius: $menu-item-radius;
       color: $menu-item-color;
       display: block;
-      padding: 0.5em 0.75em;
+      padding: 0.5em;
+      background-color: transparent;
+      margin-bottom: 0.5rem;
       &:hover{
-        background-color: $menu-item-hover-background-color;
         color: $menu-item-hover-color;
+        background-color: $menu-item-hover-bg;
       }
 
       // Modifiers
-      @include modifier(active){
-        background-color: $menu-item-active-background-color;
+      &.active{
+        background-color: $menu-item-active-bg;
         color: $menu-item-active-color;
       }
     }

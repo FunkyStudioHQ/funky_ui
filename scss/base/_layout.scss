@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto;  
   @include from($desktop) {
     width: $layout-conatainer-width;
   }
