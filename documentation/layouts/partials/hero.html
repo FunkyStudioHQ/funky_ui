@@ -8,10 +8,11 @@
     <div class="container">
       <div class="tabs tabs--boxed">
         <ul class="tabs__list">
-          <li class="tabs__list__item tabs__list__item--active"><a>Pictures</a></li>
-          <li class="tabs__list__item"><a>Music</a></li>
-          <li class="tabs__list__item"><a>Videos</a></li>
-          <li class="tabs__list__item"><a>Documents</a></li>
+          {{ $currentPage := . }}
+
+          {{ range .Site.Menus.main }}
+            <li class="tabs__list__item {{if $currentPage.IsMenuCurrent "main" . }}tabs__list__item--active{{end}}"><a href="{{.URL}}">{{ .Name }}</a></li>
+          {{end}}
         </ul>
       </div>
     </div>

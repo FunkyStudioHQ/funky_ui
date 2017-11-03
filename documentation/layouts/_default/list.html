@@ -1,28 +1,21 @@
 {{ define "title" }}
-  {{ .Site.Title }} {{ .Params.Title }}
+  {{ .Title }} &raquo; {{ .Site.Title }}
 {{ end }}
 
+{{ define "submenu" }}
+<header role="navbar" class="navbar">
+  <div class="container">
+    <nav class="navbar__menu">
+      <div class="navbar__menu--left">
+        {{ range .Data.Pages }}
+        <a class="navbar__item" href="{{.URL}}">{{ .Title }}</a>
+        {{end}}
+      </div>
+    </nav>
+  </div>
+</header>
+{{ end }}
 
 {{ define "main" }}
-<div class="columns">
-  <div class="column">
-    <section class="section">
-      <h1 class="title is-size-2 is-down-bordered">{{ .Params.Title }}</h1>
-
-      {{ $paginator := .Paginate (where .Data.Pages "Type" "blog") }}
-      {{ range $paginator.Pages }}
-      <article class="article">
-
-        <h3 class="title is-size-3"><a href="{{ .URL }}">{{ .Title }}</a></h3>
-        <p class="subtitle is-4"><small>{{ dateFormat "Jan 2, 2006" .Params.date }}</small></p>
-        <p class="author"><img width=64 height=64 src="/images/team/lorenzo.png" class="avatar">{{ .Params.author }}</p>
-        <p>{{ .Summary }}</p>
-      </article>
-      {{ end }}
-    </section>
-  </div>
-</div>
-
-{{ partial "pagination.html" . }}
-
+{{ .Content }}
 {{ end }}

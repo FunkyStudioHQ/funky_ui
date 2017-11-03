@@ -3,7 +3,7 @@ title: Tabs
 slug: "tabs"
 ---
 
-<div class="tabs">
+<div class="tabs" role="tabs">
   <ul class="tabs__list">
     <li class="tabs__list__item tabs__list__item--active"><a>Pictures</a></li>
     <li class="tabs__list__item"><a>Music</a></li>
@@ -19,7 +19,7 @@ slug: "tabs"
   </div>
 </div>
 <br />
-<div class="tabs tabs--boxed">
+<div class="tabs tabs--boxed" role="tabs">
   <ul class="tabs__list">
     <li class="tabs__list__item tabs__list__item--active"><a>Pictures</a></li>
     <li class="tabs__list__item"><a>Music</a></li>
@@ -35,7 +35,7 @@ slug: "tabs"
   </div>
 </div>
 <br />
-<div class="tabs tabs--bar">
+<div class="tabs tabs--bar" role="tabs">
   <ul class="tabs__list">
     <li class="tabs__list__item tabs__list__item--active"><a>Pictures</a></li>
     <li class="tabs__list__item"><a>Music</a></li>

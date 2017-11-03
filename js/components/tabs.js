@@ -1,4 +1,4 @@
-let tabs = document.querySelectorAll(".tabs")
+let tabs = document.querySelectorAll('.tabs[role="tabs"]')
 
 tabs.forEach = (tab) => {
   [].forEach.call(tabs, tab);

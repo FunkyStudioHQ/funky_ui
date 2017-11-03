@@ -1,6 +1,7 @@
 ---
 title: Tables
 slug: "tables"
+weight: 3
 ---
 
 <h3>Normal</h3>

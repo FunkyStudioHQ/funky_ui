@@ -11,6 +11,7 @@
   <section id="main">
     {{ partial "navbar.html" . }}
     {{ partial "hero.html" . }}
+    {{ block "submenu" . }}{{ end }}
     <section>
       <main class="container content">
       {{ block "main" . }}{{ end }}

@@ -21,6 +21,9 @@ $navbar-items-padding:               1rem !default;
   @include element(brand) {
     -webkit-box-align: stretch;
     align-items: stretch;
+    .navbar__item{
+      display: flex;
+    }
     @include display-flex;
     flex-shrink: 0;
     .navbar__item {

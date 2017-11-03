@@ -2,6 +2,21 @@
   {{ .Title }} &raquo; {{ .Site.Title }} Blog
 {{ end }}
 
+{{ define "submenu" }}
+<header role="navbar" class="navbar">
+  <div class="container">
+    <nav class="navbar__menu">
+      <div class="navbar__menu--left">
+        {{ range .Site.Pages }}
+        <a class="navbar__item" href="{{.URL}}">{{ .Title }}</a>
+        {{end}}
+      </div>
+    </nav>
+  </div>
+</header>
+{{ end }}
+
+
 {{ define "main" }}
 {{ .Content }}
 {{ end }}

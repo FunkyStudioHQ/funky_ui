@@ -1,6 +1,7 @@
 ---
 title: Typography
 slug: "typography"
+weight: 1
 ---
 
 <h1>Headings h1</h1>
