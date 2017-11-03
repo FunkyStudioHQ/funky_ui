@@ -7,3 +7,26 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+.icon {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  @include modifier(small){
+    font-size: $small-font-size;
+  }
+  @include modifier(medium){
+    font-size: $medium-font-size;
+  }
+  @include modifier(large){
+    font-size: $large-font-size;
+  }
+}

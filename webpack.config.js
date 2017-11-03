@@ -82,7 +82,8 @@ module.exports = {
   },
   plugins: [
     new CopyWebpack([
-      { from: path.resolve(__dirname, './node_modules/font-awesome/fonts'), to: 'fonts/font-awesome' }
+      { from: path.resolve(__dirname, './node_modules/font-awesome/fonts'), to: 'fonts/font-awesome' },
+      { from: "./documentation/assets/images", to: "images" }
     ]),
     new ExtractText({filename: 'stylesheets/[name].css'}),
     Autoprefixer

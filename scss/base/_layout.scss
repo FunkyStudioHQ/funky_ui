@@ -23,12 +23,15 @@ body {
 }
 
 .container {
-  margin: 0 auto;  
+  margin: 0 auto;
   @include from($desktop) {
     width: $layout-conatainer-width;
   }
   @include until($desktop) {
     width: $layout-mobile-conatainer-width;
     padding: $layout-mobile-conatainer-padding;
+  }
+  &.content{
+    padding: 1.5rem 0 0;
   }
 }
