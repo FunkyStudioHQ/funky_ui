@@ -1,0 +1,12 @@
+baseURL = "http://ui.funky.studio/"
+languageCode = "en-us"
+title = "Funky UI SCSS-JS Library"
+
+
+
+
+SectionPagesMenu = "main"
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1

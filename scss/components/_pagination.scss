@@ -13,7 +13,7 @@ $pagination-links-active-color:   $base-action-active-color !default;
   @include display-flex;
   @include flex-alignment(center);
   @include element(list) {
-     @include display-flex;
+    @include display-flex;
     @include flex-alignment(center);
     @include flex-wrap(wrap);
     @include until($pagination-hide-until) {
@@ -40,7 +40,7 @@ $pagination-links-active-color:   $base-action-active-color !default;
     &:hover {
       border-color: $pagination-border-color;
       color: $pagination-links-hover-color;
-      
+
     }
 
     &:focus {
@@ -84,6 +84,22 @@ $pagination-links-active-color:   $base-action-active-color !default;
       }
     }
 
+  }
+
+  @include modifier(small){
+    .pagination__link{
+      font-size: $small-font-size;
+    }
+  }
+  @include modifier(medium){
+    .pagination__link{
+      font-size: $medium-font-size;
+    }
+  }
+  @include modifier(large){
+    .pagination__link{
+      font-size: $large-font-size;
+    }
   }
 
 }

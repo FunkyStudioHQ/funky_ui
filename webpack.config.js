@@ -14,10 +14,10 @@ const isProduction = process.env.NODE_ENV === 'production';
 module.exports = {
   devtool: false, //(!isProduction && 'source-map'),
   entry: {
-    app:   [
-      path.resolve(__dirname, './demo/app.scss'),
-      path.resolve(__dirname, './demo/app.js'),
-    ]
+    main: [
+      "./documentation/assets/stylesheets/main.scss",
+      "./documentation/assets/javascript/main.js"
+    ],
   },
   stats: {
     assets: true,
@@ -30,14 +30,15 @@ module.exports = {
     timings: false
   },
   output: {
-    path: path.resolve(__dirname, "./demo/assets/"),
-    filename: "js/[name].js"
+    path: __dirname + '/documentation/static',
+    filename: "javascript/[name].js"
   },
   resolve: {
     extensions: ['.js'],
     modules: [
-      path.resolve(__dirname, './node_modules')
-    ]
+      path.resolve(__dirname, './documentation/assets/javascript'),
+      './node_modules'
+    ],
   },
   module: {
     rules: [
@@ -48,7 +49,7 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        include: [path.resolve(__dirname, './scss'), path.resolve(__dirname, './demo')],
+        include: [path.resolve(__dirname, './scss'), path.resolve(__dirname, './documentation')],
         loader: ExtractText.extract({
           fallback: 'style-loader',
           use: [
@@ -68,7 +69,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|gif|png|eot|svg|woff|woff2|ttf)$/,
-        loader: 'file-loader?name=[path][name].[ext]&context=./'
+        loader: 'file-loader?name=[path][name].[ext]&context=./documentation/assets/images'
       },
       {
         test: /\.styl$/,
@@ -83,7 +84,7 @@ module.exports = {
     new CopyWebpack([
       { from: path.resolve(__dirname, './node_modules/font-awesome/fonts'), to: 'fonts/font-awesome' }
     ]),
-    new ExtractText({filename: 'css/[name].css'}),
+    new ExtractText({filename: 'stylesheets/[name].css'}),
     Autoprefixer
   ]
 };
