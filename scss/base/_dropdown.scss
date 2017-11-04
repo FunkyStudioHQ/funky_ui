@@ -64,15 +64,14 @@ $dropdown-item-button-active-color:     $white !default;
       color: $dropdown-item-color;
       padding: $dropdown-item-padding;
       &:hover {
-        background-color: $dropdown-item-hover-bg;
+        opacity: 0.8;
       }
 
       @include modifier(active){
         background-color: $dropdown-item-active-bg;
         color: $dropdown-item-active-color;
         &:hover {
-          background-color: darken($dropdown-item-hover-bg, 20);
-          color: $dropdown-item-hover-color;
+          opacity: 0.8;
         }
       }
     }
@@ -106,13 +105,7 @@ $dropdown-item-button-active-color:     $white !default;
         background-color: $dropdown-item-hover-bg;
         background: $dropdown-item-hover-color;
       }
-      &.button{
-        color: $button-color;
-        &:hover{
-          background-color: $dropdown-item-hover-bg;
-          color: $dropdown-item-hover-color;
-        }
-      }
+    
     }
     .dropdown__menu{
       @include position(absolute, 0 null null 100%);
