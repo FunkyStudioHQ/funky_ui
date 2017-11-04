@@ -7,9 +7,10 @@
   <div class="container">
     <nav class="navbar__menu">
       <div class="navbar__menu--left">
-        {{ range .Site.Pages }}
-        <a class="navbar__item" href="{{.URL}}">{{ .Title }}</a>
-        {{end}}
+      {{ $currentPage := . }}
+      {{ range where .Site.Pages "Section" .Section }}
+        <a class="navbar__item{{if eq $currentPage . }}--active{{end}}" href="{{.URL}}">{{ .Title }}</a>
+      {{end}}
       </div>
     </nav>
   </div>

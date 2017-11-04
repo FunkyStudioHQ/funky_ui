@@ -1,6 +1,8 @@
 ---
 title: Rows
 slug: "rows"
+draft: false
+weight: 4
 ---
 
 <nav class="row--mobile">

@@ -1,6 +1,8 @@
 ---
 title: Pagination
 slug: "pagination"
+draft: false
+weight: 3
 ---
 
 <nav class="pagination pagination--small" role="navigation" aria-label="pagination">

@@ -65,6 +65,7 @@ $navbar-items-padding:               1rem !default;
     display: block;
     padding: $navbar-items-padding;
     cursor: pointer;
+    font-weight: normal;
     @include position(relative, null null null null);
     @include modifier(active){
       font-weight: $navbar-items-active-font-weight;

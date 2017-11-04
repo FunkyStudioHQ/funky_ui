@@ -1,6 +1,7 @@
 ---
 title: Typography
 slug: "typography"
+draft: false
 weight: 1
 ---
 

@@ -1,6 +1,8 @@
 ---
 title: Notifications
 slug: "notifications"
+draft: false
+weight: 2
 ---
 
 <div class="notification">

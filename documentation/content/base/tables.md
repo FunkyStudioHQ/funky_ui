@@ -1,6 +1,7 @@
 ---
 title: Tables
 slug: "tables"
+draft: false
 weight: 3
 ---
 

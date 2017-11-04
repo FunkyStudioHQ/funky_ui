@@ -1,6 +1,8 @@
 ---
 title: Tabs
 slug: "tabs"
+draft: false
+weight: 5
 ---
 
 <div class="tabs" role="tabs">

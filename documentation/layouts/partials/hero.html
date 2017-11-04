@@ -9,9 +9,8 @@
       <div class="tabs tabs--boxed">
         <ul class="tabs__list">
           {{ $currentPage := . }}
-
           {{ range .Site.Menus.main }}
-            <li class="tabs__list__item {{if $currentPage.IsMenuCurrent "main" . }}tabs__list__item--active{{end}}"><a href="{{.URL}}">{{ .Name }}</a></li>
+            <li class="tabs__list__item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}--active{{end}}"><a href="{{.URL}}">{{ .Name }}</a></li>
           {{end}}
         </ul>
       </div>

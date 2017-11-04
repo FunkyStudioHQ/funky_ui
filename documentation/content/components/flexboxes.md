@@ -1,6 +1,8 @@
 ---
 title: Flexboxes
 slug: "flexboxes"
+draft: false
+weight: 6
 ---
 
 <div class="flex-boxes">
