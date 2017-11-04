@@ -58,6 +58,11 @@ $navbar-items-padding:               1rem !default;
     flex-shrink: 0;
     @include mobile {
       display: none;
+      &.navbar__menu--mobile{
+        display: block;
+        overflow: hidden;
+        overflow-x: auto;
+      }
     }
     @include modifier(left) {
       @include display-flex;

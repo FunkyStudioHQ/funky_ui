@@ -2,6 +2,7 @@ baseURL = "http://ui.funky.studio/"
 languageCode = "en-us"
 title = "Funky UI SCSS-JS Library"
 pygmentsCodefences = true
+pygmentsUseClasses = true
 SectionPagesMenu = "main"
 [[menu.main]]
   name = "Home"

@@ -8,25 +8,64 @@ weight: 3
 
 <section>
   <h3>All Colors</h3>
-  <a class="button--black">Button</a>
-  <a class="button--dark">Button</a>
-  <a class="button--darken-grey">Button</a>
-  <a class="button--dark-grey">Button</a>
-  <a class="button--grey">Button</a>
-  <a class="button--light-grey">Button</a>
-  <a class="button--lighten-grey">Button</a>
-  <a class="button--white">Button</a>
-  <br />
-  <br />
-  <a class="button--red">Button</a>
-  <a class="button--orange">Button</a>
-  <a class="button--yellow">Button</a>
-  <a class="button--green">Button</a>
-  <a class="button--turquoise">Button</a>
-  <a class="button--blue">Button</a>
-  <a class="button--purple">Button</a>
-  <a class="button--brown">Button</a>
-</p>
+
+  <h5>Grey scale</h5>
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="t--small">black</th>
+        <th class="t--small">dark</th>
+        <th class="t--small">darken-grey</th>
+        <th class="t--small">dark-grey</th>
+        <th class="t--small">grey</th>
+        <th class="t--small">light-grey</th>
+        <th class="t--small">lighten-grey</th>
+        <th class="t--small">white</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-title="black"><a class="button--black">Button</a></td>
+        <td data-title="dark"><a class="button--dark">Button</a></td>
+        <td data-title="darken"><a class="button--darken-grey">Button</a></td>
+        <td data-title="dark"><a class="button--dark-grey">Button</a></td>
+        <td data-title="grey"><a class="button--grey">Button</a></td>
+        <td data-title="light"><a class="button--light-grey">Button</a></td>
+        <td data-title="lighten"><a class="button--lighten-grey">Button</a></td>
+        <td data-title="white"><a class="button--white">Button</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h5>Other colors</h5>
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="t--small">red</th>
+        <th class="t--small">orange</th>
+        <th class="t--small">yellow</th>
+        <th class="t--small">green</th>
+        <th class="t--small">turquoise</th>
+        <th class="t--small">blue</th>
+        <th class="t--small">purple</th>
+        <th class="t--small">brown</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-title="red"><a class="button--red">Button</a></td>
+        <td data-title="orange"><a class="button--orange">Button</a></td>
+        <td data-title="yellow"><a class="button--yellow">Button</a></td>
+        <td data-title="green"><a class="button--green">Button</a></td>
+        <td data-title="turquoise"><a class="button--turquoise">Button</a></td>
+        <td data-title="blue"><a class="button--blue">Button</a></td>
+        <td data-title="purple"><a class="button--purple">Button</a></td>
+        <td data-title="brown"><a class="button--brown">Button</a></td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
 <section>

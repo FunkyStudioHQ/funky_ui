@@ -5,7 +5,7 @@
 {{ define "submenu" }}
 <header role="navbar" class="navbar">
   <div class="container">
-    <nav class="navbar__menu">
+    <nav class="navbar__menu navbar__menu--mobile">
       <div class="navbar__menu--left">
         {{ range where .Site.Pages "Section" .Section }}
         <a class="navbar__item" href="{{.URL}}">{{ .Title }}</a>

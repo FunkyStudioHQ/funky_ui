@@ -28,6 +28,7 @@
   "dependencies": {
     "bourbon": "^5.0.0-beta.8",
     "bourbon-neat": "^2.1.0",
+    "clipboard": "^1.7.1",
     "font-awesome": "^4.7.0",
     "slideout": "^1.0.1"
   },

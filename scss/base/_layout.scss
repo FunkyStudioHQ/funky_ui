@@ -36,6 +36,10 @@ body {
     section:not(:first-child){
       margin-top: 1.5rem;
     }
+    @include mobile {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
   }
 }
 

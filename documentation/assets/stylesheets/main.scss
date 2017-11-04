@@ -10,9 +10,21 @@ $base-action-active-color: white;
 
 @import "../../../all";
 
+@import "syntax";
 .highlight{
+  position: relative;
   pre{
-    padding: 2rem;
+    padding: 2.5rem 0.5rem 0.5rem 0.5rem;
+    overflow: hidden;
+    overflow-x: auto;
     border-radius: $base-border-radius;
+  }
+  .copy{
+    // left: 0;
+    @extend .button--small;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-top: 10px;
   }
 }
