@@ -27,7 +27,7 @@ $navbar-items-padding:               1rem !default;
         background-color: nth($value, 1);
         color: nth($value, 2);
       }
-      a, .dropdown__item, &.dropdown:hover .dropdown__menu-item{
+      a, .dropdown__item, &:hover .dropdown__menu-item{
         color: nth($value, 2);
       }
     }

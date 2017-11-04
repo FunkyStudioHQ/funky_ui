@@ -40,10 +40,10 @@ $button-active-bg:        $base-action-active-bg !default;
   white-space: nowrap;
   font-size: $button-font-size;
 
-  &:hover{
-    color: $button-hover-color;
-    background-color: $button-hover-bg;
-  }
+  // &:hover{
+  //   color: $button-hover-color;
+  //   background-color: $button-hover-bg;
+  // }
 
   // Dimesions modifiers
   @each $name, $pair in $font-dimensions {
@@ -64,7 +64,7 @@ $button-active-bg:        $base-action-active-bg !default;
       color: nth($value, 2);
       &:hover{
         color: nth($value, 2);
-        background-color: contrast-switch(nth($value, 1));
+        opacity: 0.8;
       }
     }
   }

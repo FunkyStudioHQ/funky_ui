@@ -28,7 +28,6 @@ $dropdown-item-button-active-color:     $white !default;
   .dropdown__item {
     display: inline-block;
     cursor: pointer;
-    color: $dropdown-item-color;
     width: 100%;
     &:after {
       @include position(relative, null null null 0.5rem);
@@ -36,25 +35,7 @@ $dropdown-item-button-active-color:     $white !default;
       content: $fa-var-angle-down;
     }
 
-    &.button{
-      color: $button-color;
-      &:hover{
-        color: $button-hover-color;
-      }
-    }
-
-    @include modifier(active){
-      color: $dropdown-item-active-color;
-      &:hover {
-        color: $dropdown-item-active-color;
-      }
-      &.button{
-        color: $button-color;
-        &:hover{
-          color: $button-hover-color;
-        }
-      }
-    }
+    @include modifier(active){}
   }
 
   .dropdown__menu {

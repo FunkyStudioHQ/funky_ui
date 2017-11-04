@@ -9,7 +9,7 @@ weight: 1
   <header role="navbar" class="navbar--red">
     <div class="container">
       <div class="navbar__brand">
-        <a class="navbar__item">Your Logo</a>
+        <a class="navbar__item">[Your Logo]</a>
         <div class="navbar__burger">
           <span></span>
           <span></span>
@@ -34,7 +34,7 @@ weight: 1
   <header role="navbar" class="navbar--blue">
     <div class="container">
       <div class="navbar__brand">
-        <a class="navbar__item">Your Logo</a>
+        <a class="navbar__item">[Your Logo]</a>
         <div class="navbar__burger">
           <span></span>
           <span></span>
@@ -82,7 +82,7 @@ weight: 1
   <header role="navbar" class="navbar--purple">
     <div class="container">
       <div class="navbar__brand">
-        <a class="navbar__item">Your Logo</a>
+        <a class="navbar__item">[Your Logo]</a>
         <div class="navbar__burger">
           <span></span>
           <span></span>

@@ -9,3 +9,10 @@ $base-action-active-bg: purple;
 $base-action-active-color: white;
 
 @import "../../../all";
+
+.highlight{
+  pre{
+    padding: 2rem;
+    border-radius: $base-border-radius;
+  }
+}

@@ -12,7 +12,10 @@ $notifications-color:         black !default;
   @include position(relative, null null null null);
   background: $notifications-bg;
   color: $notifications-color;
-
+  a{
+    color: $notifications-color;
+    text-decoration: underline;
+  }
   // Elements
   @include element(close){
     @include fa-icon;
@@ -48,6 +51,10 @@ $notifications-color:         black !default;
     @include modifier($name){
       background-color: nth($color, 1);
       color: nth($color, 2);
+      a{
+        color: nth($color, 2);
+        text-decoration: underline;
+      }
     }
   }
 }
