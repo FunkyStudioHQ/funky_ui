@@ -33,6 +33,9 @@ body {
   }
   &.content{
     padding: 1.5rem 0 0;
+    section:not(:first-child){
+      margin-top: 1.5rem;
+    }
   }
 }
 

@@ -17,11 +17,29 @@ $navbar-items-padding:               1rem !default;
   height: $navbar-height;
   margin-bottom: $navbar-margin-bottom;
   border-bottom: $navbar-border-bottom;
+
+
+
+  // Color modifiers
+  @each $name, $value in $palette{
+    @include modifier($name){
+      *{
+        background-color: nth($value, 1);
+        color: nth($value, 2);
+      }
+      a, .dropdown__item, &.dropdown:hover .dropdown__menu-item{
+        color: nth($value, 2);
+      }
+    }
+  }
+
+
   // Element
   @include element(brand) {
     -webkit-box-align: stretch;
     align-items: stretch;
     .navbar__item{
+      margin-left: 1rem;
       display: flex;
     }
     @include display-flex;
