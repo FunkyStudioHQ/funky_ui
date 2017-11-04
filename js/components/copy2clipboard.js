@@ -1,24 +1,26 @@
 import Clipboard from 'clipboard'
 
-(function(document, Clipboard) {
+let codes = document.querySelectorAll('pre:not(.not-copy)')
+let addCopy = function(element) {
+  let copy = document.createElement("button")
+  copy.className = "copy button"
+  copy.textContent = "copy"
+  element.append(copy)
+}
 
-    var $codes = document.querySelectorAll('pre');
+codes.forEach = (code) => {
+  [].forEach.call(codes, code);
+}
 
-    function addCopy(element) {
-        var copy = document.createElement("button");
-        copy.className = "copy button";
-        copy.textContent = "copy";
-        element.append(copy);
+export default function() {
+  codes.forEach((code) => {
+    if (!!code) {
+      addCopy(code)
+      new Clipboard('.copy', {
+          target: function(trigger) {
+            return trigger.previousElementSibling
+          }
+      })
     }
-
-    for (var i = 0, len = $codes.length; i < len; i++) {
-        addCopy($codes[i]);
-    }
-
-
-    new Clipboard('.copy', {
-        target: function(trigger) {
-            return trigger.previousElementSibling;
-        }
-    });
-})(document, Clipboard);
+  })
+}
