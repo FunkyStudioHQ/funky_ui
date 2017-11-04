@@ -35,3 +35,7 @@ body {
     padding: 1.5rem 0 0;
   }
 }
+
+.inner{
+  min-height: calc(100vh - 100px);
+}
