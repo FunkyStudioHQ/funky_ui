@@ -7,7 +7,7 @@
   <div class="container">
     <nav class="navbar__menu navbar__menu--mobile">
       <div class="navbar__menu--left">
-        {{ range where .Site.Pages "Section" .Section }}
+        {{ range .Data.Pages }}
         <a class="navbar__item" href="{{.URL}}">{{ .Title }}</a>
         {{end}}
       </div>

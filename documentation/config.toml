@@ -5,6 +5,7 @@ title = "Funky UI SCSS-JS Library"
 pygmentsCodefences = true
 pygmentsUseClasses = true
 
+pluralizeListTitles = false
 SectionPagesMenu = "main"
 [[menu.main]]
   name = "Home"

@@ -8,7 +8,7 @@
     <nav class="navbar__menu navbar__menu--mobile" role="toolbar">
       <div class="navbar__menu--left">
       {{ $currentPage := . }}
-      {{ range where .Site.Pages "Section" .Section }}
+      {{ range where .Site.RegularPages "Section" .Section }}
         <a class="navbar__item{{if eq $currentPage . }}--active{{end}}" href="{{.URL}}">{{ .Title }}</a>
       {{end}}
       </div>
