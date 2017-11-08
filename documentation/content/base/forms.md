@@ -46,17 +46,6 @@ weight: 4
     <hr />
     <h4>Upload input</h4>
     <input type="file" name="file_upload" data-show="upload"/>
-    <!-- <div class="chained-fields">
-      <div>
-        <label class="button">
-          Sfoglia…
-          <input data-fieldrel="#rel_file_name" id="input_upload" name="x" style="display:none;" type="file">
-        </label>
-      </div>
-      <div>
-        <input id="rel_file_name" class="input" type="text" value="" placeholder="choose a file" disabled>
-      </div>
-    </div> -->
 
     <hr />
     <h4>Chained fields</h4>

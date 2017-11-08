@@ -23,33 +23,34 @@ fake_field.type = "text"
 fake_field.disabled = "disabled"
 fake_field.placeholder = "choose a file"
 
-
-label.append(field)
-inner.append(label)
-inner1.append(fake_field)
-outer_container.append(inner)
-outer_container.append(inner1)
-
 input_uploads.forEach = (input_upload) => {
   [].forEach.call(input_uploads, input_upload)
 }
 
 export default function() {
-  console.log(outer_container.outerHTML)
-  input_uploads.forEach((input) => {
+
+  input_uploads.forEach((input, indx) => {
     if (!!input) {
 
-      // if(input.outerHTML) {
-      //     input.outerHTML = outer_container
-      // }
-      // else {
-          let inputParent = input.parentNode
-          inputParent.replaceChild(outer_container,input)
-      // }
-      // input.addEventListener('change', (e) => {
+      let input_id = `input-upload_${indx}`
+      let input_name = input.getAttribute("name")
+
+      label.setAttribute("for", input_id)
+      field.setAttribute("name", input_name)
+      field.setAttribute("id", input_id)
+      label.append(field)
+      inner.append(label)
+      inner1.append(fake_field)
+      outer_container.append(inner)
+      outer_container.append(inner1)
+
+      let inputParent = input.parentNode
+      inputParent.replaceChild(outer_container,input)
+
+      // field.addEventListener('change', (e) => {
       //   let numFiles = input.files ? input.files.length : 1
-      //   let label = input.value.replace(/\\/g, '/').replace(/.*\//, '')
-      //   document.querySelector(input.dataset.fieldrel).value = label
+      //   let label = field.value.replace(/\\/g, '/').replace(/.*\//, '')
+      //   document.querySelector(field.dataset.fieldrel).value = label
       // }, true)
     }
   })
