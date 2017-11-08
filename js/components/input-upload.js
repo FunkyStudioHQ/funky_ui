@@ -8,24 +8,25 @@ let inner = document.createElement("div")
 let inner1 = document.createElement("div")
 
 let label = document.createElement("label")
+label.className = "button"
 label.innerText = "Carica"
 
 let field = document.createElement("input")
 field.className = "input"
 field.type = "file"
-field.placeholder = "choose a file"
+field.style = "display:none;"
 
 // fake field
 let fake_field = document.createElement("input")
 fake_field.className = "input"
 fake_field.type = "text"
-fake_field.disabled = "true"
+fake_field.disabled = "disabled"
 fake_field.placeholder = "choose a file"
 
 
-label.append(fake_field)
+label.append(field)
 inner.append(label)
-inner1.append(field)
+inner1.append(fake_field)
 outer_container.append(inner)
 outer_container.append(inner1)
 
@@ -34,19 +35,17 @@ input_uploads.forEach = (input_upload) => {
 }
 
 export default function() {
-  console.log(outer_container.innerHTML)
+  console.log(outer_container.outerHTML)
   input_uploads.forEach((input) => {
     if (!!input) {
 
-      if(input.outerHTML) {
-          input.outerHTML = outer_container
-      }
-      else {
-          let parent = input.parentNode
-          parent.replaceChild(outer_container,input)
-      }
-
-
+      // if(input.outerHTML) {
+      //     input.outerHTML = outer_container
+      // }
+      // else {
+          let inputParent = input.parentNode
+          inputParent.replaceChild(outer_container,input)
+      // }
       // input.addEventListener('change', (e) => {
       //   let numFiles = input.files ? input.files.length : 1
       //   let label = input.value.replace(/\\/g, '/').replace(/.*\//, '')
