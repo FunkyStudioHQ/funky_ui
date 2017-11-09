@@ -128,7 +128,7 @@ select {
       }
 
       [class^="button"] {
-        padding-bottom: 0.33em;
+        padding-bottom: 0.35em;
         border-radius: 0 $base-border-radius $base-border-radius 0;
       }
     }
@@ -151,6 +151,16 @@ select {
       }
     }
   }
+
+  @include modifier(upload){
+    div {
+      &:not(:last-child) {
+        [class^="button"] {
+          padding-bottom: 0.4em;
+        }
+      }
+    }
+  }
 }
 
 .grouped-fields {
@@ -170,13 +180,15 @@ select {
         margin-right: $small-spacing;
       }
     }
+    input.filename::disabled{
+      border-left: 0;
+    }
   }
 }
 
 .select {
   display: inline-block;
   position: relative;
-
   &::after {
     @include _directional-property(border, null, 0 0 null null);
     border-width: thin;

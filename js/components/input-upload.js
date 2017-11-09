@@ -2,14 +2,13 @@ let input_uploads = document.querySelectorAll('input[type="file"]')
 
 
 let outer_container = document.createElement("div")
-outer_container.className = "chained-fields"
+outer_container.className = "chained-fields--upload"
 
 let inner = document.createElement("div")
 let inner1 = document.createElement("div")
 
 let label = document.createElement("label")
 label.className = "button"
-label.innerText = "Carica"
 
 let field = document.createElement("input")
 field.className = "input"
@@ -18,7 +17,7 @@ field.style = "display:none;"
 
 // fake field
 let fake_field = document.createElement("input")
-fake_field.className = "input"
+fake_field.className = "input filename"
 fake_field.type = "text"
 fake_field.disabled = "disabled"
 fake_field.placeholder = "choose a file"
@@ -34,7 +33,7 @@ export default function() {
 
       let input_id = `input-upload_${indx}`
       let input_name = input.getAttribute("name")
-
+      label.innerText = input.dataset.label || "Browse..."
       label.setAttribute("for", input_id)
       field.setAttribute("name", input_name)
       field.setAttribute("id", input_id)

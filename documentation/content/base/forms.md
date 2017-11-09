@@ -54,7 +54,7 @@ weight: 4
         <input class="input" type="text" placeholder="Find a repository">
       </div>
       <div>
-        <a class="button--success">Search</a>
+        <a class="button">Search</a>
       </div>
     </div>
 
