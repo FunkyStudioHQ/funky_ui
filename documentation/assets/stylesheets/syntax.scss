@@ -57,3 +57,8 @@
 /* GenericInserted */ .chroma .gi { color: #a6e22e }
 /* GenericStrong */ .chroma .gs { font-weight: bold }
 /* GenericSubheading */ .chroma .gu { color: #75715e }
+
+/* SASS Variables */ .chroma{
+  .sfa0{ color: $red;}
+  .s7e2{ color: $red; }
+}
