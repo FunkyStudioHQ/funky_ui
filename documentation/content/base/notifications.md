@@ -2,7 +2,7 @@
 title: Notifications
 slug: "notifications"
 draft: false
-weight: 2
+weight: 3
 ---
 
 <div class="notification">

@@ -2,7 +2,7 @@
 title: Typography
 slug: "typography"
 draft: false
-weight: 1
+weight: 2
 ---
 <section>
   <h1>Headings h1</h1>

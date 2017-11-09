@@ -2,7 +2,7 @@
 title: Tables
 slug: "tables"
 draft: false
-weight: 3
+weight: 4
 ---
 
 <section>
