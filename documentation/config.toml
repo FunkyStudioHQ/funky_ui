@@ -7,7 +7,59 @@ pygmentsUseClasses = true
 
 pluralizeListTitles = false
 SectionPagesMenu = "main"
+
 [[menu.main]]
   name = "Home"
   url = "/"
   weight = 1
+
+
+[[params.colors]]
+  name = "black"
+  exadecimal = "#263238"
+[[params.colors]]
+  name = "dark"
+  exadecimal = "#2E3C43"
+[[params.colors]]
+  name = "darken-grey"
+  exadecimal = "#314549"
+[[params.colors]]
+  name = "dark-grey"
+  exadecimal = "#546E7A"
+[[params.colors]]
+  name = "grey"
+  exadecimal = "#CCCCCC"
+[[params.colors]]
+  name = "light-grey"
+  exadecimal = "#dee9ee"
+[[params.colors]]
+  name = "lighten-grey"
+  exadecimal = "#f4f8f9"
+[[params.colors]]
+  name = "white"
+  name_v
+  exadecimal = "#FFFFFF"
+[[params.colors]]
+  name = "red"
+  exadecimal = "#E74C3C"
+[[params.colors]]
+  name = "orange"
+  exadecimal = "#E67E22"
+[[params.colors]]
+  name = "yellow"
+  exadecimal = "#FFCB6B"
+[[params.colors]]
+  name = "green"
+  exadecimal = "#C3E88D"
+[[params.colors]]
+  name = "turquoise"
+  exadecimal = "#89DDFF"
+[[params.colors]]
+  name = "blue"
+  exadecimal = "#3498DB"
+[[params.colors]]
+  name = "purple"
+  exadecimal = "#9B59B6"
+[[params.colors]]
+  name = "brown"
+  exadecimal = "#be643c"

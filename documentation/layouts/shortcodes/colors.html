@@ -1,0 +1,18 @@
+{{ $class := .Get "class"}}
+<table class="table">
+<thead>
+  <tr>
+    <th>CLASS</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+  {{ range .Site.Params.colors }}
+  <tr>
+    {{ $color := . }}
+    <td>{{ $class }}--{{ $color.name }}</td>
+    <td class="bg--{{ $color.name }}"></td>
+  </tr>
+  {{ end }}
+</tbody>
+</table>

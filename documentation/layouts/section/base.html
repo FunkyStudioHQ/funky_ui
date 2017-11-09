@@ -1,0 +1,44 @@
+{{ define "title" }}
+  {{ .Title }} &raquo; {{ .Site.Title }}
+{{ end }}
+
+{{ define "submenu" }}
+<header role="navbar" class="navbar">
+  <div class="container">
+    <nav class="navbar__menu navbar__menu--mobile">
+      <div class="navbar__menu--left">
+        {{ range .Data.Pages }}
+        <a class="navbar__item" href="{{.URL}}">{{ .Title }}</a>
+        {{end}}
+      </div>
+    </nav>
+  </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<h2>Color Palette</h2>
+<table class="table">
+<thead>
+  <tr>
+    <th>NAME</th>
+    <th>COLOR</th>
+    <th>HEX</th>
+    <th>VAR</th>
+    <th>INVERSE VAR</th>
+  </tr>
+</thead>
+<tbody>
+{{ range .Site.Params.colors }}
+  {{ $color := . }}
+  <tr>
+    <td>{{ $color.name }}</td>
+    <td class="bg--{{ $color.name }}"></td>
+    <td>{{ $color.exadecimal }}</td>
+    <td>${{ $color.name }}</td>
+    <td>${{ $color.name }}-inverse</td>
+  </tr>
+{{ end }}
+</tbody>
+</table>
+{{ end }}

@@ -93,6 +93,10 @@ hr {
   .t--#{$name}{
     color: nth($color, 1);
   }
+  .bg--#{$name}{
+    color: nth($color, 2);
+    background: nth($color, 1);
+  }
 }
 
 .t--float-right{
