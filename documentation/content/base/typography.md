@@ -5,11 +5,71 @@ draft: false
 weight: 2
 ---
 <section>
-  <h1>Headings h1</h1>
-  <h2>Headings h2</h2>
-  <h3>Headings h3</h3>
-  <h4>Headings h4</h4>
-  <h5>Headings h5</h5>
+  <h4>Headings</h1>
+  <p>In funkyUI you don't need to add classes to your heading tag;<br />Just use normal tag!</p>
+  <section>
+    <nav class="row--mobile">
+      <div class="row__item">
+        <div class="t--center">
+          <h1>h1</h1>
+        </div>
+      </div>
+      <div class="row__item">
+        <div class="t--center">
+          <h2>h2</h2>
+        </div>
+      </div>
+      <div class="row__item">
+        <div class="t--center">
+            <h3>h3</h3>
+        </div>
+      </div>
+      <div class="row__item">
+        <div class="t--center">
+          <h4>h4</h4>
+        </div>
+      </div>
+      <div class="row__item">
+        <div class="t--center">
+          <h5>h5</h5>
+        </div>
+      </div>
+    </nav>
+
+    <p>You can also obtain the same result using typography classes for headings as follow:</p>
+    <nav class="row--mobile">
+      <div class="row__item">
+        <div class="t--center">
+          .h--1
+        </div>
+      </div>
+      <div class="row__item">
+        <div class="t--center">
+          .h--2
+        </div>
+      </div>
+      <div class="row__item">
+        <div class="t--center">
+            .h--3
+        </div>
+      </div>
+      <div class="row__item">
+        <div class="t--center">
+          .h--4
+        </div>
+      </div>
+      <div class="row__item">
+        <div class="t--center">
+          .h--5
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+
+
+
 </section>
 
 

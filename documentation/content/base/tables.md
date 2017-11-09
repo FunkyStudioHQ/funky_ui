@@ -6,7 +6,7 @@ weight: 4
 ---
 
 <section>
-  <h3>Normal</h3>
+  <h4>Normal</h4>
   <table class="table">
     <thead>
       <tr>
@@ -36,7 +36,7 @@ weight: 4
 </section>
 
 <section>
-  <h3>Striped</h3>
+  <h4>Striped</h4>
   <table class="table table--striped">
     <thead>
       <tr>
@@ -66,7 +66,7 @@ weight: 4
 </section>
 
 <section>
-  <h3>Bordered</h3>
+  <h4>Bordered</h4>
   <table class="table table--bordered">
     <thead>
       <tr>
@@ -96,7 +96,7 @@ weight: 4
 </section>
 
 <section>
-  <h3>Bordered + Striped</h3>
+  <h4>Bordered + Striped</h4>
   <table class="table table--bordered table--striped">
     <thead>
       <tr>
