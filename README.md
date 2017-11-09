@@ -170,9 +170,9 @@ $base-timing:   ease !default;
 ### Layout:
 ```scss
 $layout-body-margin:                0  !default;
-$layout-conatainer-width:           960px !default;
-$layout-mobile-conatainer-width:    100% !default;
-$layout-mobile-conatainer-padding:  0 20px !default;
+$layout-container-width:           960px !default;
+$layout-mobile-container-width:    100% !default;
+$layout-mobile-container-padding:  0 20px !default;
 ```
 
 ### Typography:
@@ -344,7 +344,7 @@ $tooltip-max-width:   24rem !default;
 ### Layouts
 ```scss
 $base-body-margin:                0  !default;
-$base-conatainer-width:           960px !default;
-$base-mobile-conatainer-width:    100% !default;
-$base-mobile-conatainer-padding:  0 20px !default;
+$base-container-width:           960px !default;
+$base-mobile-container-width:    100% !default;
+$base-mobile-container-padding:  0 20px !default;
 ```

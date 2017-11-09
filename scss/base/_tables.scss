@@ -17,7 +17,6 @@ $tables-th-text-transform:      uppercase !default;
 $tables-actions-text-align:     right !default;
 
 $tables-striped-bg:             $lighten-grey !default;
-$tables-striped-color:          $base-color !default;
 $tables-cells-border-width:     0 0 1px 0;
 
 
@@ -70,9 +69,6 @@ $tables-mobile-bottom-margin:   $small-spacing !default;
   @include modifier(striped) {
     tbody tr:nth-child(2n):not(.is-selected) {
       background-color: $tables-striped-bg;
-      th, td{
-        color: $tables-striped-color;
-      }
     }
   }
   // mobile style

@@ -1,7 +1,7 @@
 $layout-body-margin:                $base-body-margin !default;
-$layout-conatainer-width:           $base-conatainer-width !default;
-$layout-mobile-conatainer-width:    $base-mobile-conatainer-width !default;
-$layout-mobile-conatainer-padding:  $base-mobile-conatainer-padding !default;
+$layout-container-width:           $base-container-width !default;
+$layout-mobile-container-width:    $base-mobile-container-width !default;
+$layout-mobile-container-padding:  $base-mobile-container-padding !default;
 
 html {
   box-sizing: border-box;
@@ -25,11 +25,11 @@ body {
 .container {
   margin: 0 auto;
   @include from($desktop) {
-    width: $layout-conatainer-width;
+    width: $layout-container-width;
   }
   @include until($desktop) {
-    width: $layout-mobile-conatainer-width;
-    padding: $layout-mobile-conatainer-padding;
+    width: $layout-mobile-container-width;
+    padding: $layout-mobile-container-padding;
   }
   &.content{
     padding: 1.5rem 0 0;
