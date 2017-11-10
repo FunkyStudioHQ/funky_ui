@@ -6,7 +6,7 @@ weight: 1
 ---
 
 <section>
-  <header role="navbar" class="navbar--light-grey">
+  <header role="navbar" class="navbar navbar--unbordered navbar--light-grey">
     <div class="container">
       <div class="navbar__brand">
         <a class="navbar__item">[Your Logo]</a>

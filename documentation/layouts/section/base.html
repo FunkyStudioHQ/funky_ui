@@ -28,9 +28,8 @@ For example if You want to applicate a red color modifier to a button then have 
   <table class="table">
   <thead>
     <tr>
-      <th>NAME</th>
       <th>COLOR</th>
-      <th>HEX</th>
+      <th>NAME</th>
       <th>VAR</th>
       <th>INVERSE VAR</th>
     </tr>
@@ -39,9 +38,8 @@ For example if You want to applicate a red color modifier to a button then have 
   {{ range .Site.Params.colors }}
     {{ $color := . }}
     <tr>
+      <td class="bg--{{ $color.name }} t--center">{{ $color.exadecimal }}</td>
       <td>{{ $color.name }}</td>
-      <td class="bg--{{ $color.name }}"></td>
-      <td>{{ $color.exadecimal }}</td>
       <td>${{ $color.name }}</td>
       <td>${{ $color.name }}-inverse</td>
     </tr>
@@ -55,39 +53,34 @@ For example if You want to applicate a red color modifier to a button then have 
   <table class="table">
   <thead>
     <tr>
-      <th>NAME</th>
       <th>COLOR</th>
-      <th>HEX</th>
+      <th class="t--center">NAME</th>
       <th>VAR</th>
       <th>INVERSE VAR</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>success</td>
       <td class="bg--success"></td>
-      <td></td>
+      <td class="t--center">success</td>
       <td>$success</td>
       <td>$success-inverse</td>
     </tr>
     <tr>
-      <td>info</td>
       <td class="bg--info"></td>
-      <td></td>
+      <td class="t--center">info</td>
       <td>$info</td>
       <td>$info-inverse</td>
     </tr>
     <tr>
-      <td>warning</td>
       <td class="bg--warning"></td>
-      <td></td>
+      <td class="t--center">warning</td>
       <td>$warning</td>
       <td>$warning-inverse</td>
     </tr>
     <tr>
-      <td>danger</td>
       <td class="bg--danger"></td>
-      <td></td>
+      <td class="t--center">danger</td>
       <td>$danger</td>
       <td>$danger-inverse</td>
     </tr>

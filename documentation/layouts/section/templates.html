@@ -1,0 +1,15 @@
+{{ define "title" }}
+  {{ .Title }} &raquo; {{ .Site.Title }}
+{{ end }}
+
+
+{{ define "main" }}
+<div class="flex-boxes">
+  {{ range .Data.Pages }}
+  <div class="flex-box flex-box--big">
+    <h1 class="flex-title"><a class="navbar__item" href="{{.URL}}">{{ .Title }}</a></h1>
+  </div>
+  {{end}}
+
+</div>
+{{ end }}

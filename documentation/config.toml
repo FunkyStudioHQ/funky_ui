@@ -31,10 +31,10 @@ SectionPagesMenu = "main"
   exadecimal = "#CCCCCC"
 [[params.colors]]
   name = "light-grey"
-  exadecimal = "#dee9ee"
+  exadecimal = "#DEE9EE"
 [[params.colors]]
   name = "lighten-grey"
-  exadecimal = "#f4f8f9"
+  exadecimal = "#F4F8F9"
 [[params.colors]]
   name = "white"
   exadecimal = "#FFFFFF"
@@ -61,4 +61,4 @@ SectionPagesMenu = "main"
   exadecimal = "#9B59B6"
 [[params.colors]]
   name = "brown"
-  exadecimal = "#be643c"
+  exadecimal = "#BE643C"

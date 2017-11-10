@@ -40,82 +40,77 @@ weight: 2
     <nav class="row--mobile">
       <div class="row__item">
         <div class="t--center">
-          .h--1
+          h--1
         </div>
       </div>
       <div class="row__item">
         <div class="t--center">
-          .h--2
+          h--2
         </div>
       </div>
       <div class="row__item">
         <div class="t--center">
-            .h--3
+            h--3
         </div>
       </div>
       <div class="row__item">
         <div class="t--center">
-          .h--4
+          h--4
         </div>
       </div>
       <div class="row__item">
         <div class="t--center">
-          .h--5
+          h--5
         </div>
       </div>
     </nav>
   </section>
-
-
-
-
-
 </section>
 
+```html
+<h1>Lorem ipsum</h1>
+<h2>Lorem ipsum</h2>
+<h3>Lorem ipsum</h3>
+<h4>Lorem ipsum</h4>
+<h5>Lorem ipsum</h5>
+<!-- Is te same: -->
+<p class="h--1">Lorem ipsum</p>
+<p class="t--2">Lorem ipsum</p>
+<p class="t--3">Lorem ipsum</p>
+<p class="t--4">Lorem ipsum</p>
+<p class="t--5">Lorem ipsum</p>
+
+
+```
 
 <section>
-  <h1>Content Large</h1>
-  <div class="t--large">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-    <h2>Second level</h2>
-    <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-    <ul>
-      <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-      <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-      <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-      <li>Ut non enim metus.</li>
-    </ul>
-  </div>
-</section>
+  <h4 class="t--center">Dimension Modifiers</h4>
+  <nav class="row--mobile">
+    <div class="row__item">
+      <div class="t--center">
+        t--small
+      </div>
+    </div>
+    <div class="row__item">
+      <div class="t--center">
+          t--medium
+      </div>
+    </div>
+    <div class="row__item">
+      <div class="t--center">
+        t--large
+      </div>
+    </div>
+  </nav>
+  Small:
+  <p class="t--small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+  Medium:
+  <p class="t--medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+  Large:
+  <p class="t--large">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p></section>
 
-<section>
-  <h1>Content medium</h1>
-  <div class="t--medium">
-    <h1 class="t--success">Hello World</h1>
-    <p class="t--danger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-    <h2 class="t--info">Second level</h2>
-    <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-    <ul>
-      <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-      <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-      <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-      <li>Ut non enim metus.</li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h1>Content small</h1>
-  <div class="t--small">
-    <h1>Hello World</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
-    <h2>Second level</h2>
-    <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
-    <ul>
-      <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
-      <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
-      <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
-      <li>Ut non enim metus.</li>
-    </ul>
-  </div>
-</section>
+```html
+<p class="t--small">Lorem ipsum dolor sit amet</p>
+<p class="t--medium">Lorem ipsum dolor sit amet</p>
+<p class="t--large">Lorem ipsum dolor sit amet</p>
+```
