@@ -18,6 +18,9 @@ $navbar-items-padding:               1rem !default;
   margin-bottom: $navbar-margin-bottom;
   border-bottom: $navbar-border-bottom;
 
+  @include modifier(unbordered){
+    border-bottom: 0;
+  }
 
 
   // Color modifiers
