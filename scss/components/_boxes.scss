@@ -15,8 +15,6 @@ $boxes-box-top-colors:       $red, $turquoise, $purple, $yellow, $grey, $orange 
   clear: both;
   @include display-flex;
   @include flex-wrap(wrap);
-  justify-content: center;
-  text-align: center;
 
   .flex-box {
     align-self: stretch;
@@ -29,41 +27,22 @@ $boxes-box-top-colors:       $red, $turquoise, $purple, $yellow, $grey, $orange 
     padding: 2em 2em 3em;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
-    @for $i from 1 to 7 {
-      // assign colors from $boxes-box-top-colors list
-
-      &:nth-child(#{$i}) {
-        $color-from-list: nth($boxes-box-top-colors, $i);
-        border-top: 6px solid $color-from-list;
-
-        &:focus,
-        &:hover {
-          background-color: transparentize($color-from-list, 0.9);
-        }
-      }
-    }
-
-    img {
-      display: block;
-      height: 3em;
-      margin: 0 auto 1em;
-      opacity: 0.4;
-    }
 
     .flex-title {
-      color: $boxes-box-color;
       font-size: 1.2em;
       margin-bottom: 0.5em;
     }
 
-    p {
-      color: transparentize($boxes-box-color, 0.1);
-      line-height: 1.5em;
-      margin: auto;
+    // colors modifiers
+    @each $name, $color in $palette {
+      @include modifier($name){
+        background: nth($color, 1);
+        color: nth($color, 2);
+      }
     }
-  }
 
-  .flex-box-big {
-    flex: 1 1 40em;
+    @include modifier(big){
+      flex: 1 1 40em;
+    }
   }
 }
