@@ -15,8 +15,8 @@ module.exports = {
   devtool: false, //(!isProduction && 'source-map'),
   entry: {
     main: [
-      "./docs/assets/stylesheets/main.scss",
-      "./docs/assets/javascript/main.js"
+      "./documentation/assets/stylesheets/main.scss",
+      "./documentation/assets/javascript/main.js"
     ],
   },
   stats: {
@@ -30,13 +30,13 @@ module.exports = {
     timings: false
   },
   output: {
-    path: __dirname + '/docs/static',
+    path: __dirname + '/documentation/static',
     filename: "javascript/[name].js"
   },
   resolve: {
     extensions: ['.js'],
     modules: [
-      path.resolve(__dirname, './docs/assets/javascript'),
+      path.resolve(__dirname, './documentation/assets/javascript'),
       './node_modules'
     ],
   },
@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         test: /\.(sass|scss)$/,
-        include: [path.resolve(__dirname, './scss'), path.resolve(__dirname, './docs')],
+        include: [path.resolve(__dirname, './scss'), path.resolve(__dirname, './documentation')],
         loader: ExtractText.extract({
           fallback: 'style-loader',
           use: [
@@ -69,7 +69,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|gif|png|eot|svg|woff|woff2|ttf)$/,
-        loader: 'file-loader?name=[path][name].[ext]&context=./docs/assets/images'
+        loader: 'file-loader?name=[path][name].[ext]&context=./documentation/assets/images'
       },
       {
         test: /\.styl$/,
@@ -83,7 +83,7 @@ module.exports = {
   plugins: [
     new CopyWebpack([
       { from: path.resolve(__dirname, './node_modules/font-awesome/fonts'), to: 'fonts/font-awesome' },
-      { from: "./docs/assets/images", to: "images" }
+      { from: "./documentation/assets/images", to: "images" }
     ]),
     new ExtractText({filename: 'stylesheets/[name].css'}),
     Autoprefixer
