@@ -1,0 +1,19 @@
+// grid
+$grid: $base-grid !default;
+
+.grid{
+  @include grid-container;
+
+  @include modifier(visual){
+    @include grid-visual;
+  }
+
+  @include element(item){
+    @include grid-column(1, $grid);
+    @for $i from 1 through map-get($grid, "columns") {
+      @include modifier($i){
+        @include grid-column($i, $grid);
+      }
+    }
+  }
+}
