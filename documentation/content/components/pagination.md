@@ -98,24 +98,23 @@ weight: 3
 </nav>
 
 <section>
-  <h4>PAgination Variables</h4>
+  <h4>Variables</h4>
   <table class="table--striped table--bordered">
   <thead>
   <tr>
     <th>VARIABLE</th>
     <th>DEFAULT VALUE</th>
-    <th>REAL VALUE</th>
   </tr>
   </thead>
   <tbody>
-    <tr><td class="t--red">$pagination-hide-until</td><td class="t--purple">$tablet</td><td></td></tr>
-    <tr><td class="t--red">$pagination-border-color</td><td class="t--purple">$base-border-color</td><td></td></tr>
-    <tr><td class="t--red">$pagination-border-radius</td><td class="t--purple">$base-border-radius</td><td></td></tr>
-    <tr><td class="t--red">$pagination-links-color</td><td class="t--purple">$base-link-color</td><td></td></tr>
-    <tr><td class="t--red">$pagination-links-hover-color</td><td class="t--purple">$base-link-hover-color</td><td></td></tr>
-    <tr><td class="t--red">$pagination-links-bg</td><td class="t--purple">$base-link-hover-bg</td><td></td></tr>
-    <tr><td class="t--red">$pagination-links-active-bg</td><td class="t--purple">$base-action-active-bg</td><td></td></tr>
-    <tr><td class="t--red">$pagination-links-active-color</td><td class="t--purple">$base-action-active-color</td><td></td></tr>
+    <tr><td class="t--red">$pagination-hide-until</td><td class="t--purple">$tablet</td></tr>
+    <tr><td class="t--red">$pagination-border-color</td><td class="t--purple">$base-border-color</td></tr>
+    <tr><td class="t--red">$pagination-border-radius</td><td class="t--purple">$base-border-radius</td></tr>
+    <tr><td class="t--red">$pagination-links-color</td><td class="t--purple">$base-link-color</td></tr>
+    <tr><td class="t--red">$pagination-links-hover-color</td><td class="t--purple">$base-link-hover-color</td></tr>
+    <tr><td class="t--red">$pagination-links-bg</td><td class="t--purple">$base-link-hover-bg</td></tr>
+    <tr><td class="t--red">$pagination-links-active-bg</td><td class="t--purple">$base-action-active-bg</td></tr>
+    <tr><td class="t--red">$pagination-links-active-color</td><td class="t--purple">$base-action-active-color</td></tr>
   </tbody>
   </table>
 </section>
