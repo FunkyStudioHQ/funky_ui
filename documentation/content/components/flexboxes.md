@@ -3,6 +3,16 @@ title: Flexboxes
 slug: "flexboxes"
 draft: false
 weight: 6
+variables:
+  $boxes-bg:                  "$white"
+  $boxes-color:               "$dark-grey"
+  $boxes-box-border-color:    "$light-grey"
+  $boxes-border-radius:       "$base-border-radius"
+  $boxes-box-border:          "1px solid $boxes-box-border-color"
+  $boxes-box-background:      "$white"
+  $boxes-box-gutter:          "0.4em"
+  $boxes-box-width:           "18em"
+  $boxes-box-color:           "transparentize($boxes-color, 0.3)"
 ---
 
 <div class="flex-boxes">

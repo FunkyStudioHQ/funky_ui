@@ -156,7 +156,7 @@ select {
     div {
       &:not(:last-child) {
         [class^="button"] {
-          padding-bottom: 0.4em;
+          padding-bottom: 0.35em;
         }
       }
     }
@@ -194,7 +194,6 @@ select {
     border-width: thin;
     border-style: solid;
     border-color: shade($base-border-color, 20%);
-
     content: " ";
     display: block;
     height: 0.5em;

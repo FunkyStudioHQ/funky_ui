@@ -3,6 +3,11 @@ title: Breadcrumbs
 slug: "breadcrumbs"
 draft: false
 weight: 7
+variables:
+  $breadcrumb-item-color:           "$base-link-color"
+  $breadcrumb-item-hover-color:     "$base-link-hover-color"
+  $breadcrumb-item-active-color:    "$base-color"
+  $breadcrumb-item-separator-color: "$base-color"
 ---
 
 <div class="breadcrumb">
