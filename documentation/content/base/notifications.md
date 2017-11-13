@@ -3,6 +3,12 @@ title: Notifications
 slug: "notifications"
 draft: false
 weight: 3
+variables:
+  $notifications-border-radius: "$base-border-radius"
+  $notifications-margin:        "0 0 $small-spacing"
+  $notifications-padding:       "1.25rem 2.5rem 1.25rem 1.5rem"
+  $notifications-bg:            "$grey"
+  $notifications-color:         "black"
 ---
 
 <div class="notification">

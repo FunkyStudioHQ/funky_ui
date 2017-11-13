@@ -3,6 +3,19 @@ title: Typography
 slug: "typography"
 draft: false
 weight: 2
+variables:
+  $typography-font-family:            "$base-font-family"
+  $typography-line-height:            "$base-line-height"
+  $typography-bg:                     "$base-bg"
+  $typography-color:                  "$base-color"
+  $typography-headings-font-family:   "$base-font-family"
+  $typography-headings-font-weight:   "600"
+  $typography-headings-line-height:   "1.2"
+  $typography-headings-transform:     "none"
+  $typography-link-color:             "$base-link-color"
+  $typography-link-hover-color:       "$base-link-hover-color"
+  $typography-link-font-weight:       "$base-link-font-weight"
+  $typography-link-decoration:        "$base-link-decoration"
 ---
 <section>
   <h4>Headings</h1>

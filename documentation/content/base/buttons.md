@@ -3,6 +3,23 @@ title: Buttons
 slug: "buttons"
 draft: false
 weight: 4
+variables:
+  $button-font-family:     "$base-font-family"
+  $button-font-size:       "$base-font-size"
+  $button-font-weight:     "600"
+  $button-line-heigth:     "1"
+  $button-cursor:          "pointer"
+  $button-border:          "0"
+  $button-border-radius:   "$base-border-radius"
+  $button-text-transform:  "none"
+  $button-text-align:      "center"
+  $button-padding:         "$small-spacing $base-spacing"
+  $button-color:           "$base-action-color"
+  $button-bg:              "$base-action-bg"
+  $button-hover-color:     "$base-action-hover-color"
+  $button-hover-bg:        "$base-action-hover-bg"
+  $button-active-color:    "$base-action-active-color"
+  $button-active-bg:       "$base-action-active-bg"
 ---
 
 

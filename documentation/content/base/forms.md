@@ -3,6 +3,19 @@ title: Forms
 slug: "forms"
 draft: false
 weight: 5
+variables:
+  $forms-font-family:         "$base-font-family"
+  $forms-font-weigth:         "600"
+  $forms-font-size:           "$base-font-size"
+  $forms-border-radius:       "$base-border-radius"
+  $forms-border-color:        "$base-border-color"
+  $forms-border-size:         "1px"
+  $forms-border-style:        "solid"
+  $forms-box-shadow:          "inset 0 0 1px $light-grey, 0 2px 4px darken($white, 10%)"
+  $forms-disabled-bg:         "shade($base-bg, 5%)"
+  $forms-inputs-bg:           "$white"
+  $forms-textarea-min-height: "120px"
+  $forms-textarea-max-height: "600px"
 ---
 
 

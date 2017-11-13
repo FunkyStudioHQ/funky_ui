@@ -3,6 +3,28 @@ title: Tables
 slug: "tables"
 draft: false
 weight: 4
+variables:
+  $tables-width:                  "100%"
+  $tables-layout:                 "fixed"
+  $tables-border-collapse:        "collapse"
+  $tables-border-spacing:         "0"
+  $tables-margin:                 "0 0 $small-spacing"
+  $tables-cells-padding:          "0.5em 0.75em"
+  $tables-bg:                     "$base-bg"
+  $tables-cells-border:           "1px solid $base-border-color"
+  $tables-cells-border-width:     "0 0 1px 0"
+  $tables-cells-text-align:       "left"
+  $tables-th-font-family:         "$base-font-family"
+  $tables-th-font-weight:         "$base-font-weight"
+  $tables-th-font-variant:        "small-caps"
+  $tables-th-text-transform:      "uppercase"
+  $tables-actions-text-align:     "right"
+  $tables-striped-bg:             "$lighten-grey"
+  $tables-cells-border-width:     "0 0"
+  $tables-mobile-th-color:        "$base-color"
+  $tables-mobile-th-font-size:    "10pt"
+  $tables-mobile-border:          "1px solid $base-border-color"
+  $tables-mobile-bottom-margin:   "$small-spacing"
 ---
 
 <section>

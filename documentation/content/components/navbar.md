@@ -3,6 +3,18 @@ title: Navbar
 slug: "navbar"
 draft: false
 weight: 1
+variables:
+  $navbar-bg:                          "$base-bg"
+  $navbar-height:                      "52px"
+  $navbar-margin-bottom:               "0"
+  $navbar-border-bottom:               "1px solid #ddd"
+  $navbar-items-color:                 "$base-link-color"
+  $navbar-items-hover-color:           "$base-link-hover-color"
+  $navbar-items-hover-bg:              "$base-link-hover-bg"
+  $navbar-items-active-color:          "$base-link-active-color"
+  $navbar-items-active-bg:             "$base-link-active-bg"
+  $navbar-items-active-font-weight:    "700"
+  $navbar-items-padding:               "1rem"
 ---
 
 <section>

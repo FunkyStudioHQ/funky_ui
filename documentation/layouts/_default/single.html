@@ -19,4 +19,27 @@
 
 {{ define "main" }}
 {{ .Content }}
+
+  {{ $scss_variables := $.Param "variables" }}
+  {{ if $scss_variables }}
+  <section>
+    <h4>Variables</h4>
+    <table class="table table--bordered table--striped">
+    <thead>
+    <tr>
+      <th>VARIABLE</th>
+      <th>DEFAULT VALUE</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{ range $name, $value := $scss_variables }}
+    <tr>
+      <td class="t--red">{{ $name }}</td>
+      <td class="t--purple">{{ $value}}</td>
+    </tr>
+    {{ end }}
+    </tbody>
+    </table>
+  </section>
+  {{ end }}
 {{ end }}
