@@ -85,6 +85,67 @@ variables:
   </table>
 </section>
 
+
+<section>
+  <h3>With Icons</h3>
+
+  <table class="table">
+    <tbody>
+      <tr>
+        <td>
+          <a class="button button--dark">
+            <span class="icon"><i class="fa fa-paper-plane-o"></i></span>
+            <span>Button</span>
+          </a>
+        </td>
+        <td>
+          <a class="button button--light-grey">
+            <span class="icon"><i class="fa fa-power-off"></i></span>
+            <span>Button</span>
+          </a>
+        </td>
+        <td>
+          <a class="button button--red">
+            <span class="icon"><i class="fa fa-heart"></i></span>
+            <span>Button</span>
+          </a>
+        </td>
+        <td>
+          <a class="button button--green">            
+            <span>Button</span>
+            <span class="icon"><i class="fa fa-arrows"></i></span>
+          </a>
+        </td>
+        <td>
+          <a class="button button--orange">            
+            <span class="icon"><i class="fa fa-university"></i></span>
+            <span>Button</span>            
+          </a>
+        </td>
+        <td>
+          <a class="button button--purple">            
+            <span class="icon"><i class="fa fa-user-o"></i></span>
+            <span>Button</span>            
+          </a>
+        </td>
+        <td>
+          <a class="button button--black">            
+            <span class="icon"><i class="fa fa-automobile"></i></span>
+            <span>Button</span>            
+          </a>
+        </td>
+        <td>
+          <a class="button button--blue">            
+            <span class="icon"><i class="fa fa-futbol-o"></i></span>
+            <span>Button</span>            
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
 <section>
   <h3>dropdown</h3>
   <div class="dropdown">
@@ -251,13 +312,6 @@ variables:
   </div>
 </section>
 
-<a class="button">
-  <span class="icon">
-    <i class="fa fa-github"></i>
-  </span>
-  <span>GitHub</span>
-</a>
-
 <section>
   <h3>Dimension modifier</h3>
   <a class="button--red button--small">Button</a>
@@ -266,3 +320,9 @@ variables:
   <a class="button--green button--large">Button</a>
 </p>
 </section>
+
+<button class="button badge" data-badge="8">Button</button>
+
+<button class="button badge--red" data-badge="8">Button</button>
+
+<a class="badge" data-badge="100">Notifications</a>

@@ -41,8 +41,8 @@ $button-active-bg:        $base-action-active-bg !default;
   font-size: $button-font-size;
 
   .icon{
-    height: 1.5em;
-    width: 1.5em;
+    height: 0.5em;
+    width: 1em;
     &:first-child:not(:last-child){
       margin-left: calc(-0.375em - 1px);
       margin-right: 0.1875em;

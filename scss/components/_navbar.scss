@@ -22,7 +22,6 @@ $navbar-items-padding:               1rem !default;
     border-bottom: 0;
   }
 
-
   // Color modifiers
   @each $name, $value in $palette{
     @include modifier($name){
@@ -35,7 +34,6 @@ $navbar-items-padding:               1rem !default;
       }
     }
   }
-
 
   // Element
   @include element(brand) {
