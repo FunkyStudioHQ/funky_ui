@@ -1,0 +1,18 @@
+
+.tag{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $base-border-radius;
+  height: 2em;
+  line-height: 1.5;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  white-space: nowrap;
+  @each $name, $color in $palette {
+    @include modifier($name){
+      color: nth($color, 2);
+      background: nth($color, 1);
+    }
+  }
+}
