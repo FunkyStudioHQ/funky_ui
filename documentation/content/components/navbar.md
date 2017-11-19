@@ -33,12 +33,15 @@ variables:
         <div class="navbar__menu--left">
           <div class="navbar__item dropdown">
             <a class="dropdown__item">Dropdown</a>
-            <div class="dropdown__menu">
+            <div class="dropdown__menu--large">
               <a class="dropdown__menu-item">One</a>
               <a class="dropdown__menu-item">Two</a>
               <a class="dropdown__menu-item">Three</a>
               <hr class="dropdown__menu__divider">
-              <a class="dropdown__menu-item">Separated</a>
+              <a class="dropdown__menu-item">
+                <span clas="icon"><i class="fa fa-github"></i></span>
+                <span>Separated</span>
+              </a>
             </div>
           </div>
         </div>

@@ -251,6 +251,12 @@ variables:
   </div>
 </section>
 
+<a class="button">
+  <span class="icon">
+    <i class="fa fa-github"></i>
+  </span>
+  <span>GitHub</span>
+</a>
 
 <section>
   <h3>Dimension modifier</h3>

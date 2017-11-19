@@ -13,6 +13,8 @@ SectionPagesMenu = "main"
   url = "/"
   weight = 1
 
+[params]
+  app_vesion = "0.0.11"
 
 [[params.colors]]
   name = "black"

@@ -53,13 +53,11 @@ variables:
   <h4>Checkboxes and radio buttons</h4>
   <div>
     <label class="checkbox">
-      <input type="checkbox">
-      I agree to the <a href="#">terms and conditions</a>
-    </label>
+      <input type="checkbox">label example</label>
   </div>
   <div>
     <label class="radio">
-      <input type="radio" name="question"> Yes
+      <input type="radio" name="question">Yes
     </label>
     <label class="radio">
       <input type="radio" name="question"> No
@@ -69,6 +67,7 @@ variables:
 
 <section>
   <h4>Inputs with size modifiers</h4>
+  <p>To use this modifiers add class <i>t--small</i>, <i>t--medium</i> or <i>t--large</i> to your input</p>
   <ul>
     <li><input type="text" class="t--small" placeholder="input" /></li>
     <li><input type="text" class="input" placeholder="input" /></li>
@@ -76,6 +75,13 @@ variables:
     <li><input type="text" class="t--large" placeholder="input" /></li>    
   </ul>
 </section>
+
+```html
+<input type="text" class="t--small" />
+<input type="text" />
+<input type="text" class="t--medium" />
+<input type="text" class="t--large" />
+```
 
 <section>
   <h4>Upload input</h4>
@@ -86,7 +92,7 @@ variables:
   <h4>Chained fields</h4>
   <div class="chained-fields">
     <div>
-      <input class="input" type="text" placeholder="Find a repository">
+      <input class="input" type="text">
     </div>
     <div>
       <a class="button">Search</a>
@@ -94,21 +100,21 @@ variables:
   </div>
   <div class="chained-fields">
     <div>
-      <a class="button">Search</a>
+      <a class="button">button</a>
     </div>
     <div>
-      <input class="input" type="text" placeholder="Find a repository">
+      <input class="input" type="text">
     </div>
   </div>
   <div class="chained-fields">
     <div>
-      <a class="button">Search</a>
+      <a class="button">button</a>
     </div>
     <div>
-      <input class="input" type="text" placeholder="Find a repository">
+      <input class="input" type="text">
     </div>
     <div>
-      <a class="button">Search</a>
+      <a class="button">button</a>
     </div>
   </div>
 </section>
@@ -117,46 +123,46 @@ variables:
   <h4>Grouped fields</h4>
   <div class="grouped-fields">
     <div>
-      <label>Message</label>
-      <input class="input" type="text" placeholder="Find a repository">
+      <label>text 1</label>
+      <input class="input" type="text">
     </div>
     <div>
-      <label>Message</label>
-      <input class="input" type="text" placeholder="Find a repository">
-    </div>
-  </div>
-
-  <div class="grouped-fields--fullwidth">
-    <div>
-      <label>Message</label>
-      <input class="input" type="text" placeholder="Find a repository">
-    </div>
-    <div>
-      <label>Message</label>
-      <input class="input" type="text" placeholder="Find a repository">
+      <label>text 2</label>
+      <input class="input" type="text">
     </div>
   </div>
 
   <div class="grouped-fields--fullwidth">
     <div>
-      <label>Message</label>
-      <input class="input" type="text" placeholder="Find a repository">
+      <label>text 1</label>
+      <input class="input" type="text">
     </div>
     <div>
-      <label>Message</label>
-      <input class="input" type="text" placeholder="Find a repository">
+      <label>text 2</label>
+      <input class="input" type="text">
+    </div>
+  </div>
+
+  <div class="grouped-fields--fullwidth">
+    <div>
+      <label>text 1</label>
+      <input class="input" type="text">
     </div>
     <div>
-      <label>Message</label>
-      <input class="input" type="text" placeholder="Find a repository">
+      <label>text 2</label>
+      <input class="input" type="text">
     </div>
     <div>
-      <label>Message</label>
-      <input class="input" type="text" placeholder="Find a repository">
+      <label>text 3</label>
+      <input class="input" type="text">
     </div>
     <div>
-      <label>Message</label>
-      <input class="input" type="text" placeholder="Find a repository">
+      <label>text 4</label>
+      <input class="input" type="text">
+    </div>
+    <div>
+      <label>text 5</label>
+      <input class="input" type="text">
     </div>
   </div>
 </section>

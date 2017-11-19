@@ -68,7 +68,7 @@ weight: 4
     <div class="row__right">
       <div class="row__item">
         <div class="dropdown">
-          <a class="dropdown__item button">Docs asdasdasdasdasd</a>
+          <a class="dropdown__item button">dropdown</a>
           <div class="dropdown__menu">
             <a class="dropdown__menu-item">Overview</a>
             <a class="dropdown__menu-item">Elements</a>
