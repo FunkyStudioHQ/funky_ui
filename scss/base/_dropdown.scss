@@ -34,8 +34,7 @@ $dropdown-item-button-active-color:     $white !default;
       @include fa-icon;
       content: $fa-var-angle-down;
     }
-
-    @include modifier(active){}
+    //@include modifier(active){}
   }
 
   .dropdown__menu {
@@ -48,6 +47,10 @@ $dropdown-item-button-active-color:     $white !default;
     -webkit-box-shadow: $dropdown-content-shadow;
     box-shadow: $dropdown-content-shadow;
     font-size: $dropdown-content-font-size;
+
+    @include modifier(large){
+      width: 14rem;
+    }
 
     hr {
       margin: 0;
@@ -105,7 +108,7 @@ $dropdown-item-button-active-color:     $white !default;
         background-color: $dropdown-item-hover-bg;
         background: $dropdown-item-hover-color;
       }
-    
+
     }
     .dropdown__menu{
       @include position(absolute, 0 null null 100%);
