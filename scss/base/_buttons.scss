@@ -40,6 +40,18 @@ $button-active-bg:        $base-action-active-bg !default;
   white-space: nowrap;
   font-size: $button-font-size;
 
+  .icon{
+    height: 1.5em;
+    width: 1.5em;
+    &:first-child:not(:last-child){
+      margin-left: calc(-0.375em - 1px);
+      margin-right: 0.1875em;
+    }
+    &:last-child:not(:first-child) {
+      margin-left: 0.1875em;
+      margin-right: calc(-0.375em - 1px);
+    }
+  }
   // &:hover{
   //   color: $button-hover-color;
   //   background-color: $button-hover-bg;
