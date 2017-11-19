@@ -17,7 +17,7 @@ $badge-border-radius: 1rem !default;
     color: $white;
     content: attr(data-badge);
     display: inline-block;
-    top: calc(0px - ( 0.8rem / 2 ));
+    top: calc(0px - ( 1rem / 2 ));
     left: calc(100% - ( 0.8rem / 2 ));
     min-height: 1rem;
     min-width: 1rem;
@@ -41,15 +41,13 @@ $badge-border-radius: 1rem !default;
       color: $base-color;
     }
   }
+}
 
-  // Color modifiers
-  @each $name, $value in $palette{
-    @include modifier($name){
-      &:not([data-badge=""])::after,{
-        background-color: nth($value, 1);
-        color: nth($value, 2);
-      }
+@each $name, $value in $palette{
+  .badge.badge--#{$name}{
+    &:not([data-badge=""])::after,{
+      background-color: nth($value, 1);
+      color: nth($value, 2);
     }
   }
-
 }

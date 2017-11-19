@@ -321,8 +321,6 @@ variables:
 </p>
 </section>
 
-<button class="button badge" data-badge="8">Button</button>
+<button class="button badge badge--red" data-badge="8">Button</button>
 
-<button class="button badge--red" data-badge="8">Button</button>
-
-<a class="badge" data-badge="100">Notifications</a>
+<span class="badge" data-badge="100">Notifications</span>
