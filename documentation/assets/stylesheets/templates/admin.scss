@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+$fa-font-path: "/fonts/font-awesome";
+
+@import "font-awesome";
+
+@import "../../../../all";
+
+
+main{
+  display: flex;
+  flex-flow: row;
+  height: calc(100%);
+  section{
+    &:first-child{
+      margin-bottom: 2em;
+      border-bottom: 0;
+    }
+  }
+  .navbar{
+    .navbar__burger{
+      display: block;
+    }
+  }
+
+
+  .main__panel{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    // align-items: flex-end;
+  }
+  .sidebar{
+    display: none;
+    display: flex;
+    flex-flow: column;
+    width: 240px;
+    height: calc(100%);
+    border-right: 1px solid #ccc;
+    padding-top: $navbar-height;
+    @include mobile{
+      display: none;
+    }
+  }
+}
+
+footer.footer{
+  margin-top: 0;
+}

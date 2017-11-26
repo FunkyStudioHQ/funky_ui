@@ -18,6 +18,11 @@ module.exports = {
       "./documentation/assets/stylesheets/main.scss",
       "./documentation/assets/javascript/main.js"
     ],
+    admin: [
+      "./documentation/assets/stylesheets/templates/admin.scss"
+  //,
+      // "./documentation/assets/javascript/templates/admin.js"
+    ]
   },
   stats: {
     assets: true,
