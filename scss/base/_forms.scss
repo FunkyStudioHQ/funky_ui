@@ -119,6 +119,8 @@ select {
     &:first-child {
       #{$all-text-inputs} {
         border-radius: $base-border-radius 0 0 $base-border-radius;
+        padding-bottom: 0.35em;
+        margin-top: 1px;
       }
     }
 
@@ -128,7 +130,7 @@ select {
       }
 
       [class^="button"] {
-        padding-bottom: 0.35em;
+        padding-bottom: 0.39em;
         border-radius: 0 $base-border-radius $base-border-radius 0;
       }
     }
@@ -141,7 +143,7 @@ select {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         border-bottom-left-radius: $base-border-radius;
-        padding-bottom: 0.33em;
+        padding-bottom: 0.35em;
       }
     }
 
