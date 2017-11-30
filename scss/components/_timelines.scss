@@ -1,215 +1,315 @@
-$timeline-marker-size: .8em !default;
-$timeline-marker-color: $grey !default;
-$timeline-marker-icon-size: 1.5em !default;
-$timeline-marker-border-size: .1em !default;
-$timeline-marker-border: $timeline-marker-border-size solid $timeline-marker-color !default;
-$timeline-line-color: $grey !default;
-$timeline-line-width: .1em !default;
-$timeline-line-style: solid !default;
-$timeline-line: $timeline-line-width $timeline-line-style $timeline-line-color !default;
-$timeline-content-padding: 1em 0 0 2em !default;
-$timeline-rtl-content-padding: 1em 2em 0 0 !default;
-$timeline-icon-size: $small-font-size !default;
-$timeline-header-width: 4em !default;
-$dimensions: 16 24 32 48 64 96 128 !default;
-
-.timeline{
+.timeline {
   display: flex;
   flex-direction: column;
-
-  .timeline__header{
-    width: $timeline-header-width;
-    min-width: $timeline-header-width;
-    max-width: $timeline-header-width * 2;
+  @include element(header){
+    width: 4em;
+    min-width: 4em;
+    max-width: 8em;
     word-wrap: normal;
     text-align: center;
     display: flex;
     justify-content: center;
   }
-
-  .timeline__item{
+  @include element(item){
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
     position: relative;
-    margin-left: $timeline-header-width / 2;
+    margin-left: 2em;
     padding-bottom: 2em;
-    &::before{
+    &::before {
       content: "";
-      background-color: $timeline-line-color;
+      background-color: #dbdbdb;
       display: block;
-      width: $timeline-line-width;
+      width: 0.1em;
       height: 100%;
       position: absolute;
       left: 0;
       top: 0;
     }
-  }
+    @include element(marker){
+      position: absolute;
+      background: #dbdbdb;
+      border: 0.1em solid #dbdbdb;
+      border-radius: 100%;
+      content: "";
+      display: block;
+      height: 0.8em;
+      left: -0.35em;
+      top: 1.2rem;
+      width: 0.8em;
 
-  .timeline__marker{
-    position: absolute;
-    background: $timeline-marker-color;
-    border: $timeline-marker-border;
-    border-radius: 100%;
-    content: "";
-    display: block;
-    height: $timeline-marker-size;
-    left: -(($timeline-marker-size / 2) - $timeline-marker-border-size / 2);
-    top: 1.2rem;
-  }
+      @each $name, $value in $palette{
+        @include modifier($name){
+          background-color: nth($value, 1) !important;
+          border-color: nth($value, 1) !important;
+          .image {
+            border-color: nth($value, 1) !important;
+          }
+          &.is-icon {
+            background-color: nth($value, 1) !important;
+            border-color: nth($value, 1) !important;
+            > i {
+              color: nth($value, 2) !important;
+            }
+          }
+          &.is-outlined {
+            background-color: nth($value, 1) !important;
+            border-color: nth($value, 1) !important;
+            .image {
+              background-color: nth($value, 1) !important;
+            }
+            &.is-icon {
+              background-color: nth($value, 1) !important;
+              > i {
+                color: nth($value, 1) !important;
+              }
+            }
+          }
+        }
+      }
 
-  //
-  //   .timeline-marker
-  //     position: absolute;
-  //     background: $timeline-marker-color;
-  //     border: $timeline-marker-border;
-  //     border-radius: 100%;
-  //     content: "";
-  //     display: block;
-  //     height: $timeline-marker-size;
-  //     left: -(($timeline-marker-size / 2) - $timeline-marker-border-size / 2);
-  //     top: 1.2rem;
-  //     width: $timeline-marker-size;
-  //     &.is-image
-  //       @each $dimension in $dimensions
-  //         &.is-#{$dimension}x#{$dimension}
-  //           height: $dimension * 1px;
-  //           width: $dimension * 1px;
-  //           left: ( $dimension / 2 ) * -1px;
-  //       background: $timeline-marker-color;
-  //       border: $timeline-marker-border;
-  //       border-radius: 100%;
-  //       display: block;
-  //       overflow: hidden;
-  //     &.is-icon
-  //       height: $timeline-marker-icon-size;
-  //       width: $timeline-marker-icon-size;
-  //       left: -(($timeline-marker-icon-size / 2) - $timeline-marker-border-size / 2);
-  //       line-height: .75rem;
-  //       padding: $timeline-icon-size / 3;
-  //       background: $timeline-marker-color;
-  //       border: $timeline-marker-border;
-  //       border-radius: 100%;
-  //       > i
-  //         color: $white;
-  //         font-size: $timeline-icon-size !important;
-  //     &.is-outlined
-  //       .image
-  //         background: $white;
-  //       &.is-icon
-  //         background: $white;
-  //         > i
-  //           color: $timeline-marker-color;
-  //     @each $name, $pair in $colors
-  //       $color: nth($pair, 1);
-  //       $color-invert: nth($pair, 2);
-  //       &.is-#{$name}
-  //         background-color: $color !important;
-  //         border-color: $color !important;
-  //         .image
-  //           border-color: $color !important;
-  //
-  //         &.is-icon
-  //           background-color: $color !important;
-  //           border-color: $color !important;
-  //           > i
-  //             color: $color-invert !important;
-  //         &.is-outlined
-  //           background-color: $white !important;
-  //           border-color: $color !important;
-  //           .image
-  //             background-color: $white !important;
-  //           &.is-icon
-  //             background-color: $white !important;
-  //             > i
-  //               color: $color !important;
-  //   .timeline-content
-  //     padding: 1em 0 0 .5em;
-  //     padding: $timeline-content-padding;
-  //     .heading
-  //       font-weight: $weight-semibold;
-  //
-  //   @each $name, $pair in $colors
-  //     $color: nth($pair, 1);
-  //     $color-invert: nth($pair, 2);
-  //     &.is-#{$name}
-  //       &::before
-  //         background-color: $color;
-  //
-  // &.is-centered
-  //   .timeline-header
-  //     display: flex;
-  //     width: 100%;
-  //     align-self: center;
-  //   .timeline-item
-  //     width: 50%;
-  //     align-self: flex-end;
-  //     &:nth-of-type(2n)
-  //       align-self: flex-start;
-  //       margin-left: 0;
-  //       margin-right: $timeline-header-width / 2;
-  //       &::before
-  //         right: -$timeline-line-width;
-  //         left: auto;
-  //       .timeline-marker
-  //         left: auto;
-  //         right: -(($timeline-marker-size / 2) - $timeline-marker-border-size / 2) - $timeline-line-width;
-  //         &.is-image
-  //           @each $dimension in $dimensions
-  //             &.is-#{$dimension}x#{$dimension}
-  //               left: auto;
-  //               right: ( $dimension / 2 ) * -1px;
-  //         &.is-icon
-  //           left: auto;
-  //           right: -(($timeline-marker-icon-size / 2) - $timeline-marker-border-size / 2) - $timeline-line-width;
-  //       .timeline-content
-  //         padding: $timeline-rtl-content-padding;
-  //         text-align: right;
-  //         display: flex;
-  //         flex-direction: column;
-  //         align-items: flex-end;
-  //         flex-basis: 100%;
-  //     &:nth-of-type(2n+1)
-  //       &::before
-  //         content: "";
-  //         background-color: $timeline-line-color;
-  //         display: block;
-  //         width: $timeline-line-width;
-  //         height: 100%;
-  //         position: absolute;
-  //         top: 0;
-  //
-  // &.is-rtl
-  //   justify-content: flex-end;
-  //   align-items: flex-end;
-  //   .timeline-item{
-  //     justify-content: flex-end;
-  //     border-left: none;
-  //     &::before{
-  //       right: 0;
-  //       left: auto;
-  //     }
-  //     margin-left: 0;
-  //     margin-right: $timeline-header-width / 2;
-  //     .timeline-marker{
-  //       left: auto;
-  //       right: -(($timeline-marker-size / 2) - $timeline-marker-border-size / 2);
-  //       &.is-image{
-  //         @each $dimension in $dimensions{
-  //           &.is-#{$dimension}x#{$dimension}{
-  //             left: auto;
-  //             right: ( $dimension / 2 ) * -1px;
-  //           }
-  //         }
-  //       }
-  //       &.is-icon{
-  //         left: auto;
-  //         right: -(($timeline-marker-icon-size / 2) - $timeline-marker-border-size / 2);
-  //       }
-  //     }
-  //     .timeline-content{
-  //       padding: $timeline-rtl-content-padding;
-  //       text-align: right;
-  //     }
-  //   }
+
+      &.is-image {
+        background: #dbdbdb;
+        border: 0.1em solid #dbdbdb;
+        border-radius: 100%;
+        display: block;
+        overflow: hidden;
+        &.is-16x16 {
+          height: 16px;
+          width: 16px;
+          left: -8px;
+        }
+        &.is-24x24 {
+          height: 24px;
+          width: 24px;
+          left: -12px;
+        }
+        &.is-32x32 {
+          height: 32px;
+          width: 32px;
+          left: -16px;
+        }
+        &.is-48x48 {
+          height: 48px;
+          width: 48px;
+          left: -24px;
+        }
+        &.is-64x64 {
+          height: 64px;
+          width: 64px;
+          left: -32px;
+        }
+        &.is-96x96 {
+          height: 96px;
+          width: 96px;
+          left: -48px;
+        }
+        &.is-128x128 {
+          height: 128px;
+          width: 128px;
+          left: -64px;
+        }
+      }
+      &.is-icon {
+        height: 1.5em;
+        width: 1.5em;
+        left: -0.7em;
+        line-height: .75rem;
+        padding: 0.25rem;
+        background: #dbdbdb;
+        border: 0.1em solid #dbdbdb;
+        border-radius: 100%;
+        > i {
+          color: white;
+          font-size: 0.75rem !important;
+        }
+      }
+      &.is-outlined {
+        .image {
+          background: white;
+        }
+        &.is-icon {
+          background: white;
+          > i {
+            color: #dbdbdb;
+          }
+        }
+      }
+      &.is-link {
+        background-color: #3273dc !important;
+        border-color: #3273dc !important;
+        .image {
+          border-color: #3273dc !important;
+        }
+        &.is-icon {
+          background-color: #3273dc !important;
+          border-color: #3273dc !important;
+          > i {
+            color: #fff !important;
+          }
+        }
+        &.is-outlined {
+          background-color: white !important;
+          border-color: #3273dc !important;
+          .image {
+            background-color: white !important;
+          }
+          &.is-icon {
+            background-color: white !important;
+            > i {
+              color: #3273dc !important;
+            }
+          }
+        }
+      }
+    }
+    @include element(content){
+      padding: 1em 0 0 .5em;
+      padding: 1em 0 0 2em;
+      .heading {
+        font-weight: 600;
+      }
+    }
+
+    @each $name, $value in $palette{
+      @include modifier($name){
+        &::before{
+          background-color: nth($value, 1);
+        }
+      }
+    }
+  }
+  &.centered {
+    .timeline__header {
+      display: flex;
+      width: 100%;
+      align-self: center;
+    }
+    .timeline__item {
+      width: 50%;
+      align-self: flex-end;
+      &:nth-of-type(2n) {
+        align-self: flex-start;
+        margin-left: 0;
+        margin-right: 2em;
+        &::before {
+          right: -0.1em;
+          left: auto;
+        }
+        .timeline__item__marker {
+          left: auto;
+          right: -0.45em;
+          &.is-image {
+            &.is-16x16 {
+              left: auto;
+              right: -8px;
+            }
+            &.is-24x24 {
+              left: auto;
+              right: -12px;
+            }
+            &.is-32x32 {
+              left: auto;
+              right: -16px;
+            }
+            &.is-48x48 {
+              left: auto;
+              right: -24px;
+            }
+            &.is-64x64 {
+              left: auto;
+              right: -32px;
+            }
+            &.is-96x96 {
+              left: auto;
+              right: -48px;
+            }
+            &.is-128x128 {
+              left: auto;
+              right: -64px;
+            }
+          }
+          &.is-icon {
+            left: auto;
+            right: -0.8em;
+          }
+        }
+        .timeline__item__content {
+          padding: 1em 2em 0 0;
+          text-align: right;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          flex-basis: 100%;
+        }
+      }
+      &:nth-of-type(2n+1)::before {
+        content: "";
+        background-color: #dbdbdb;
+        display: block;
+        width: 0.1em;
+        height: 100%;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+  &.is-rtl {
+    justify-content: flex-end;
+    align-items: flex-end;
+    .timeline__item {
+      justify-content: flex-end;
+      border-left: none;
+      margin-left: 0;
+      margin-right: 2em;
+      &::before {
+        right: 0;
+        left: auto;
+      }
+      .timeline__item__marker {
+        left: auto;
+        right: -0.35em;
+        &.is-image {
+          &.is-16x16 {
+            left: auto;
+            right: -8px;
+          }
+          &.is-24x24 {
+            left: auto;
+            right: -12px;
+          }
+          &.is-32x32 {
+            left: auto;
+            right: -16px;
+          }
+          &.is-48x48 {
+            left: auto;
+            right: -24px;
+          }
+          &.is-64x64 {
+            left: auto;
+            right: -32px;
+          }
+          &.is-96x96 {
+            left: auto;
+            right: -48px;
+          }
+          &.is-128x128 {
+            left: auto;
+            right: -64px;
+          }
+        }
+        &.is-icon {
+          left: auto;
+          right: -0.7em;
+        }
+      }
+      .timeline__item__content {
+        padding: 1em 2em 0 0;
+        text-align: right;
+      }
+    }
+  }
 }

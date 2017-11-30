@@ -14,4 +14,11 @@ variables:
 
 <a href="#" data-tooltip="Tooltip!" class="tooltip tooltip--left">Hover me!</a>
 
-<a href="#" data-tooltip="Tooltip!" class="tooltip tooltip--bottom tooltip">Hover me!</a>
+<a href="#" data-tooltip="Tooltip!" class="tooltip tooltip--bottom">Hover me!</a>
+
+```html
+<a href="#" data-tooltip="Tooltip!" class="tooltip tooltip">Hover me!</a>
+<a href="#" data-tooltip="Tooltip!" class="tooltip tooltip--right">Hover me!</a>
+<a href="#" data-tooltip="Tooltip!" class="tooltip tooltip--left">Hover me!</a>
+<a href="#" data-tooltip="Tooltip!" class="tooltip tooltip--bottom">Hover me!</a>
+```
