@@ -8,6 +8,7 @@ $typography-headings-font-family:   $base-font-family !default;
 $typography-headings-font-weight:   600 !default;
 $typography-headings-line-height:   1.2 !default;
 $typography-headings-transform:     none !default;
+$typography-headings-color:         $base-color !default;
 
 $typography-link-color:             $base-link-color !default;
 $typography-link-hover-color:       $base-link-hover-color !default;
@@ -21,13 +22,10 @@ html {
   background: $typography-bg;
 }
 
-body, section, main, header, .container{
-  color: $typography-color;
+body{
   background-color: $base-bg;
 }
 
-
-// Headings
 @for $i from 1 through 6 {
   .h--#{$i},
   h#{$i} {
@@ -37,14 +35,16 @@ body, section, main, header, .container{
     line-height: $typography-headings-line-height;
     text-transform: $typography-headings-transform;
     margin: 0 0 $small-spacing;
-    font-size: modular-scale(6 - $index);
+    color: $typography-headings-color;
+    font-size: rem(modular-scale(6 - $index));
     @include mobile{
-      font-size: modular-scale(5 - $index);
+      font-size: rem(modular-scale(5 - $index));
     }
   }
 }
 
 p {
+  color: $typography-color;
   margin: 0 0 $small-spacing;
 }
 
@@ -53,12 +53,10 @@ a {
   font-weight: $typography-link-font-weight;
   text-decoration: $typography-link-decoration;
   transition: color $base-duration $base-timing;
-
   &:hover {
     color: $typography-link-hover-color;
     cursor: pointer;
   }
-
   &:focus {
     outline: $base-focus-outline;
     outline-offset: $base-focus-outline-offset;

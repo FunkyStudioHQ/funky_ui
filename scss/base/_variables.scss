@@ -2,7 +2,7 @@
 
 // Text & Font
 $base-font-family:  $sans-serif !default;
-$base-font-size:    16px !default;
+$base-font-size:    1rem !default;
 $base-color:        $black !default;
 $base-font-weight:  600 !default;
 
@@ -32,6 +32,8 @@ $base-action-hover-color:  $light-grey-inverse !default;
 
 $base-action-active-color: $blue-inverse !default;
 $base-action-active-bg:    $blue !default;
+
+$base-footer-bg: $white !default;
 
 // grid
 $base-grid: (

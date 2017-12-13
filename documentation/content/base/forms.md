@@ -88,6 +88,10 @@ variables:
   <input type="file" name="file_upload" data-show="upload"/>
 </section>
 
+```html
+<input type="file" name="[your-upload-field]" data-show="upload"/>
+```
+
 <section>
   <h4>Chained fields</h4>
   <div class="chained-fields">
@@ -119,20 +123,40 @@ variables:
   </div>
 </section>
 
-<section>
-  <h4>Grouped fields</h4>
-  <div class="grouped-fields">
+```html
+<div class="chained-fields">
+  <div class="chained-fields">
     <div>
-      <label>text 1</label>
       <input class="input" type="text">
     </div>
     <div>
-      <label>text 2</label>
+      <a class="button">Search</a>
+    </div>
+  </div>
+  <div class="chained-fields">
+    <div>
+      <a class="button">button</a>
+    </div>
+    <div>
       <input class="input" type="text">
     </div>
   </div>
-
-  <div class="grouped-fields--fullwidth">
+  <div class="chained-fields">
+    <div>
+      <a class="button">button</a>
+    </div>
+    <div>
+      <input class="input" type="text">
+    </div>
+    <div>
+      <a class="button">button</a>
+    </div>
+  </div>
+</div>
+```
+<section>
+  <h4>Grouped fields</h4>
+  <div class="grouped-fields">
     <div>
       <label>text 1</label>
       <input class="input" type="text">
@@ -166,3 +190,44 @@ variables:
     </div>
   </div>
 </section>
+
+```html
+<div class="grouped-fields">
+  <div>
+    <label>text 1</label>
+    <input class="input" type="text">
+  </div>
+  <div>
+    <label>text 2</label>
+    <input class="input" type="text">
+  </div>
+  [...]
+</div>
+```
+
+<section>
+  <h4>Full width</h4>
+  <div class="grouped-fields--fullwidth">
+    <div>
+      <label>text 1</label>
+      <input class="input" type="text">
+    </div>
+    <div>
+      <label>text 2</label>
+      <input class="input" type="text">
+    </div>
+  </div>
+</section>
+
+```html
+<div class="grouped-fields--fullwidth">
+  <div>
+    <label>text 1</label>
+    <input class="input" type="text">
+  </div>
+  <div>
+    <label>text 2</label>
+    <input class="input" type="text">
+  </div>
+</div>
+```

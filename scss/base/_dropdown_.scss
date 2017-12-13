@@ -1,17 +1,17 @@
-$dropdown-content-bg: $base-bg !default;
+$dropdown-content-bg:               $base-bg !default;
 $dropdown-content-arrow:            $base-color !default;
 $dropdown-content-offset:           0.5rem !default;
 $dropdown-content-radius:           $base-border-radius !default;
 $dropdown-content-shadow:           0 2px 3px rgba($black, 0.1), 0 0 0 1px rgba($black, 0.1) !default;
 $dropdown-content-z:                20 !default;
 
-$dropdown-item-color:                   $dark-grey !default;
-$dropdown-item-hover-color:             $black !default;
-$dropdown-item-hover-bg:  darken($grey, 20) !default;
-$dropdown-item-active-color:            darken($grey, 20) !default;
-$dropdown-item-active-bg: $base-link-color !default;
+$dropdown-item-color:               $dark-grey !default;
+$dropdown-item-hover-color:         $black !default;
+$dropdown-item-hover-bg:            darken($grey, 20) !default;
+$dropdown-item-active-color:        darken($grey, 20) !default;
+$dropdown-item-active-bg:           $base-link-color !default;
 
-$dropdown-divider-bg:     $button-hover-bg !default;
+$dropdown-divider-bg:               $button-hover-bg !default;
 
 .dropdown, .dropdown__submenu > .dropdown {
   display: inline-flex;
