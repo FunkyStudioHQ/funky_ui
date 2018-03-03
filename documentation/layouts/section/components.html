@@ -1,0 +1,17 @@
+{{ define "title" }}
+  {{ .Title }} &raquo; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+<header role="navbar" class="navbar">
+  <div class="container">
+    <nav class="navbar__menu navbar__menu--mobile">
+      <div class="navbar__menu--left">
+        {{ range .Data.Pages }}
+        <a class="navbar__item" href="{{.URL}}">{{ .Title }}</a>
+        {{end}}
+      </div>
+    </nav>
+  </div>
+</header>
+{{ end }}
